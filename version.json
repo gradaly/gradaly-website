@@ -1,18 +1,18 @@
 {
-  "version": "4.0.1",
-  "name": "Gradaly v4.0.1",
-  "title": "Gradaly v4.0.1",
-  "published_at": "2026-11-04T13:50:00.000Z",
-  "notes": "### ✨ What's New in Gradaly v4.0.1\n- **Rubric & Grading Data Integrity**: Deleting a question now strictly removes only that question across all grading JSON files (`gradings/*.json`, `solution_grading.json`, `rubric_chats.json`) without affecting other questions. Deleting a criterion within a question now automatically resets the grading for that specific question (`pending`) across all graded copies so outdated evaluations are never retained.\n- **Clean `.gradaly` Archive Export & Import + SemVer Protection**: `.gradaly` project exports now strictly exclude AI chat history (`rubric_chats.json`) and export/import only active questions from `config.json` and their corresponding gradings. Added strict SemVer protection blocking imports from newer Gradaly versions while automatically migrating archives exported from older versions.\n- **Instant Project List Refresh**: Importing a `.gradaly` archive now immediately updates the sidebar and welcome screen project lists without requiring an application restart.\n- **AI Grading Reliability (Gemini & OpenRouter GLM-5.3 Flash)**: Added automatic multi-step fallback for Google Gemini (`gemini-3.8-flash`) when safety/recitation filters return an empty candidate, and tuned reasoning effort (`low`) and token budgets for OpenRouter `z-ai/glm-5.3-flash` to prevent truncated JSON responses.\n- **Linux AppImage & Ubuntu 22.04 Focus/Display Stability**: Enabled X11/XWayland fallback (`GDK_BACKEND=x11`), disabled WebKitGTK DMA-BUF compositing (`WEBKIT_DISABLE_COMPOSITING_MODE=1`), and suppressed `canberra-gtk-module` warnings on Linux to prevent window focus loss when switching from fullscreen terminals.",
-  "html_url": "https://github.com/pschaus/gradaly-website/releases/tag/v4.0.1",
+  "version": "4.0.2",
+  "name": "Gradaly v4.0.2",
+  "title": "Gradaly v4.0.2",
+  "published_at": "2026-11-07T08:15:00.000Z",
+  "notes": "### ✨ What's New in Gradaly v4.0.2\n- **Terms of Use, Disclaimer of Liability & EU AI Act / GDPR / FERPA Compliance**: Added a comprehensive 7-point legal notice and first-launch acceptance dialog covering \"As Is\" software warranty, instructor responsibility for rubric design and final grades, mandatory human oversight under the European AI Act (EU AI Act High-Risk education framework), third-party AI provider / API key billing disclaimer, GDPR & FERPA/COPPA data controller obligations and endpoint/decryption-link security, liability cap, and indemnification.\n- **Rubric & Grading Data Integrity**: Deleting a question strictly removes only that question across all grading JSON files (`gradings/*.json`, `solution_grading.json`, `rubric_chats.json`). Deleting a criterion within a question automatically resets the grading for that specific question (`pending`) across all graded copies.\n- **Clean `.gradaly` Archive Export & Import + SemVer Protection**: `.gradaly` project exports strictly exclude AI chat history (`rubric_chats.json`) and export/import only active questions from `config.json`. Added strict SemVer protection blocking imports from newer Gradaly versions while migrating older archives.\n- **AI Grading Reliability & Linux Stability**: Added automatic multi-step fallback for Google Gemini (`gemini-3.8-flash`) and tuned token budgets for OpenRouter `z-ai/glm-5.3-flash`, plus Linux X11/WebKitGTK stability improvements.",
+  "html_url": "https://github.com/pschaus/gradaly-website/releases/tag/v4.0.2",
   "assets": {
-    "macos": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.0.1_universal.dmg",
-    "windows": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.0.1_x64-setup.exe",
-    "linux_appimage_x86": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.0.1_amd64.AppImage",
-    "linux_appimage_arm": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.0.1_aarch64.AppImage",
-    "linux_deb_x86": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.0.1_amd64.deb",
-    "linux_deb_arm": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.0.1_arm64.deb",
-    "linux_rpm_x86": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly-4.0.1-1.x86_64.rpm",
-    "linux_rpm_arm": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly-4.0.1-1.aarch64.rpm"
+    "macos": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.0.2_universal.dmg",
+    "windows": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.0.2_x64-setup.exe",
+    "linux_appimage_x86": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.0.2_amd64.AppImage",
+    "linux_appimage_arm": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.0.2_aarch64.AppImage",
+    "linux_deb_x86": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.0.2_amd64.deb",
+    "linux_deb_arm": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.0.2_arm64.deb",
+    "linux_rpm_x86": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly-4.0.2-1.x86_64.rpm",
+    "linux_rpm_arm": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly-4.0.2-1.aarch64.rpm"
   }
 }
