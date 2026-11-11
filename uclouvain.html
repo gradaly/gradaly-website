@@ -312,7 +312,29 @@
                 licenseKey: '',
                 alreadyClaimed: false,
                 copied: false,
-                apiBase: 'https://gradaly-license-service.gradaly.workers.dev',
+                apiBase: 'https://portal.gradaly.io',
+                fallbackApiBase: 'https://gradaly-license-service.gradaly.workers.dev',
+
+                async apiPost(path, payload) {
+                    const bases = [this.apiBase, this.fallbackApiBase];
+                    let lastErr = null;
+                    for (const base of bases) {
+                        try {
+                            const res = await fetch(`${base}${path}`, {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify(payload),
+                            });
+                            if (res.status >= 500 || res.status === 404) {
+                                continue;
+                            }
+                            return res;
+                        } catch (e) {
+                            lastErr = e;
+                        }
+                    }
+                    throw lastErr || new Error('Network error');
+                },
 
                 toggleLang() {
                     this.lang = this.lang === 'fr' ? 'en' : 'fr';
@@ -332,11 +354,7 @@
                     this.loading = true;
 
                     try {
-                        const response = await fetch(`${this.apiBase}/api/request-code`, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ email: cleanEmail }),
-                        });
+                        const response = await this.apiPost('/api/request-code', { email: cleanEmail });
 
                         const data = await response.json();
                         if (!response.ok) {
@@ -369,11 +387,7 @@
                     this.loading = true;
 
                     try {
-                        const response = await fetch(`${this.apiBase}/api/verify-code`, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ email: cleanEmail, code: cleanOtp }),
-                        });
+                        const response = await this.apiPost('/api/verify-code', { email: cleanEmail, code: cleanOtp });
 
                         const data = await response.json();
                         if (!response.ok) {
