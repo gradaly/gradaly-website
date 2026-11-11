@@ -73,9 +73,9 @@ const translations = {
         carousel_slide3_title: "Import Official Class Roster (CSV)",
         carousel_slide3_desc: "Load your enrolled students list (matricule IDs, names, emails, groups). All student records remain 100% confidential and local on your computer.",
         
-        carousel_slide4_badge: "Exam Mode • Step 4: Copies & Matching",
-        carousel_slide4_title: "Batch Import Scans & Automatic Offline OCR",
-        carousel_slide4_desc: "Drop student exam PDF scans in batch or split a multi-copy document. On-device local OCR inspects handwritten headers and links each copy to its student.",
+        carousel_slide4_badge: "Exam Mode • Step 4: Copies, Integrity Audit & OCR",
+        carousel_slide4_title: "Batch Import Scans, Integrity Check & Offline OCR",
+        carousel_slide4_desc: "Drop student exam PDF scans in batch or split a multi-copy document. Audit page integrity (upside-down, swapped, missing pages) with 1-click PDF repair, and match copies via 100% local OCR.",
         
         carousel_slide5_badge: "Exam Mode • Step 5: Grading Console",
         carousel_slide5_title: "100% Human, AI Pre-Grading, or Hybrid Evaluation",
@@ -122,7 +122,7 @@ const translations = {
 
         guide_step5_tag: "100% Local Privacy",
         guide_step5_title: "Student Roster (CSV), PDF Splitting & Offline OCR",
-        guide_step4_item1_desc: "Import your enrolled student list (IDs, names, emails, groups) from CSV/Excel and slice bulk scanner PDFs into individual booklets.",
+        guide_step4_item1_desc: "Import your enrolled student list (IDs, names, emails, groups) from CSV/Excel, slice bulk scanner PDFs into individual booklets, and audit scan integrity (swapped, 180° upside-down, or missing pages) with 1-click repair.",
         guide_step5_item2_desc: "Embedded WebAssembly OCR reads handwritten headers 100% offline on your machine to pair each copy with its student.",
 
         guide_step6_tag: "100% Human or AI-Assisted",
@@ -357,9 +357,9 @@ const translations = {
         carousel_slide3_title: "Importer la liste des étudiants (CSV)",
         carousel_slide3_desc: "Chargez la liste officielle de votre promotion (matricules, noms, e-mails, groupes). Vos données nominatives restent 100 % locales et confidentielles sur votre machine.",
         
-        carousel_slide4_badge: "Mode Examen • Étape 4 : Copies & Appariement OCR",
-        carousel_slide4_title: "Import des scans & Appariement OCR hors-ligne",
-        carousel_slide4_desc: "Déposez vos scans de copies en lot ou découpez un scan groupé. L'OCR local hors-ligne lit les en-têtes manuscrits et relie chaque copie à l'étudiant correspondant.",
+        carousel_slide4_badge: "Mode Examen • Étape 4 : Copies, Audit & OCR",
+        carousel_slide4_title: "Import des scans, Vérification d'intégrité & OCR hors-ligne",
+        carousel_slide4_desc: "Déposez vos scans en lot ou découpez un scan groupé. Vérifiez l'intégrité des pages (pages à 180°, feuilles inversées, pages manquantes) avec réparation en 1 clic et appariement OCR 100 % local.",
         
         carousel_slide5_badge: "Mode Examen • Étape 5 : Console de Notation",
         carousel_slide5_title: "Notation 100 % humaine, assistée par IA ou mixte",
@@ -406,7 +406,7 @@ const translations = {
 
         guide_step5_tag: "Confidentialité 100 % Locale",
         guide_step5_title: "Liste d'Étudiants (CSV), Découpage PDF & OCR Hors-Ligne",
-        guide_step4_item1_desc: "Importez la liste de votre promotion (matricules, noms, e-mails, groupes) depuis un CSV/Excel et découpez automatiquement vos scans PDF groupés.",
+        guide_step4_item1_desc: "Importez la liste de votre promotion (matricules, noms, e-mails, groupes) depuis un CSV/Excel, découpez vos scans PDF groupés et vérifiez l'intégrité des copies (pages à l'envers, feuilles inversées ou manquantes) avec réparation en 1 clic.",
         guide_step5_item2_desc: "Le moteur OCR WebAssembly embarqué lit les en-têtes manuscrits 100 % hors-ligne sur votre ordinateur pour relier chaque copie à son étudiant.",
 
         guide_step6_tag: "100 % Humain ou Assisté par IA",
