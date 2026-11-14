@@ -122,12 +122,12 @@ const translations = {
 
         guide_step5_tag: "100% Local Privacy",
         guide_step5_title: "Student Roster (CSV), PDF Splitting & Offline OCR",
-        guide_step4_item1_desc: "Import your enrolled student list (IDs, names, emails, groups) from CSV/Excel, slice bulk scanner PDFs into individual booklets, and audit scan integrity (swapped, 180° upside-down, or missing pages) with 1-click repair.",
+        guide_step4_item1_desc: "Import your enrolled student list (IDs, names, emails, groups) from CSV/Excel, slice bulk scanner PDFs into individual booklets, optimize heavy >220 DPI scans to 200 DPI, and audit scan integrity (swapped, 180° upside-down, or missing pages) with 1-click repair.",
         guide_step5_item2_desc: "Embedded WebAssembly OCR reads handwritten headers 100% offline on your machine to pair each copy with its student.",
 
         guide_step6_tag: "100% Human or AI-Assisted",
         guide_step6_title: "3-Pane Grading Console & Batch Flex Mode (-50%)",
-        guide_step6_item1_desc: "Grade 100% manually with keyboard shortcuts (1–9, J/K), or launch Multimodal AI Pre-Grading in Standard parallel mode or 50%-discounted Asynchronous Batch mode.",
+        guide_step6_item1_desc: "Grade 100% manually with full 2D keyboard navigation (↑/↓ copies, ←/→ questions, 1–9 criteria, V validate, ? cheat sheet), or launch Multimodal AI Pre-Grading in Standard parallel mode or 50%-discounted Asynchronous Batch mode with anomaly detection.",
         guide_step6_item3_desc: "Review AI justifications, edit Markdown + KaTeX feedback, and validate every grade with a single click.",
 
         collab_banner_badge: "Team Grading (Gradaly Pro)",
@@ -406,12 +406,12 @@ const translations = {
 
         guide_step5_tag: "Confidentialité 100 % Locale",
         guide_step5_title: "Liste d'Étudiants (CSV), Découpage PDF & OCR Hors-Ligne",
-        guide_step4_item1_desc: "Importez la liste de votre promotion (matricules, noms, e-mails, groupes) depuis un CSV/Excel, découpez vos scans PDF groupés et vérifiez l'intégrité des copies (pages à l'envers, feuilles inversées ou manquantes) avec réparation en 1 clic.",
+        guide_step4_item1_desc: "Importez la liste de votre promotion (matricules, noms, e-mails, groupes) depuis un CSV/Excel, découpez vos scans PDF groupés, optimisez en un clic les scans lourds (>220 DPI) vers 200 DPI, et vérifiez l'intégrité des copies (pages à l'envers, feuilles inversées ou manquantes) avec réparation en 1 clic.",
         guide_step5_item2_desc: "Le moteur OCR WebAssembly embarqué lit les en-têtes manuscrits 100 % hors-ligne sur votre ordinateur pour relier chaque copie à son étudiant.",
 
         guide_step6_tag: "100 % Humain ou Assisté par IA",
         guide_step6_title: "Console de Notation à 3 Panneaux & Mode Batch Flex (-50 %)",
-        guide_step6_item1_desc: "Corrigez 100 % manuellement au clavier (touches 1–9, J/K), ou lancez la pré-correction IA multimodale en mode Standard ou en mode Batch asynchrone à -50 %.",
+        guide_step6_item1_desc: "Corrigez 100 % manuellement au clavier avec navigation 2D complète (↑/↓ copies, ←/→ questions, 1–9 critères, V valider, ? aide-mémoire), ou lancez la pré-correction IA multimodale parallèle ou en mode Batch asynchrone à -50 % avec détection d'anomalies.",
         guide_step6_item3_desc: "Consultez la justification IA, éditez le feedback Markdown + KaTeX et validez chaque copie en un clic.",
 
         collab_banner_badge: "Travail en Équipe (Gradaly Pro)",

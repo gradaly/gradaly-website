@@ -1,18 +1,18 @@
 {
-  "version": "4.1.0",
-  "name": "Gradaly v4.1.0",
-  "title": "Gradaly v4.1.0",
-  "published_at": "2026-11-11T14:46:00.000Z",
-  "notes": "### New Features & Improvements\n- **On-Demand Copy Integrity Audit & Thumbnail Strip (Copies Tab)**: Added an on-demand verification tool to detect missing pages, extra pages, swapped pages, upside-down (180°) pages, landscape pages, and optional blank pages before grading, complete with anomaly filtering and one-click PDF repair.\n- **High-Precision Multi-Scale RANSAC + Web Worker Pool**: Uses 2x2 supersampled template corner anchors, soft-clamped ink normalization for thin LaTeX box templates, cycle-based swap validation (including swaps with blank/draft pages), and multi-scale similarity RANSAC across a parallel Web Worker pool for fast, zero-false-positive detection.",
-  "html_url": "https://github.com/pschaus/gradaly-website/releases/tag/v4.1.0",
+  "version": "4.2.0",
+  "name": "Gradaly v4.2.0",
+  "title": "Gradaly v4.2.0",
+  "published_at": "2026-11-14T06:38:00.000Z",
+  "notes": "### 🚀 New Features & Improvements\n- **High-Speed Parallel Online Copy Synchronization**: Replaced sequential copy syncing with a hardware-aware 2-stage pipeline (multi-core CPU preparation pool + 10 concurrent HTTP/2 binary `application/octet-stream` upload streams), off-thread JPEG encoding, and KaTeX/MathJax caching, cutting sync times for large exams (600+ copies) by up to 8x.\n- **Full 2D Keyboard Navigation & Fast Grading Shortcuts**: Navigate between copies/students (`↑` / `↓` or `K` / `J`) across all tabs, switch questions or PDF pages (`←` / `→` or `H` / `L`), toggle rubric criteria directly with number keys `1`–`9`, validate manually with `V`, and press `?` at any time to open the Keyboard Shortcuts cheat sheet.\n- **High-DPI Scan Detection & One-Click 200 DPI Optimization**: Automatically detects scans above 220 DPI during import and offers native downscaling to 200 DPI to significantly reduce project size and speed up sharing and AI grading.\n- **Resend Batch Email Delivery & Quota Diagnostics**: Upgraded student notification emails to use the Resend Batch API (up to 10x faster delivery for large cohorts) with precise quota/rate-limit diagnostics, Test/Dry-Run mode, and seamless resume for unsent recipients.\n- **Faster Cloud Project Sharing & Large Archive Support**: Switched cloud project sharing to raw binary transfers (`application/octet-stream`) with 5 MB chunks, 4x parallel workers, automatic retry, and chunked IPC transfers supporting 400+ MB archives.\n- **Question-Level Parallel AI Grading & Optional Anomaly Detection**: Parallelized AI evaluation across `(copy, question)` pairs with shared PDF caching, plus optional automatic detection and filtering of grading anomalies.",
+  "html_url": "https://github.com/pschaus/gradaly-website/releases/tag/v4.2.0",
   "assets": {
-    "macos": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.1.0_universal.dmg",
-    "windows": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.1.0_x64-setup.exe",
-    "linux_appimage_x86": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.1.0_amd64.AppImage",
-    "linux_appimage_arm": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.1.0_aarch64.AppImage",
-    "linux_deb_x86": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.1.0_amd64.deb",
-    "linux_deb_arm": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.1.0_arm64.deb",
-    "linux_rpm_x86": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly-4.1.0-1.x86_64.rpm",
-    "linux_rpm_arm": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly-4.1.0-1.aarch64.rpm"
+    "macos": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.2.0_universal.dmg",
+    "windows": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.2.0_x64-setup.exe",
+    "linux_appimage_x86": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.2.0_amd64.AppImage",
+    "linux_appimage_arm": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.2.0_aarch64.AppImage",
+    "linux_deb_x86": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.2.0_amd64.deb",
+    "linux_deb_arm": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly_4.2.0_arm64.deb",
+    "linux_rpm_x86": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly-4.2.0-1.x86_64.rpm",
+    "linux_rpm_arm": "https://github.com/pschaus/gradaly-website/releases/latest/download/Gradaly-4.2.0-1.aarch64.rpm"
   }
 }
