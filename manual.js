@@ -466,7 +466,7 @@ const manualTranslations = {
                     },
                     {
                         q: "Where can I make suggestions and bug reports?",
-                        a: "<p>We welcome all your feedback, feature ideas, and bug reports! You can open an issue directly on our GitHub issue tracker here: <a href=\"https://github.com/pschaus/gradaly-website/issues\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-indigo-600 font-bold hover:underline\">https://github.com/pschaus/gradaly-website/issues</a>.</p>"
+                        a: "<p>We welcome all your feedback, feature ideas, and bug reports! You can open an issue directly on our GitHub issue tracker here: <a href=\"https://github.com/gradaly/gradaly-website/issues\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-indigo-600 font-bold hover:underline\">https://github.com/gradaly/gradaly-website/issues</a>.</p>"
                     }
                 ]
             },
@@ -1164,7 +1164,7 @@ const manualTranslations = {
                     },
                     {
                         q: "Où puis-je faire des suggestions d'amélioration ou signaler un bug ?",
-                        a: "<p>Vos retours d'expérience, idées de fonctionnalités et signalements de bugs sont les bienvenus ! Vous pouvez ouvrir un ticket directement sur notre espace GitHub Issues ici : <a href=\"https://github.com/pschaus/gradaly-website/issues\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-indigo-600 font-bold hover:underline\">https://github.com/pschaus/gradaly-website/issues</a>.</p>"
+                        a: "<p>Vos retours d'expérience, idées de fonctionnalités et signalements de bugs sont les bienvenus ! Vous pouvez ouvrir un ticket directement sur notre espace GitHub Issues ici : <a href=\"https://github.com/gradaly/gradaly-website/issues\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-indigo-600 font-bold hover:underline\">https://github.com/gradaly/gradaly-website/issues</a>.</p>"
                     }
                 ]
             },
