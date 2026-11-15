@@ -22,7 +22,7 @@ const translations = {
         prod1_desc: "For official exams, midterms, or formative mock tests during the year to give students rich feedback under realistic exam conditions:",
         prod1_b1: "Import student roster (CSV), split bulk scans & match identities 100% offline via local OCR.",
         prod1_b2: "Grade in 100% Human Mode (keyboard shortcuts), with Multimodal AI Pre-Grading (-50% Batch), or in a Team.",
-        prod1_b3: "Return rich individual feedback via Multi-Sheet Excel, Annotated PDFs, or the Encrypted Consultation Portal.",
+        prod1_b3: "Return rich individual feedback via Moodle CSV (with embedded copy link), Multi-Sheet Excel, Annotated PDFs, or the Encrypted Consultation Portal.",
         prod1_cta: "Explore Product 1: Exam Mode",
         prod1_demo_btn: "Live Copy Demo",
         prod1_manual_btn: "Read Exam Manual",
@@ -86,8 +86,8 @@ const translations = {
         carousel_slide6_desc: "Review cohort score distributions, question performance, criterion success rates, and bracketed histograms [a, b[. Simulate rubric changes in real time.",
         
         carousel_slide7_badge: "Exam Mode • Step 7: Restitution",
-        carousel_slide7_title: "Export Excel, Annotated PDFs, Web Portal or QR Slips",
-        carousel_slide7_desc: "Export official Excel gradebooks, annotated student PDFs, or publish encrypted graded copies to the Student Consultation Portal with magic links or cut-out QR slips.",
+        carousel_slide7_title: "Export to Moodle, Excel, Annotated PDFs, Web Portal or QR Slips",
+        carousel_slide7_desc: "Export official Excel gradebooks, Moodle CSVs (Gradebook or Assignment worksheet with embedded consultation links), annotated student PDFs, or publish encrypted copies to the Student Web Portal.",
 
         // Practice Carousel slides (4 slides)
         carousel_p1_badge: "Practice QR Mode • Step 1: Worksheet & Criteria",
@@ -135,9 +135,9 @@ const translations = {
         collab_banner_desc: "Co-grade exams with colleagues or TAs via .gradaly archives or AES-256-GCM encrypted Cloud links, and merge rubrics or gradings question-by-question with automatic backups.",
 
         guide_step8_tag: "Analytics & Exports",
-        guide_step8_title: "Cohort Histograms, Multi-Sheet Excel & Annotated PDFs",
+        guide_step8_title: "Cohort Histograms, Moodle CSV, Multi-Sheet Excel & Annotated PDFs",
         guide_step7_item2_desc: "Analyze mean, median, spread, unambiguous [a, b[ histograms, and per-criterion validation rates.",
-        guide_step8_item1_desc: "Export official multi-sheet Excel gradebooks, individual annotated student PDFs (ZIP), or publish to the Encrypted Student Consultation Portal below.",
+        guide_step8_item1_desc: "Export official multi-sheet Excel gradebooks, Moodle CSV files (direct Gradebook import or Assignment grading worksheet completion with clickable online copy links), individual annotated PDFs (ZIP), or publish to the Encrypted Student Consultation Portal below.",
 
         // Product 2 Section: Practice & Self-Assessment QR Mode
         practice_badge: "Product 2 • Formative Self-Assessment (By the Student)",
@@ -188,13 +188,13 @@ const translations = {
         comp_r4_exam: "Optional (100% human mode available) or Teacher API key (~$5 for 400 copies in Batch)",
         comp_r4_prac: "Zero API key required on portal.gradaly.io (built-in Gradaly AI relay) or optional personal student Gemini key",
         comp_r5_label: "Free vs. Gradaly Pro",
-        comp_r5_exam: "Free: full grading + 1-copy export preview • Pro: full-cohort Excel, annotated PDFs, Exam Web Portal & Team Merge",
+        comp_r5_exam: "Free: full grading + 1-copy export preview • Pro: full-cohort Moodle CSV, Excel, annotated PDFs, Exam Web Portal & Team Merge",
         comp_r5_prac: "Free: project creation & printable QR PDF design • Pro: publication of the Student Practice Website (online or .zip)",
 
         // Student Portal Subsection inside Exam Mode
         portal_badge: "Exam Mode Restitution • Gradaly Pro",
         portal_title: "Zero-Knowledge Exam Consultation Portal",
-        portal_subtitle: "Return 200 graded exam or mock test copies in minutes without paper handling: publish AES-256 client-encrypted copies online, send automated magic-link emails, or print cut-out individual QR slips.",
+        portal_subtitle: "Return 200 graded exam or mock test copies in minutes without paper handling: publish AES-256 client-encrypted copies online, send automated magic-link emails, export grades + personal consultation links to Moodle, or print cut-out individual QR slips.",
         portal_shot_web: "1. Client-Side Decrypted Exam Copy Viewer",
         portal_shot_mail: "2. Automated Email with Personal Magic Link",
         portal_shot_qr: "3. Printable Cut-Out QR Slips (No Email Needed)",
@@ -253,7 +253,7 @@ const translations = {
         plan_free_f3: "100% offline student OCR & matching",
         plan_free_f4: "Live grading console & human control",
         plan_free_f5: "Cohort analytics & score histograms",
-        plan_free_f6: "Evaluation exports (1-copy test for Excel, PDF and Web portal)",
+        plan_free_f6: "Evaluation exports (1-copy test for Moodle CSV, Excel, PDF and Web portal)",
         plan_free_f7: "Practice QR Mode: project creation & design of the printable PDF with QR codes",
         plan_free_btn: "Download for Free",
         plan_pro_name: "Gradaly Pro",
@@ -262,7 +262,7 @@ const translations = {
         plan_pro_f1: "Zero-Knowledge Exam Student Web Portal (full class, hosted or ZIP)",
         plan_pro_f7: "Collaborative Team Grading (.gradaly & encrypted Cloud links) + selective merge",
         plan_pro_f8: "Publication of the Practice QR Student Website (portal.gradaly.io or standalone .zip)",
-        plan_pro_f2: "Unlimited Multi-Sheet Excel Export",
+        plan_pro_f2: "Unlimited Multi-Sheet Excel & Moodle CSV Export (with online copy links)",
         plan_pro_f3: "Individual Annotated Student PDFs (ZIP Archive)",
         plan_pro_f4: "Print-friendly cover sheet with grade & question breakdown",
         plan_pro_f5: "License valid on all your machines (macOS, Windows, Linux)",
@@ -306,7 +306,7 @@ const translations = {
         prod1_desc: "Pour vos examens finaux, partiels ou tests à blanc formatifs pendant l'année afin d'offrir un feedback détaillé dans des conditions réalistes d'examen :",
         prod1_b1: "Importez la liste d'étudiants (CSV), découpez les scans groupés et associez les copies 100 % hors-ligne par OCR.",
         prod1_b2: "Corrigez en Mode 100 % Humain (au clavier), avec Pré-correction IA Multimodale (Batch -50 %), ou en Équipe.",
-        prod1_b3: "Restituez un feedback détaillé par Tableur Excel, Copies PDF Annotées ou Portail Web de Consultation Chiffré.",
+        prod1_b3: "Restituez un feedback détaillé par Export Moodle (CSV avec lien de copie), Tableur Excel, Copies PDF Annotées ou Portail Web Chiffré.",
         prod1_cta: "Découvrir le Produit 1 : Mode Examen",
         prod1_demo_btn: "Démo Copie en Direct",
         prod1_manual_btn: "Manuel Examen",
@@ -370,8 +370,8 @@ const translations = {
         carousel_slide6_desc: "Analysez la distribution des notes de la promotion, le taux de réussite par critère et simulez vos ajustements de barème instantanément.",
         
         carousel_slide7_badge: "Mode Examen • Étape 7 : Restitution",
-        carousel_slide7_title: "Excel, PDF annotés, Portail Web en ligne ou Coupons QR",
-        carousel_slide7_desc: "Exportez le tableur Excel officiel, les copies annotées en PDF, ou publiez les copies corrigées chiffrées sur le Portail Web de Consultation avec liens magiques ou coupons QR.",
+        carousel_slide7_title: "Export Moodle, Excel, PDF annotés, Portail Web ou Coupons QR",
+        carousel_slide7_desc: "Exportez le tableur Excel officiel, le fichier CSV pour Moodle (Carnet de notes ou Feuille de Devoir avec liens de consultation), les copies PDF annotées, ou publiez sur le Portail Web.",
 
         // Practice Carousel slides (4 slides)
         carousel_p1_badge: "Mode Entraînement QR • Étape 1 : Sujet & Critères",
@@ -419,9 +419,9 @@ const translations = {
         collab_banner_desc: "Corrigez à plusieurs entre collègues ou assistants via des archives .gradaly ou des liens Cloud chiffrés en AES-256-GCM, et fusionnez barèmes ou corrections question par question avec sauvegarde automatique.",
 
         guide_step8_tag: "Statistiques & Exports",
-        guide_step8_title: "Histogrammes [a, b[, Tableur Excel & Copies PDF Annotées",
+        guide_step8_title: "Histogrammes [a, b[, Export Moodle CSV, Tableur Excel & PDF Annotés",
         guide_step7_item2_desc: "Analysez moyenne, médiane, écart-type, histogrammes [a, b[ sans ambiguïté et taux de réussite détaillé par critère.",
-        guide_step8_item1_desc: "Exportez le tableur Excel multi-feuilles officiel, l'archive ZIP des copies PDF annotées, ou publiez sur le Portail Web de Consultation ci-dessous.",
+        guide_step8_item1_desc: "Exportez le tableur Excel multi-feuilles officiel, le CSV pour Moodle (import direct dans le Carnet de notes ou remplissage automatique d'une feuille d'évaluation de Devoir avec lien cliquable vers la copie), l'archive ZIP des PDF annotés, ou publiez sur le Portail Web ci-dessous.",
 
         // Product 2 Section: Practice & Self-Assessment QR Mode
         practice_badge: "Produit 2 • Auto-Évaluation Formative (Par l'Étudiant)",
@@ -472,13 +472,13 @@ const translations = {
         comp_r4_exam: "Optionnelle (mode 100 % humain disponible) ou clé enseignant (~5 $ pour 400 copies en Batch)",
         comp_r4_prac: "Aucune clé API requise sur portal.gradaly.io (relais IA Gradaly intégré) ou clé Gemini personnelle optionnelle",
         comp_r5_label: "Version Gratuite vs Gradaly Pro",
-        comp_r5_exam: "Gratuit : correction complète + test d'export 1 copie • Pro : Excel complet, PDF annotés, Portail Web d'Examen & Fusion d'équipe",
+        comp_r5_exam: "Gratuit : correction complète + test d'export 1 copie • Pro : Export Moodle CSV, Excel complet, PDF annotés, Portail Web d'Examen & Fusion d'équipe",
         comp_r5_prac: "Gratuit : création du projet et design du PDF avec QR codes • Pro : publication du site web d'entraînement étudiant (en ligne ou .zip)",
 
         // Student Portal Subsection inside Exam Mode
         portal_badge: "Restitution Mode Examen • Gradaly Pro",
         portal_title: "Portail Web Zero-Knowledge de Consultation des Copies Corrigées",
-        portal_subtitle: "Rendez 200 copies d'examen ou de test à blanc corrigées en quelques minutes : publiez les copies chiffrées en AES-256 en ligne, envoyez automatiquement les liens magiques par e-mail ou imprimez des coupons QR individuels découpables.",
+        portal_subtitle: "Rendez 200 copies d'examen ou de test à blanc corrigées en quelques minutes : publiez les copies chiffrées en AES-256 en ligne, envoyez automatiquement les liens magiques par e-mail, exportez les notes + liens de consultation vers Moodle, ou imprimez des coupons QR individuels.",
         portal_shot_web: "1. Consultation Web de la copie corrigée",
         portal_shot_mail: "2. Notification e-mail avec lien magique",
         portal_shot_qr: "3. Coupons QR individuels prêts à imprimer",
@@ -537,7 +537,7 @@ const translations = {
         plan_free_f3: "Appariement de la liste d'étudiants 100% hors-ligne",
         plan_free_f4: "Console de correction live & contrôle humain total",
         plan_free_f5: "Statistiques complètes et histogrammes de notes",
-        plan_free_f6: "Exports d'évaluation (1 copie test en Excel, PDF et portail web)",
+        plan_free_f6: "Exports d'évaluation (1 copie test en CSV Moodle, Excel, PDF et portail web)",
         plan_free_f7: "Mode Entraînement QR : création du projet et design du sujet PDF avec QR codes",
         plan_free_btn: "Télécharger gratuitement",
         plan_pro_name: "Gradaly Pro",
@@ -546,7 +546,7 @@ const translations = {
         plan_pro_f1: "Portail Web de Consultation d'Examen Zéro-Knowledge (toute la classe, en ligne ou ZIP)",
         plan_pro_f7: "Correction collaborative (.gradaly & lien Cloud chiffré) + fusion sélective",
         plan_pro_f8: "Publication du site web d'Entraînement QR pour les étudiants (portal.gradaly.io ou .zip autonome)",
-        plan_pro_f2: "Exportation Excel multi-feuilles illimitée",
+        plan_pro_f2: "Exportation Excel multi-feuilles & CSV Moodle illimitée (avec liens de consultation)",
         plan_pro_f3: "Archive ZIP de toutes les copies PDF annotées",
         plan_pro_f4: "Page de garde récapitulative élégante (note, synthèse par question)",
         plan_pro_f5: "Licence valide sur toutes vos machines (macOS, Windows, Linux)",
