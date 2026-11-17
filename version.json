@@ -1,18 +1,18 @@
 {
-  "version": "4.3.0",
-  "name": "Gradaly v4.3.0",
-  "title": "Gradaly v4.3.0",
-  "published_at": "2026-11-15T11:55:00.000Z",
-  "notes": "### 🎓 Moodle Gradebook & Assignment Export (with Online Copy Links)\n- **Direct Moodle Gradebook CSV Export**: Generate UTF-8 CSV files tailored for *Moodle Gradebook → Import → CSV file*, including Student ID (`ID number`), Email, Name, Group, scaled total Grade (raw scale, `/20`, or `/100`), optional per-question columns (`Q1, Q2...`), and rich Feedback.\n- **Moodle Assignment Grading Worksheet Auto-Fill**: Load an existing *\"Offline grading worksheet\"* CSV downloaded from a Moodle *Assignment*, automatically match students by ID number or Email, and populate the `Grade` and `Feedback comments` columns in-place.\n- **Embedded Personal Consultation Links in Moodle**: Automatically include each student's clickable encrypted Web Portal link (`portal.gradaly.io`) and per-question score breakdown inside Moodle's Feedback field — giving students 1-click access to their graded copy directly from Moodle without relying on email delivery.",
-  "html_url": "https://github.com/gradaly/gradaly-website/releases/tag/v4.3.0",
+  "version": "4.4.0",
+  "name": "Gradaly v4.4.0",
+  "title": "Gradaly v4.4.0",
+  "published_at": "2026-11-17T10:15:00.000Z",
+  "notes": "### 🐍 Python Code Execution, Live AI Query Inspector & Custom PDF Filenames\n- **Native Python Code Execution Sandbox (`code_execution` / `code_interpreter`) & Compatibility Test**: Optional advanced setting (disabled by default) enabling native server-side Python code execution during rubric design and copy evaluation on Google Gemini (`code_execution`), OpenAI (`/v1/responses` `code_interpreter`), and Anthropic (`/v1/messages` `code_execution_20250825`), with a 1-click model compatibility test.\n- **Live AI Query & Image Inspector (`👁️ AI Query`) & Statement Source Selector (`Student Copy` vs. `Canvas`)**: Per-question `AI Statement: [Student Copy] / [Canvas]` option (essential when student copies contain individualized numerical parameters) and an interactive `👁️ AI Query` modal in the Grading and Review tabs to inspect the exact cropped/stitched image, its source breakdown, System & User prompts, and the full HTTP JSON payload.\n- **Enhanced `.debug/grading/inspect.html` Diagnostic Reports**: Standalone visual `inspect.html` report alongside `image_source.json`, `request_payload.json`, `prompt.txt`, `image.jpg`, and `raw_api_response.json` (including executed Python code and stdout).\n- **Single-Question Evaluation Interrupt (`✕ Stop`) & Flexible Annotated PDF Filenames**: Instant interrupt button for single-question evaluation, customizable filename patterns (`{nom}`, `{prenom}`, `{id}`, `{projet}`, `{copie}`, `{groupe}`) for annotated PDF exports, full pagination for Vision model discovery, and bounded timeouts for local Apple Vision OCR matching.",
+  "html_url": "https://github.com/gradaly/gradaly-website/releases/tag/v4.4.0",
   "assets": {
-    "macos": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_4.3.0_universal.dmg",
-    "windows": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_4.3.0_x64-setup.exe",
-    "linux_appimage_x86": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_4.3.0_amd64.AppImage",
-    "linux_appimage_arm": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_4.3.0_aarch64.AppImage",
-    "linux_deb_x86": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_4.3.0_amd64.deb",
-    "linux_deb_arm": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_4.3.0_arm64.deb",
-    "linux_rpm_x86": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly-4.3.0-1.x86_64.rpm",
-    "linux_rpm_arm": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly-4.3.0-1.aarch64.rpm"
+    "macos": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_4.4.0_universal.dmg",
+    "windows": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_4.4.0_x64-setup.exe",
+    "linux_appimage_x86": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_4.4.0_amd64.AppImage",
+    "linux_appimage_arm": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_4.4.0_aarch64.AppImage",
+    "linux_deb_x86": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_4.4.0_amd64.deb",
+    "linux_deb_arm": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_4.4.0_arm64.deb",
+    "linux_rpm_x86": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly-4.4.0-1.x86_64.rpm",
+    "linux_rpm_arm": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly-4.4.0-1.aarch64.rpm"
   }
 }
