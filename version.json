@@ -2,7 +2,7 @@
   "version": "4.5.0",
   "name": "Gradaly v4.5.0",
   "title": "Gradaly v4.5.0",
-  "published_at": "2026-11-18T17:30:00.000Z",
+  "published_at": "2026-11-18T17:52:12.013Z",
   "notes": "### 🌍 10-Language Support, Native Cloud Demo Projects & Unicode/CJK PDF Engine\n- **10-Language Support Across Gradaly**: Full localization of the Desktop interface, AI grading & rubric assistant prompts, student & teacher web portals, Excel/Word/CSV/Moodle exports, and offline OCR matching in **French, English, Dutch, German, Spanish, Italian, Turkish, Simplified Chinese, Japanese, and Korean**.\n- **Native Cloud Demo Projects in All 10 Languages**: Creating an Exam or QR Practice demo project now automatically fetches a 100% natively localized demo (canvas, 20 handwritten student copies, roster, rubric, and AI feedbacks) matching your active language, with local caching and seamless offline fallback while reducing installer size by ~4 MB.\n- **Cross-Platform Unicode & CJK PDF Engine**: Bundled Noto Sans Unicode & CJK fonts with automatic kinsoku line wrapping and glyph fallback for zero-crash annotated PDF and QR slip generation on macOS, Windows, and Linux.",
   "html_url": "https://github.com/gradaly/gradaly-website/releases/tag/v4.5.0",
   "assets": {
