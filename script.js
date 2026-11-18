@@ -282,6 +282,7 @@ const translations = {
         legal_p5_text: "Although Gradaly uses Privacy-by-Design principles (local student rosters and client-side AES-256-GCM encryption on portal.gradaly.io), the user (or their institution) acts as the sole Data Controller and is solely responsible for compliance with GDPR (EU), FERPA / COPPA (US), and institutional policies. The publisher accepts no liability for any data leak or unauthorized access resulting from hacking/malware/compromise of the user's computer or accounts, accidental disclosure or mail-merge errors involving secret decryption links (#k=...), CSV files, API keys, or .gradaly archives, or personal data sent to third-party AI providers.",
         legal_p6_title: "6. Liability Cap, Indemnification (Hold Harmless) & Governing Law",
         legal_p6_text: "IN NO EVENT SHALL THE AUTHOR OR PUBLISHER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES. WHERE LIABILITY CANNOT BE LAWFULLY EXCLUDED ENTIRELY, TOTAL CUMULATIVE LIABILITY SHALL NOT EXCEED THE AMOUNT ACTUALLY PAID BY THE USER FOR THEIR GRADALY PRO LICENSE IN THE PRECEDING 12 MONTHS (OR USD $0 / EUR 0 € FOR THE FREE VERSION). Users agree to defend, indemnify, and hold harmless the publisher from any third-party claims (including from students, parents, or institutions). Governed by Belgian/EU law under the exclusive jurisdiction of the courts of Belgium, with an express waiver of class actions and jury trials.",
+        uclouvain_offer: "UCLouvain faculty? Claim your free license →",
     },
     fr: {
         nav_exam_mode: "1. Mode Examen (Enseignant)",
@@ -566,26 +567,81 @@ const translations = {
         legal_p5_text: "Bien que Gradaly intègre des mesures Privacy-by-Design (traitement local des listes d'étudiants et chiffrement côté client AES-256-GCM sur portal.gradaly.io), l'utilisateur (ou son établissement) agit en qualité de seul Responsable de traitement (Data Controller) et demeure seul responsable du respect du RGPD (UE), des lois FERPA / COPPA (États-Unis) et des règles de son institution. L'éditeur décline toute responsabilité en cas de fuite ou divulgation résultant du piratage/malware/vol de l'ordinateur ou des comptes de l'utilisateur, d'une erreur d'envoi ou de partage des liens secrets contenant les clés de déchiffrement (#k=...), des fichiers CSV, clés API ou archives .gradaly, ou de l'envoi de données personnelles vers des fournisseurs d'IA tiers.",
         legal_p6_title: "6. Plafond de responsabilité, Indemnisation (Hold Harmless) & Droit applicable",
         legal_p6_text: "EN AUCUN CAS L'AUTEUR OU L'ÉDITEUR NE POURRA ÊTRE TENU RESPONSABLE DE TOUT DOMMAGE INDIRECT, CONSÉCUTIF, SPÉCIAL OU PUNITIF. DANS TOUS LES CAS OÙ LA RESPONSABILITÉ NE POURRAIT ÊTRE EXCLUE EN TOTALITÉ, ELLE EST STRICTEMENT PLAFONNÉE AU MONTANT PAYÉ PAR L'UTILISATEUR POUR SA LICENCE GRADALY PRO AU COURS DES 12 DERNIERS MOIS (OU 0 € / 0 $ POUR LA VERSION GRATUITE). L'utilisateur accepte d'indemniser et de dégager l'éditeur de toute réclamation de tiers (étudiants, parents, établissements). Conditions régies par le droit belge/UE sous la compétence exclusive des tribunaux belges, avec renonciation expresse aux actions collectives (class actions) et procès devant jury.",
+        uclouvain_offer: "Enseignant UCLouvain ? Licence offerte ici →",
     }
 };
 
+const GRADALY_SUPPORTED_LANGUAGES = [
+    { code: 'fr', label: 'Français', flag: '🇫🇷' },
+    { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'nl', label: 'Nederlands', flag: '🇳🇱' },
+    { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+    { code: 'es', label: 'Español', flag: '🇪🇸' },
+    { code: 'it', label: 'Italiano', flag: '🇮🇹' },
+    { code: 'tr', label: 'Türkçe', flag: '🇹🇷' },
+    { code: 'zh', label: '中文 (简体)', flag: '🇨🇳' },
+    { code: 'ja', label: '日本語', flag: '🇯🇵' },
+    { code: 'ko', label: '한국어', flag: '🇰🇷' }
+];
+
+function resolveWebsiteLanguage() {
+    const validCodes = GRADALY_SUPPORTED_LANGUAGES.map((l) => l.code);
+    try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const param = (urlParams.get('lang') || '').toLowerCase().split(/[-_]/)[0];
+        if (validCodes.includes(param)) return param;
+    } catch (_) {}
+    try {
+        const saved = (localStorage.getItem('gradaly_lang') || '').toLowerCase().split(/[-_]/)[0];
+        if (validCodes.includes(saved)) return saved;
+    } catch (_) {}
+    const nav = ((navigator.language || navigator.userLanguage || '') + '').toLowerCase().split(/[-_]/)[0];
+    if (validCodes.includes(nav)) return nav;
+    return 'en';
+}
+
+if (typeof window !== 'undefined' && window.GRADALY_SITE_I18N) {
+    Object.assign(translations, window.GRADALY_SITE_I18N);
+}
+
 document.addEventListener('alpine:init', () => {
+    if (typeof window !== 'undefined' && window.GRADALY_SITE_I18N) {
+        Object.assign(translations, window.GRADALY_SITE_I18N);
+    }
     Alpine.data('i18n', () => ({
         lang: 'en',
+        langMenuOpen: false,
+        supportedLanguages: GRADALY_SUPPORTED_LANGUAGES,
         t: {},
+        get assetLang() {
+            return this.lang === 'fr' ? 'fr' : 'en';
+        },
+        get currentLangObj() {
+            return this.supportedLanguages.find((l) => l.code === this.lang) || this.supportedLanguages[1];
+        },
         init() {
-            const userLang = navigator.language || navigator.userLanguage; 
-            if(userLang.startsWith('fr')) {
-                this.lang = 'fr';
-            }
+            this.lang = resolveWebsiteLanguage();
+            this.updateTranslations();
+        },
+        setLang(code) {
+            if (!translations[code]) return;
+            this.lang = code;
+            this.langMenuOpen = false;
+            try {
+                localStorage.setItem('gradaly_lang', code);
+            } catch (_) {}
             this.updateTranslations();
         },
         toggleLang() {
-            this.lang = this.lang === 'en' ? 'fr' : 'en';
-            this.updateTranslations();
+            const idx = this.supportedLanguages.findIndex((l) => l.code === this.lang);
+            const next = this.supportedLanguages[(idx + 1) % this.supportedLanguages.length];
+            this.setLang(next.code);
         },
         updateTranslations() {
-            this.t = translations[this.lang];
+            this.t = Object.assign({}, translations.en, translations[this.lang] || {});
+            if (typeof document !== 'undefined' && document.documentElement) {
+                document.documentElement.lang = this.lang;
+            }
         }
     }));
 });

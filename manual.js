@@ -3,7 +3,7 @@ const manualTranslations = {
         badge_manual: "User Manual (2-in-1)",
         back_home: "Back to Website",
         download_btn: "Download Gradaly",
-        hero_pill: "2-in-1 Desktop Application • Complete User Manual v4.4.0",
+        hero_pill: "2-in-1 Desktop Application • Complete User Manual v4.5.0",
         hero_title: "Gradaly User Manual",
         hero_subtitle: "Grade Smarter, not Harder. Gradaly is a 2-in-1 application offering two independent workflows: (1) Exam & Mock Test Grading by the teacher (for formative mock exams under realistic exam conditions or official exams), and (2) Practice QR Self-Assessment by the student on smartphone. Select the guide matching your workflow below:",
         search_placeholder: "Search across all guides (e.g. exam, mock test, practice QR, rubric, OCR, API key, FAQ)...",
@@ -24,6 +24,9 @@ const manualTranslations = {
         btn_go_practice: "Open Manual 2: Practice QR Mode",
         btn_go_exam: "Open Manual 1: Exam Grading Mode",
         toc_title: "Table of Contents",
+        sidebar_exam_mode: "Exam Mode",
+        sidebar_practice_mode: "Practice QR",
+        screenshot_badge: "EN Interface",
         privacy_box_title: "100% Local Student Privacy",
         privacy_box_text: "Student rosters, ID zones, OCR matching, and project files are stored locally in Documents/Gradaly on your computer. Cloud portals and team links use client-side AES-256-GCM Zero-Knowledge encryption.",
         sections: [
@@ -284,7 +287,7 @@ const manualTranslations = {
                 subtitle: "Analyze score distributions, import grades and personal consultation links into Moodle, and return rich individual feedback to your students.",
                 paragraphs: [
                     "The <strong>6. Summary</strong> tab computes real-time cohort statistics: mean, median, standard deviation, min/max, unambiguous histograms <code>[a, b[</code>, and per-criterion validation rates.",
-                    "To return graded exams to students (1-copy preview in Free mode; full cohort in Gradaly Pro), choose among four channels:<br>1) <strong>Multi-Sheet Excel Gradebook</strong> (global summary + 1 tab per question, for all copies or a selected subset).<br>2) <strong>Moodle Export (Gradebook CSV &amp; Assignment Grading Worksheet)</strong>: generate a standard UTF-8 CSV for <em>Moodle Gradebook → Import → CSV file</em> or automatically fill in an offline grading worksheet downloaded from a <em>Moodle Assignment</em> (matching by Student ID / Matricule or Email), embedding both the scaled grade (raw, <code>/20</code>, or <code>/100</code>) and each student's clickable <strong>personal encrypted consultation URL</strong> inside the Moodle <em>Feedback</em> column!<br>3) <strong>Individual Annotated PDFs (ZIP or Single Copy) with Customizable Filename Format</strong>: combines a summary cover sheet with the student's handwritten pages, and lets you customize the exported PDF filename pattern using flexible placeholders (<code>{nom}</code>, <code>{prenom}</code>, <code>{id}</code>, <code>{projet}</code>, <code>{copie}</code>, <code>{groupe}</code> — e.g. <code>{nom}_{prenom}_{projet}.pdf</code>) with a live filename preview.<br>4) <strong>Zero-Knowledge Student Consultation Web Portal</strong>: publish and sync encrypted graded copies online at high speed (hardware-aware multi-core CPU pipeline + 10 parallel HTTP/2 binary streams), send personalized magic links in seconds via the <strong>Resend Batch Email API</strong> (with built-in quota/rate-limit diagnostics, Test/Dry-Run mode, and 1-click resume for unsent recipients), export directly for <strong>Moodle</strong>, or print <strong>cut-out individual QR code slips</strong> to hand out in class."
+                    "To return graded exams to students (1-copy preview in Free mode; full cohort in Gradaly Pro), choose among four channels:<br>1) <strong>Multi-Sheet Excel Gradebook</strong> (global summary + 1 tab per question, for all copies or a selected subset).<br>2) <strong>Moodle Export (Gradebook CSV &amp; Assignment Grading Worksheet)</strong>: generate a standard UTF-8 CSV for <em>Moodle Gradebook → Import → CSV file</em> or automatically fill in an offline grading worksheet downloaded from a <em>Moodle Assignment</em> (matching by Student ID / Matricule or Email), embedding both the scaled grade (raw, <code>/20</code>, or <code>/100</code>) and each student's clickable <strong>personal encrypted consultation URL</strong> inside the Moodle <em>Feedback</em> column!<br>3) <strong>Individual Annotated PDFs (ZIP or Single Copy) with Customizable Filename Format</strong>: combines a summary cover sheet with the student's handwritten pages, and lets you customize the exported PDF filename pattern using flexible placeholders (<code>{nom}</code>, <code>{prenom}</code>, <code>{id}</code>, <code>{projet}</code>, <code>{copie}</code>, <code>{groupe}</code> — e.g. <code>{nom}_{prenom}_{projet}.pdf</code>) with a live filename preview.<br>4) <strong>Zero-Knowledge Student Consultation Web Portal</strong>: publish and sync encrypted graded copies online at high speed (hardware-aware multi-core CPU pipeline + 10 parallel HTTP/2 binary streams), notify students either via <strong>Direct Cloud Email (<code>@gradaly.io</code>)</strong> or via <strong>Mail Merge Export (<code>Publipostage</code> — your own university email address in Outlook Web / Microsoft 365, Word + Outlook Desktop, or Thunderbird)</strong> using a ready-to-use Excel <code>.xlsx</code> table or <code>.csv</code> file, export directly for <strong>Moodle</strong>, or print <strong>cut-out individual QR code slips</strong> to hand out in class."
                 ],
                 screenshots: [
                     {
@@ -473,6 +476,10 @@ const manualTranslations = {
                     {
                         q: "How do I import grades and student consultation links into Moodle?",
                         a: "<p>Gradaly includes a dedicated <strong>🎓 Moodle Export (CSV)</strong> tool (accessible from both the <strong>Online Web Portal</strong> window and the main <strong>Export</strong> hub) supporting Moodle's two official import workflows:</p><p><strong>1. Direct Moodle Gradebook CSV Import:</strong><ul><li>In Gradaly, choose <strong>1. Moodle Gradebook (Direct CSV)</strong>, select your score scale (raw exam total, <code>/20</code>, or <code>/100</code>) and feedback content (clickable link to the student's encrypted copy on <code>portal.gradaly.io</code> + per-question score breakdown), and export the UTF-8 CSV file.</li><li>In your Moodle course, open the <strong>Grades</strong> tab, click the top-left dropdown menu (<strong>Grader report</strong>) → <strong>Import</strong> → <strong>CSV file</strong>, and upload the CSV.</li><li>Under <em>Identify user by</em>, map <code>ID number</code> (Student ID / Matricule) to <code>ID number</code> (or <code>Email address</code> to <code>Email address</code>). Under <em>Grade item mappings</em>, map the <code>Grade</code> column to your grade item (or <em>New grade item</em>) and map the <code>Feedback</code> column to the corresponding <strong>Feedbacks</strong> field.</li></ul></p><p><strong>2. Moodle Assignment Offline Grading Worksheet (Zero Column Mapping):</strong><ul><li>In your Moodle <em>Assignment</em> settings, enable <em>Offline grading worksheet</em> and <em>Feedback comments</em> under <em>Feedback types</em>, then download the grading worksheet CSV from <em>View all submissions → Grading action: Download grading worksheet</em>.</li><li>In Gradaly, select <strong>2. Complete a Moodle Assignment Worksheet</strong> and pick that CSV: Gradaly automatically matches all students by ID number or Email and fills in the <code>Grade</code> and <code>Feedback comments</code> columns in-place so you can re-upload it directly to Moodle!</li></ul></p>"
+                    },
+                    {
+                        q: "Can I send student notification emails from my own university email address (Outlook Web, Word + Outlook, Thunderbird) using Mail Merge?",
+                        a: "<p><strong>Yes!</strong> In the <strong>✉️ Notify by Email</strong> window of the Online Web Portal, switch to the second tab: <strong>📊 Mail Merge (My Email Client)</strong>. You can customize your subject and message (using optional variables such as <code>{prenom}</code>, <code>{nom}</code>, <code>{matricule}</code>, <code>{note}</code>, <code>{max}</code>, <code>{lien}</code>) and export in 3 dedicated formats: a <strong>Word Data Source <code>.docx</code></strong> (for Microsoft Word + Outlook Mail Merge), an <strong>Excel <code>.xlsx</code> workbook</strong> (containing a formal Excel Table named <code>Publipostage</code> for Microsoft 365 / Power Automate), or a <strong>UTF-8 <code>.csv</code> file</strong> (for Thunderbird).</p><p><strong>Why is Gradaly's Mail Merge export so convenient?</strong> Because in addition to individual columns (<code>EMAIL</code>, <code>PRENOM</code>, <code>NOM</code>, <code>MATRICULE</code>, <code>NOTE</code>, <code>MAX</code>, <code>NOTE_SUR_MAX</code>, <code>LIEN_COPIE</code>), the exported file also includes <strong>pre-assembled ready-to-send columns for every student</strong>: <code>SUJET_PRET</code> (subject), <code>MESSAGE_TEXTE_PRET</code> (complete plain-text email), and <code>MESSAGE_HTML_PRET</code> (complete HTML email). You only need to insert that single field into your mail merge tool:</p><ul><li><strong>💼 Microsoft Word + Classic Outlook Desktop (Windows &amp; Mac):</strong> Click <strong>Export for Word (<code>.docx</code>)</strong> in Gradaly. In Word, open <em>Mailings → Select Recipients → Use an Existing List…</em> and pick the exported <code>.docx</code> file (unlike <code>.xlsx</code> on macOS, a native Word <code>.docx</code> table opens immediately without triggering Word's legacy Excel converter security popup or sandbox errors). Insert the merge field <code>«MESSAGE_TEXTE_PRET»</code>, then click <em>Finish &amp; Merge → Send Email Messages…</em> (To: <code>EMAIL</code>).</li><li><strong>🌐 Outlook Web (Microsoft 365 in browser) via Power Automate:</strong> Click <strong>Export as Excel (<code>.xlsx</code>)</strong> and upload the file to your university OneDrive. In Microsoft Power Automate (<code>make.powerautomate.com</code>), create an instant cloud flow with 2 steps: <em>Excel Online (Business) → List rows present in a table</em> (selecting your file and the <code>Publipostage</code> table) followed by <em>Office 365 Outlook → Send an email (V2)</em> with <code>To = EMAIL</code>, <code>Subject = SUJET_PRET</code>, and <code>Body = MESSAGE_HTML_PRET</code>. For small groups or individual resends, you can also click <strong>Outlook Web</strong> directly on any student row in Gradaly (or in the Excel sheet) to open a pre-filled compose tab in <code>outlook.office.com</code>!</li><li><strong>🦅 Mozilla Thunderbird (Windows, macOS, Linux):</strong> Using the free <em>Mail Merge</em> add-on, write a new email with <code>{{EMAIL}}</code> in <em>To</em>, <code>{{SUJET_PRET}}</code> in <em>Subject</em>, and <code>{{MESSAGE_TEXTE_PRET}}</code> in the body, then launch <em>Mail Merge → CSV</em> with the exported <code>.csv</code> file.</li></ul>"
                     },
                     {
                         q: "Where can I make suggestions and bug reports?",
@@ -711,7 +718,7 @@ const manualTranslations = {
         badge_manual: "Manuel Utilisateur (2-en-1)",
         back_home: "Retour au site",
         download_btn: "Télécharger Gradaly",
-        hero_pill: "Logiciel Desktop 2-en-1 • Manuel Utilisateur Complet v4.4.0",
+        hero_pill: "Logiciel Desktop 2-en-1 • Manuel Utilisateur Complet v4.5.0",
         hero_title: "Manuel Utilisateur Gradaly",
         hero_subtitle: "Mieux corriger, pour mieux former. Gradaly est un produit 2-en-1 réunissant deux outils complémentaires : (1) le Mode Examen & Test à Blanc pour l'évaluation de copies par l'enseignant (pour un test à blanc formatif en conditions réelles ou un examen final), et (2) le Mode Entraînement QR pour l'auto-évaluation autonome par l'étudiant sur smartphone. Choisissez ci-dessous le manuel correspondant à votre besoin :",
         search_placeholder: "Rechercher dans les manuels (ex: examen, test à blanc, entraînement QR, barème, OCR, clé API, FAQ)...",
@@ -732,6 +739,9 @@ const manualTranslations = {
         btn_go_practice: "Ouvrir le Manuel 2 : Mode Entraînement QR",
         btn_go_exam: "Ouvrir le Manuel 1 : Mode Examen",
         toc_title: "Sommaire du Manuel",
+        sidebar_exam_mode: "Mode Examen",
+        sidebar_practice_mode: "Entraînement QR",
+        screenshot_badge: "Interface FR",
         privacy_box_title: "Confidentialité 100 % Locale",
         privacy_box_text: "La liste des étudiants, l'OCR et vos projets restent stockés localement dans Documents/Gradaly sur votre ordinateur. Les publications web utilisent un chiffrement AES-256-GCM Zero-Knowledge côté client.",
         sections: [
@@ -992,7 +1002,7 @@ const manualTranslations = {
                 subtitle: "Analysez la distribution des notes, importez les notes et les liens de consultation dans Moodle, et restituez à chaque étudiant sa copie corrigée et commentée.",
                 paragraphs: [
                     "L'onglet <strong>6. Statistiques</strong> calcule en temps réel les indicateurs de la promotion : moyenne, médiane, écart-type, notes min/max, histogrammes par tranches <code>[a, b[</code>, et taux de validation de chaque critère.",
-                    "Pour restituer les résultats aux étudiants (aperçu 1 copie en version gratuite ; promotion complète avec Gradaly Pro), quatre canaux sont disponibles :<br>1) <strong>Tableur Excel multi-feuilles</strong> (synthèse officielle + 1 onglet détaillé par question, sur toutes les copies ou une sélection).<br>2) <strong>Export Moodle (Carnet de notes CSV &amp; Feuille d'évaluation de Devoir)</strong> : générez un CSV UTF-8 prêt pour <em>Carnet de notes Moodle → Importer → Fichier CSV</em> ou complétez automatiquement une feuille d'évaluation hors-ligne téléchargée depuis un <em>Devoir Moodle</em> (appariement par Matricule ou E-mail), en injectant à la fois la note (brute, ramenée sur <code>/20</code> ou sur <code>/100</code>) et le <strong>lien cliquable personnel vers la copie chiffrée</strong> dans la colonne <em>Feedback / Commentaires</em> de Moodle !<br>3) <strong>Copies PDF annotées individuelles (ZIP ou copie unique) avec format de nommage flexible</strong> : combine une page de garde récapitulative et les pages manuscrites de l'étudiant, et vous permet de personnaliser le format des noms de fichiers PDF via des balises flexibles (<code>{nom}</code>, <code>{prenom}</code>, <code>{id}</code>, <code>{projet}</code>, <code>{copie}</code>, <code>{groupe}</code> — ex. <code>{nom}_{prenom}_{projet}.pdf</code>) avec aperçu en direct.<br>4) <strong>Portail Web Étudiant Zero-Knowledge</strong> : publiez et synchronisez les copies corrigées chiffrées à très haute vitesse (pipeline multi-cœurs CPU + 10 flux binaires HTTP/2 parallèles), envoyez les liens magiques par lots via l'<strong>API Batch Resend</strong> (avec diagnostic précis des quotas, mode Test/Simulation et reprise automatique des e-mails non envoyés), exportez directement pour <strong>Moodle</strong>, ou imprimez des <strong>planches de coupons QR codes individuels</strong> à distribuer en auditoire."
+                    "Pour restituer les résultats aux étudiants (aperçu 1 copie en version gratuite ; promotion complète avec Gradaly Pro), quatre canaux sont disponibles :<br>1) <strong>Tableur Excel multi-feuilles</strong> (synthèse officielle + 1 onglet détaillé par question, sur toutes les copies ou une sélection).<br>2) <strong>Export Moodle (Carnet de notes CSV &amp; Feuille d'évaluation de Devoir)</strong> : générez un CSV UTF-8 prêt pour <em>Carnet de notes Moodle → Importer → Fichier CSV</em> ou complétez automatiquement une feuille d'évaluation hors-ligne téléchargée depuis un <em>Devoir Moodle</em> (appariement par Matricule ou E-mail), en injectant à la fois la note (brute, ramenée sur <code>/20</code> ou sur <code>/100</code>) et le <strong>lien cliquable personnel vers la copie chiffrée</strong> dans la colonne <em>Feedback / Commentaires</em> de Moodle !<br>3) <strong>Copies PDF annotées individuelles (ZIP ou copie unique) avec format de nommage flexible</strong> : combine une page de garde récapitulative et les pages manuscrites de l'étudiant, et vous permet de personnaliser le format des noms de fichiers PDF via des balises flexibles (<code>{nom}</code>, <code>{prenom}</code>, <code>{id}</code>, <code>{projet}</code>, <code>{copie}</code>, <code>{groupe}</code> — ex. <code>{nom}_{prenom}_{projet}.pdf</code>) avec aperçu en direct.<br>4) <strong>Portail Web Étudiant Zero-Knowledge</strong> : publiez et synchronisez les copies corrigées chiffrées à très haute vitesse (pipeline multi-cœurs CPU + 10 flux binaires HTTP/2 parallèles), notifiez les étudiants soit par <strong>Envoi direct Cloud (<code>@gradaly.io</code>)</strong>, soit par <strong>Publipostage avec votre propre adresse e-mail universitaire (Outlook Web / Microsoft 365, Word + Outlook Desktop, ou Thunderbird)</strong> grâce à l'export d'un classeur Excel <code>.xlsx</code> structuré ou d'un fichier <code>.csv</code>, exportez directement pour <strong>Moodle</strong>, ou imprimez des <strong>planches de coupons QR codes individuels</strong> à distribuer en auditoire."
                 ],
                 screenshots: [
                     {
@@ -1180,7 +1190,11 @@ const manualTranslations = {
                     },
                     {
                         q: "Comment importer les notes et les liens de consultation des copies dans Moodle ?",
-                        a: "<p>Gradaly intègre un outil dédié <strong>🎓 Export Moodle (CSV)</strong> (accessible depuis la fenêtre du <strong>Portail Web en ligne</strong> ainsi que depuis le menu principal <strong>Exporter</strong>) prenant en charge les deux méthodes officielles de Moodle :</p><p><strong>1. Import direct dans le Carnet de notes Moodle (CSV neuf) :</strong><ul><li>Dans Gradaly, sélectionnez <strong>1. Carnet de notes Moodle (CSV direct)</strong>, choisissez l'échelle de note (barème brut, <code>/20</code> ou <code>/100</code>) et le contenu du commentaire (lien cliquable vers la copie chiffrée sur <code>portal.gradaly.io</code> + détail des points par question), puis exportez le fichier CSV UTF-8.</li><li>Dans votre cours Moodle, cliquez sur l'onglet <strong>Notes</strong> (<em>Grades</em>), puis dans le menu déroulant en haut à gauche (<strong>Rapport de l'évaluateur / Grader report</strong>), choisissez <strong>Importer</strong> → <strong>Fichier CSV</strong>.</li><li>Dans <em>Identifier les utilisateurs par</em>, associez <code>Numéro d'identification</code> (Matricule) à <code>Numéro d'identification</code> (ou <code>Adresse de courriel</code> à <code>Adresse de courriel</code>). Dans <em>Correspondance des éléments d'évaluation</em>, associez la colonne <code>Note</code> à votre activité (ou à un <em>Nouvel élément d'évaluation</em>) et associez la colonne <code>Feedback</code> au champ <strong>Commentaires (Feedbacks)</strong> correspondant.</li></ul></p><p><strong>2. Compléter une feuille d'évaluation de Devoir Moodle (sans aucun mapping) :</strong><ul><li>Dans les paramètres de votre activité <em>Devoir</em> sur Moodle, activez <em>Feuille d'évaluation hors-ligne</em> et <em>Feedback par commentaires</em> dans <em>Types de feedback</em>, puis téléchargez la feuille CSV depuis <em>Consulter tous les travaux remis → Action d'évaluation : Télécharger la feuille d'évaluation</em>.</li><li>Dans Gradaly, choisissez <strong>2. Compléter une feuille de Devoir Moodle</strong> et sélectionnez ce fichier : Gradaly apparie automatiquement les étudiants par Matricule ou E-mail et remplit les colonnes <code>Note</code> et <code>Feedback par commentaires</code> pour que vous puissiez ré-importer directement le fichier dans votre Devoir Moodle !</li></ul></p>"
+                        a: "<p>Gradaly intègre un outil dédié <strong>🎓 Export Moodle (CSV)</strong> (accessible depuis la fenêtre du <strong>Portail Web en ligne</strong> ainsi que depuis le menu principal <strong>Exporter</strong>) prenant en charge les deux méthodes officielles de Moodle :</p><p><strong>1. Import direct dans le Carnet de notes Moodle (CSV neuf) :</strong><ul><li>Dans Gradaly, sélectionnez <strong>1. Carnet de notes Moodle (CSV neuf)</strong>, choisissez l'échelle de note (barème brut, <code>/20</code> ou <code>/100</code>) et le contenu du commentaire (lien cliquable vers la copie chiffrée sur <code>portal.gradaly.io</code> + détail des points par question), puis exportez le fichier CSV UTF-8.</li><li>Dans votre cours Moodle, cliquez sur l'onglet <strong>Notes</strong> (<em>Grades</em>), puis dans le menu déroulant en haut à gauche (<strong>Rapport de l'évaluateur / Grader report</strong>), choisissez <strong>Importer</strong> → <strong>Fichier CSV</strong>.</li><li>Dans <em>Identifier les utilisateurs par</em>, associez <code>Numéro d'identification</code> (Matricule) à <code>Numéro d'identification</code> (ou <code>Adresse de courriel</code> à <code>Adresse de courriel</code>). Dans <em>Correspondance des éléments d'évaluation</em>, associez la colonne <code>Note</code> à votre activité (ou à un <em>Nouvel élément d'évaluation</em>) et associez la colonne <code>Feedback</code> au champ <strong>Commentaires (Feedbacks)</strong> correspondant.</li></ul></p><p><strong>2. Compléter une feuille d'évaluation de Devoir Moodle (sans aucun mapping) :</strong><ul><li>Dans les paramètres de votre activité <em>Devoir</em> sur Moodle, activez <em>Feuille d'évaluation hors-ligne</em> et <em>Feedback par commentaires</em> dans <em>Types de feedback</em>, puis téléchargez la feuille CSV depuis <em>Consulter tous les travaux remis → Action d'évaluation : Télécharger la feuille d'évaluation</em>.</li><li>Dans Gradaly, choisissez <strong>2. Compléter une feuille de Devoir Moodle</strong> et sélectionnez ce fichier : Gradaly apparie automatiquement les étudiants par Matricule ou E-mail et remplit les colonnes <code>Note</code> et <code>Feedback par commentaires</code> pour que vous puissiez ré-importer directement le fichier dans votre Devoir Moodle !</li></ul></p>"
+                    },
+                    {
+                        q: "Puis-je envoyer les e-mails de notification avec ma propre adresse universitaire (Outlook Web, Word + Outlook, Thunderbird) via un publipostage ?",
+                        a: "<p><strong>Oui !</strong> Dans la fenêtre <strong>✉️ Notifier par e-mail</strong> du Portail Web en ligne, ouvrez le second onglet : <strong>📊 Publipostage (Mon client mail)</strong>. Vous pouvez y personnaliser l'objet et le message d'accompagnement (avec prise en charge de variables optionnelles comme <code>{prenom}</code>, <code>{nom}</code>, <code>{matricule}</code>, <code>{note}</code>, <code>{max}</code>, <code>{lien}</code>), puis exporter dans 3 formats dédiés : une <strong>source de données Word <code>.docx</code></strong> (pour Microsoft Word + Outlook), un <strong>classeur Excel <code>.xlsx</code></strong> (contenant un vrai tableau structuré nommé <code>Publipostage</code> pour Microsoft 365 / Power Automate) ou un <strong>fichier <code>.csv</code> UTF-8</strong> (pour Thunderbird).</p><p><strong>Pourquoi l'export publipostage de Gradaly est-il aussi simple à utiliser ?</strong> Parce qu'en plus des colonnes individuelles (<code>EMAIL</code>, <code>PRENOM</code>, <code>NOM</code>, <code>MATRICULE</code>, <code>NOTE</code>, <code>MAX</code>, <code>NOTE_SUR_MAX</code>, <code>LIEN_COPIE</code>), le fichier exporté contient les colonnes <strong>déjà assemblées pour chaque étudiant</strong> : <code>SUJET_PRET</code>, <code>MESSAGE_TEXTE_PRET</code> et <code>MESSAGE_HTML_PRET</code>. Il vous suffit d'insérer cet unique champ dans votre outil d'envoi :</p><ul><li><strong>💼 Microsoft Word + Outlook Desktop Classique (Windows &amp; Mac) :</strong> Cliquez sur <strong>Exporter pour Word (<code>.docx</code>)</strong> dans Gradaly. Dans Word, ouvrez <em>Publipostage → Sélectionner les destinataires → Utiliser une liste existante…</em> et choisissez le fichier <code>.docx</code> exporté (contrairement au format <code>.xlsx</code> sur macOS, une table Word <code>.docx</code> native s'importe directement sans déclencher l'alerte de sécurité du convertisseur Excel ni d'erreur de lecture sandbox). Insérez le champ de fusion <code>«MESSAGE_TEXTE_PRET»</code>, puis cliquez sur <em>Terminer et fusionner → Envoyer des messages électroniques…</em> (À : <code>EMAIL</code>).</li><li><strong>🌐 Outlook Web (Microsoft 365 dans le navigateur) via Power Automate :</strong> Cliquez sur <strong>Exporter en Excel (<code>.xlsx</code>)</strong> et déposez le fichier dans votre OneDrive universitaire. Dans Microsoft Power Automate (<code>make.powerautomate.com</code>), créez un flux cloud instantané comportant 2 actions : <em>Excel Online (Business) → Lister les lignes présentes dans un tableau</em> (en sélectionnant votre fichier et la table <code>Publipostage</code>), suivi de <em>Office 365 Outlook → Envoyer un e-mail (V2)</em> avec <code>À = EMAIL</code>, <code>Objet = SUJET_PRET</code> et <code>Corps = MESSAGE_HTML_PRET</code>. Pour de petits groupes ou des renvois ciblés, vous pouvez aussi cliquer directement sur le bouton <strong>Outlook Web</strong> en face de chaque étudiant dans Gradaly (ou dans le fichier Excel) pour ouvrir un onglet de rédaction pré-rempli dans <code>outlook.office.com</code> !</li><li><strong>🦅 Mozilla Thunderbird (Windows, macOS, Linux) :</strong> Avec l'extension gratuite <em>Mail Merge</em>, rédigez un nouveau message avec <code>{{EMAIL}}</code> dans <em>Pour</em>, <code>{{SUJET_PRET}}</code> dans <em>Sujet</em> et <code>{{MESSAGE_TEXTE_PRET}}</code> dans le corps du mail, puis lancez <em>Mail Merge → CSV</em> avec le fichier <code>.csv</code> exporté.</li></ul>"
                     },
                     {
                         q: "Où puis-je faire des suggestions d'amélioration ou signaler un bug ?",
@@ -1413,32 +1427,86 @@ const manualTranslations = {
     }
 };
 
+const GRADALY_MANUAL_LANGUAGES = [
+    { code: 'fr', label: 'Français', flag: '🇫🇷' },
+    { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'nl', label: 'Nederlands', flag: '🇳🇱' },
+    { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+    { code: 'es', label: 'Español', flag: '🇪🇸' },
+    { code: 'it', label: 'Italiano', flag: '🇮🇹' },
+    { code: 'tr', label: 'Türkçe', flag: '🇹🇷' },
+    { code: 'zh', label: '中文 (简体)', flag: '🇨🇳' },
+    { code: 'ja', label: '日本語', flag: '🇯🇵' },
+    { code: 'ko', label: '한국어', flag: '🇰🇷' }
+];
+
+if (typeof window !== 'undefined' && window.GRADALY_MANUAL_I18N) {
+    Object.assign(manualTranslations, window.GRADALY_MANUAL_I18N);
+}
+
 function manualApp() {
+    if (typeof window !== 'undefined' && window.GRADALY_MANUAL_I18N) {
+        Object.assign(manualTranslations, window.GRADALY_MANUAL_I18N);
+    }
+    const validCodes = GRADALY_MANUAL_LANGUAGES.map((l) => l.code);
     return {
         lang: 'en',
+        langMenuOpen: false,
+        supportedLanguages: GRADALY_MANUAL_LANGUAGES,
         activeGuide: 'exam',
         search: '',
         t: manualTranslations.en,
+        get assetLang() {
+            return this.lang === 'fr' ? 'fr' : 'en';
+        },
+        get currentLangObj() {
+            return this.supportedLanguages.find((l) => l.code === this.lang) || this.supportedLanguages[1];
+        },
         init() {
             const urlParams = new URLSearchParams(window.location.search);
-            const langParam = urlParams.get('lang');
-            if (langParam === 'fr' || langParam === 'en') {
-                this.lang = langParam;
+            const langParam = (urlParams.get('lang') || '').toLowerCase().split(/[-_]/)[0];
+            let chosen = '';
+            if (validCodes.includes(langParam)) {
+                chosen = langParam;
             } else {
-                const navLang = navigator.language || navigator.userLanguage || '';
-                if (navLang.toLowerCase().startsWith('fr')) {
-                    this.lang = 'fr';
-                }
+                try {
+                    const saved = (localStorage.getItem('gradaly_lang') || '').toLowerCase().split(/[-_]/)[0];
+                    if (validCodes.includes(saved)) chosen = saved;
+                } catch (_) {}
             }
+            if (!chosen) {
+                const navLang = ((navigator.language || navigator.userLanguage || '') + '').toLowerCase().split(/[-_]/)[0];
+                chosen = validCodes.includes(navLang) ? navLang : 'en';
+            }
+            this.lang = manualTranslations[chosen] ? chosen : 'en';
+            try {
+                localStorage.setItem('gradaly_lang', this.lang);
+            } catch (_) {}
             const modeParam = urlParams.get('mode');
             if (modeParam === 'exam' || modeParam === 'practice' || modeParam === 'reference' || modeParam === 'all') {
                 this.activeGuide = modeParam;
             }
-            this.t = manualTranslations[this.lang];
+            this.t = manualTranslations[this.lang] || manualTranslations.en;
+            if (typeof document !== 'undefined' && document.documentElement) {
+                document.documentElement.lang = this.lang;
+            }
+        },
+        setLang(code) {
+            if (!manualTranslations[code]) return;
+            this.lang = code;
+            this.langMenuOpen = false;
+            try {
+                localStorage.setItem('gradaly_lang', code);
+            } catch (_) {}
+            this.t = manualTranslations[code];
+            if (typeof document !== 'undefined' && document.documentElement) {
+                document.documentElement.lang = code;
+            }
         },
         toggleLang() {
-            this.lang = this.lang === 'en' ? 'fr' : 'en';
-            this.t = manualTranslations[this.lang];
+            const idx = this.supportedLanguages.findIndex((l) => l.code === this.lang);
+            const next = this.supportedLanguages[(idx + 1) % this.supportedLanguages.length];
+            this.setLang(next.code);
         },
         selectGuide(guide) {
             this.activeGuide = guide;

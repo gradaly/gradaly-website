@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradaly.io — User Manual / Manuel Utilisateur (v4.4.0)</title>
+    <title>Gradaly.io — User Manual / Manuel Utilisateur (v4.5.0)</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -15,6 +15,9 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Apple SD Gothic Neo", "Malgun Gothic", "Microsoft YaHei", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", sans-serif;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white" x-data="manualApp()" x-init="init()">
@@ -24,23 +27,47 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex items-center space-x-3">
-                    <a href="index.html" class="flex items-center space-x-2 group">
+                    <a :href="'index.html?lang=' + lang" class="flex items-center space-x-2 group">
                         <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-xl group-hover:bg-indigo-700 transition">G</div>
                         <span class="font-bold text-xl tracking-tight text-slate-900">Gradaly<span class="text-indigo-600">.io</span></span>
                     </a>
                     <span class="hidden sm:inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-200" x-text="t.badge_manual"></span>
-                    <span class="hidden md:inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold font-mono bg-slate-100 text-slate-700 border border-slate-200">v4.4.0</span>
+                    <span class="hidden md:inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold font-mono bg-slate-100 text-slate-700 border border-slate-200">v4.5.0</span>
                 </div>
 
                 <div class="flex items-center space-x-3">
-                    <a href="index.html" class="text-sm font-semibold text-slate-600 hover:text-indigo-600 transition flex items-center gap-1.5">
+                    <a :href="'index.html?lang=' + lang" class="text-sm font-semibold text-slate-600 hover:text-indigo-600 transition flex items-center gap-1.5">
                         <i class="fas fa-arrow-left text-xs"></i>
                         <span x-text="t.back_home"></span>
                     </a>
-                    <button @click="toggleLang()" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 transition text-sm font-semibold border border-slate-300 cursor-pointer">
-                        <span x-text="lang === 'en' ? '🇫🇷 Français' : '🇬🇧 English'"></span>
-                    </button>
-                    <a href="index.html#download" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-lg shadow-xs text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 transition" x-text="t.download_btn"></a>
+                    <div class="relative" @click.outside="langMenuOpen = false">
+                        <button type="button"
+                                @click="langMenuOpen = !langMenuOpen"
+                                class="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 transition text-xs sm:text-sm font-semibold border border-slate-300 cursor-pointer inline-flex items-center gap-1.5">
+                            <span x-text="currentLangObj.flag"></span>
+                            <span class="hidden lg:inline" x-text="currentLangObj.label"></span>
+                            <span class="lg:hidden uppercase" x-text="currentLangObj.code"></span>
+                            <i class="fas fa-chevron-down text-[10px] text-slate-500 transition-transform duration-150" :class="{'rotate-180': langMenuOpen}"></i>
+                        </button>
+                        <div x-show="langMenuOpen"
+                             x-cloak
+                             x-transition.opacity.duration.150ms
+                             class="absolute right-0 mt-2 w-44 rounded-xl bg-white border border-slate-200 shadow-xl py-1.5 z-50">
+                            <template x-for="item in supportedLanguages" :key="item.code">
+                                <button type="button"
+                                        @click="setLang(item.code)"
+                                        :class="lang === item.code ? 'bg-indigo-50 text-indigo-700 font-bold' : 'text-slate-700 hover:bg-slate-50 font-medium'"
+                                        class="w-full px-3.5 py-2 text-left text-xs sm:text-sm flex items-center justify-between transition cursor-pointer">
+                                    <span class="flex items-center gap-2">
+                                        <span x-text="item.flag"></span>
+                                        <span x-text="item.label"></span>
+                                    </span>
+                                    <i x-show="lang === item.code" class="fas fa-check text-[11px] text-indigo-600"></i>
+                                </button>
+                            </template>
+                        </div>
+                    </div>
+                    <a :href="'index.html?lang=' + lang + '#download'" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-lg shadow-xs text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 transition" x-text="t.download_btn"></a>
                 </div>
             </div>
         </div>
@@ -127,14 +154,14 @@
                                 :class="activeGuide === 'exam' ? 'bg-indigo-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'"
                                 class="py-1.5 px-2 rounded-lg transition cursor-pointer truncate flex items-center justify-center gap-1.5">
                             <i class="fas fa-graduation-cap text-[10px]"></i>
-                            <span x-text="lang === 'fr' ? 'Mode Examen' : 'Exam Mode'"></span>
+                            <span x-text="t.sidebar_exam_mode"></span>
                         </button>
                         <button type="button"
                                 @click="selectGuide('practice')"
                                 :class="activeGuide === 'practice' ? 'bg-teal-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'"
                                 class="py-1.5 px-2 rounded-lg transition cursor-pointer truncate flex items-center justify-center gap-1.5">
                             <i class="fas fa-qrcode text-[10px]"></i>
-                            <span x-text="lang === 'fr' ? 'Entraînement QR' : 'Practice QR'"></span>
+                            <span x-text="t.sidebar_practice_mode"></span>
                         </button>
                     </div>
 
@@ -256,9 +283,9 @@
                                                         <i class="fas fa-desktop" :class="sec.partColor === 'teal' ? 'text-teal-600' : 'text-indigo-600'"></i>
                                                         <span x-text="shot.caption"></span>
                                                     </span>
-                                                    <span class="font-mono text-[11px] px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-600" x-text="lang === 'fr' ? 'Interface FR' : 'EN Interface'"></span>
+                                                    <span class="font-mono text-[11px] px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-600" x-text="t.screenshot_badge"></span>
                                                 </div>
-                                                <img :src="'manual-assets/' + shot.filePrefix + '_' + lang + '.png'"
+                                                <img :src="'manual-assets/' + shot.filePrefix + '_' + assetLang + '.png'"
                                                      :alt="shot.caption"
                                                      loading="lazy"
                                                      class="w-full rounded-xl border border-slate-200 shadow-sm bg-white">
@@ -375,15 +402,23 @@
             <div class="flex items-center space-x-2">
                 <div class="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">G</div>
                 <span class="font-bold text-white">Gradaly.io</span>
-                <span class="text-xs text-slate-500">— v4.4.0</span>
+                <span class="text-xs text-slate-500">— v4.5.0</span>
             </div>
             <div class="flex items-center gap-6">
-                <a href="index.html" class="hover:text-white transition" x-text="t.back_home"></a>
-                <a href="index.html#download" class="hover:text-white transition" x-text="t.download_btn"></a>
+                <a :href="'index.html?lang=' + lang" class="hover:text-white transition" x-text="t.back_home"></a>
+                <a :href="'index.html?lang=' + lang + '#download'" class="hover:text-white transition" x-text="t.download_btn"></a>
             </div>
         </div>
     </footer>
 
-    <script src="manual.js?v=4.4.0"></script>
+    <script src="locales/manual-nl.js?v=4.5.0"></script>
+    <script src="locales/manual-de.js?v=4.5.0"></script>
+    <script src="locales/manual-es.js?v=4.5.0"></script>
+    <script src="locales/manual-it.js?v=4.5.0"></script>
+    <script src="locales/manual-tr.js?v=4.5.0"></script>
+    <script src="locales/manual-zh.js?v=4.5.0"></script>
+    <script src="locales/manual-ja.js?v=4.5.0"></script>
+    <script src="locales/manual-ko.js?v=4.5.0"></script>
+    <script src="manual.js?v=4.5.0"></script>
 </body>
 </html>

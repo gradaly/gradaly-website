@@ -1,0 +1,167 @@
+{
+  "format_version": 1,
+  "app_version": "4.5.0",
+  "generated_at": 1795021058,
+  "demos": [
+    {
+      "lang": "de",
+      "type": "exam",
+      "file": "exam_de.gradaly",
+      "name": "Demo Klausur DE",
+      "size": 2127584,
+      "sha256": "40f062fb2917cdc3e7813cc886c59d7d67dac6d289d4ad6a24d40a39c47d5d1f"
+    },
+    {
+      "lang": "de",
+      "type": "practice",
+      "file": "practice_de.gradaly",
+      "name": "Demo Übung DE",
+      "size": 150329,
+      "sha256": "31e19ba115c8c3b43c2bc14e1f3d1e12c66d412564d71b0eb18834d522bdf00d"
+    },
+    {
+      "lang": "en",
+      "type": "exam",
+      "file": "exam_en.gradaly",
+      "name": "Demo Exam EN",
+      "size": 3578222,
+      "sha256": "defe9ec8072b779c79d7c7ee41caf857fccb9f06cfc5e97ef05d5a590917580e"
+    },
+    {
+      "lang": "en",
+      "type": "practice",
+      "file": "practice_en.gradaly",
+      "name": "Demo Practice EN",
+      "size": 336643,
+      "sha256": "c6873260cecf932e1f370a1f7bfa0a1a449c29d803af2325da75fd4af6e48e57"
+    },
+    {
+      "lang": "es",
+      "type": "exam",
+      "file": "exam_es.gradaly",
+      "name": "Demo Examen ES",
+      "size": 2100804,
+      "sha256": "ee867c7a062ea79678e39593e858416b96a36a80f4c82c930d0de5576f840d90"
+    },
+    {
+      "lang": "es",
+      "type": "practice",
+      "file": "practice_es.gradaly",
+      "name": "Demo Práctica ES",
+      "size": 148386,
+      "sha256": "9e2825c98dc82772b768fe24ccb3deba748b935c5cc570f2edf73cf3620e95f3"
+    },
+    {
+      "lang": "fr",
+      "type": "exam",
+      "file": "exam_fr.gradaly",
+      "name": "Demo Exam FR",
+      "size": 3531016,
+      "sha256": "34cb8847baefdff5f2cd50268f1b2a53ad75ebbae6dbbe46aa8af05c57215044"
+    },
+    {
+      "lang": "fr",
+      "type": "practice",
+      "file": "practice_fr.gradaly",
+      "name": "Demo Entraînement FR",
+      "size": 334170,
+      "sha256": "25ae57c8e729a428f3d0bf5c5bcb1e590a96c613750b8862fcf2c07d91649bf9"
+    },
+    {
+      "lang": "it",
+      "type": "exam",
+      "file": "exam_it.gradaly",
+      "name": "Demo Esame IT",
+      "size": 2082840,
+      "sha256": "b1db0c7c886e728a65472f93fa6383a280dba6d2e64a84c2da9e02026b2b9fc0"
+    },
+    {
+      "lang": "it",
+      "type": "practice",
+      "file": "practice_it.gradaly",
+      "name": "Demo Esercitazione IT",
+      "size": 146921,
+      "sha256": "8afd2b1ca3b536ef6c6033414560aaaf1b75cad371f26397ef77109622fd832f"
+    },
+    {
+      "lang": "ja",
+      "type": "exam",
+      "file": "exam_ja.gradaly",
+      "name": "Gradaly 試験デモ",
+      "size": 3547051,
+      "sha256": "7e2b8beb16d60fc959e6ab4cd9ee7ac3fa6cdb8c86d3569da758d2c3cc59c599"
+    },
+    {
+      "lang": "ja",
+      "type": "practice",
+      "file": "practice_ja.gradaly",
+      "name": "Gradaly 演習デモ",
+      "size": 257429,
+      "sha256": "020260251f0d7493d94b9ddba297386b6dab86916d33404217ef6c21de63db64"
+    },
+    {
+      "lang": "ko",
+      "type": "exam",
+      "file": "exam_ko.gradaly",
+      "name": "Gradaly 시험 데모",
+      "size": 2795362,
+      "sha256": "aabfd27d626add60a549a1c836ef11a9689537c165ecabad62924c92efa0c064"
+    },
+    {
+      "lang": "ko",
+      "type": "practice",
+      "file": "practice_ko.gradaly",
+      "name": "Gradaly 연습 데모",
+      "size": 199917,
+      "sha256": "f21e32db731854e947d36e5df5489916d9c61743f3d26d862cf4349558ffc4ca"
+    },
+    {
+      "lang": "nl",
+      "type": "exam",
+      "file": "exam_nl.gradaly",
+      "name": "Demo Examen NL",
+      "size": 2099677,
+      "sha256": "6b2af1e7e530e8726e86217eea35990cc241527d1069e8c9e5c150e3d64e71ae"
+    },
+    {
+      "lang": "nl",
+      "type": "practice",
+      "file": "practice_nl.gradaly",
+      "name": "Demo Oefening NL",
+      "size": 148072,
+      "sha256": "bfbe986b6c5798952a7e1954a673ea7bc2d727e36f5e64b6417c0fb5ca9abf00"
+    },
+    {
+      "lang": "tr",
+      "type": "exam",
+      "file": "exam_tr.gradaly",
+      "name": "Demo Sınav TR",
+      "size": 2124058,
+      "sha256": "ec660ea579d61cd721f53a2030781d5137aa576174c4a47de2025e5e1b149bc9"
+    },
+    {
+      "lang": "tr",
+      "type": "practice",
+      "file": "practice_tr.gradaly",
+      "name": "Demo Alıştırma TR",
+      "size": 149973,
+      "sha256": "0fd101aabcff59b920cccfe0023e69a10a4e18a0dd5ba5f21cd4e2abc38c0861"
+    },
+    {
+      "lang": "zh",
+      "type": "exam",
+      "file": "exam_zh.gradaly",
+      "name": "Gradaly 考试示例",
+      "size": 3672428,
+      "sha256": "86ed1f7a70ecffd2fe9c5dc060909fe1dd9abcb4765291eb6538ecaac83f2046"
+    },
+    {
+      "lang": "zh",
+      "type": "practice",
+      "file": "practice_zh.gradaly",
+      "name": "Gradaly 练习示例",
+      "size": 265921,
+      "sha256": "207af83feddefe8b75c7f1ae2f9ad8fd14130b0e7fcbe8afd3b84391ca4760d1"
+    }
+  ]
+}
