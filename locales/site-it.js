@@ -50,7 +50,7 @@ window.GRADALY_SITE_I18N.it = {
     adv_pedagogy_title: "Rigore Didattico e Progettazione della Griglia",
     adv_pedagogy_text: "Dedica la tua esperienza accademica alla definizione di criteri di valutazione chiari, articolati ed equi anziché a operazioni ripetitive. L'IA applica con coerenza i tuoi criteri a ogni singolo elaborato.",
     adv_flex_title: "Ricalcolo Dinamico e Simulazione",
-    adv_flex_text: "Modifica il peso di un criterio, affina la griglia di valutazione o varia il punteggio di base: osserva istantaneamente l'impatto sull'intero corso o riesegui la valutazione con un clic per verificare diversi scenari valutativi.",
+    adv_flex_text: "Modifica il peso di un criterio, affina la griglia di valutazione o varia il punteggio di base: osserva istantaneamente l'impatto sull'intero corso ed esegui Suite di Benchmark e Regressione multi-modello per confrontare i modelli IA su elaborati validati.",
     adv_control_title: "Il Controllo Finale Resta al Docente",
     adv_control_text: "Gradaly è un assistente alla valutazione, mai un sostituto. Il docente conserva la piena sovranità accademica: convalida, rettifica i criteri o riformula il feedback con un solo clic.",
     adv_privacy_title: "Riservatezza Totale e Zero Cloud",
@@ -58,7 +58,7 @@ window.GRADALY_SITE_I18N.it = {
     adv1_title: "Applicazione Desktop Nativa",
     adv1_text: "Fluida, leggera e reattiva. Funziona direttamente sul tuo computer (macOS, Windows, Linux) con rendering PDF ad alte prestazioni e senza rallentamenti del browser.",
     adv_cost_title: "100% Diretto e Multi-Fornitore",
-    adv_cost_text: "Usa la tua chiave API (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) o modelli locali tramite Ollama senza alcun ricarico — e in modalità Esercitazione QR gli studenti si autovalutano su portal.gradaly.io senza dover configurare alcuna chiave API.",
+    adv_cost_text: "Usa la tua chiave API (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) o modelli locali tramite Ollama senza alcun ricarico, monitora ogni token nel registro locale di utilizzo e costi IA (grafici giornalieri/mensili e tariffe $/1M personalizzate) — e in modalità Esercitazione QR gli studenti si autovalutano su portal.gradaly.io senza chiave API.",
 
     // Exam Carousel slides (7 slides)
     carousel_slide1_badge: "Modalità Esame • Fase 1: Modello e Area ID",
@@ -117,7 +117,7 @@ window.GRADALY_SITE_I18N.it = {
 
     guide_step3_tag: "Griglia e Soluzione di Riferimento",
     guide_step3_title: "Riquadri delle Domande, Criteri e Assistente Griglia IA",
-    guide_step3_item2_desc: "Definisci criteri puramente additivi o sottrattivi, verifica la tua griglia sulla Soluzione di riferimento (⭐ Correttore) e ricalcola dinamicamente i punteggi.",
+    guide_step3_item2_desc: "Definisci criteri additivi o sottrattivi con gruppi mutuamente esclusivi OR (livelli di credito parziale o malus), anteprima Render / Edit KaTeX, verifica sulla Soluzione di riferimento (⭐ Correttore) e ricalcolo dinamico dei punteggi.",
     guide_step3_item3_desc: "Co-progetta o affina i criteri in modo interattivo via chat con l'Assistente Griglia IA — anche incollando screenshot di reali risposte degli studenti.",
 
     guide_step5_tag: "Riservatezza 100% Locale",
@@ -185,7 +185,7 @@ window.GRADALY_SITE_I18N.it = {
     comp_r3_exam: "Importazione CSV degli iscritti + divisione scansioni PDF + abbinamento OCR al 100% offline",
     comp_r3_prac: "Zero elenco studenti, zero elaborati da raccogliere o scansionare per il docente",
     comp_r4_label: "Chiave API IA",
-    comp_r4_exam: "Facoltativa (modalità 100% manuale disponibile) oppure chiave API del docente (~5 $ per 400 elaborati in Batch)",
+    comp_r4_exam: "Facoltativa (modalità 100% manuale disponibile) oppure chiave API del docente (con registro locale dei token e tariffe $/1M personalizzate)",
     comp_r4_prac: "Nessuna chiave API richiesta su portal.gradaly.io (relay IA Gradaly integrato) o chiave Gemini personale facoltativa",
     comp_r5_label: "Versione Gratuita vs Gradaly Pro",
     comp_r5_exam: "Gratuito: valutazione completa + anteprima esportazione 1 elaborato • Pro: CSV Moodle, Excel, PDF annotati, Portale Web Esame e Unione in commissione per l'intero corso",

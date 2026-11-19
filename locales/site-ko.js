@@ -50,7 +50,7 @@ window.GRADALY_SITE_I18N.ko = {
     adv_pedagogy_title: "교육적 본질과 정교한 루브릭 설계",
     adv_pedagogy_text: "단순 반복 채점 대신 세밀하고 수준 높은 채점 기준표를 설계하는 데 학문적 전문성을 투자하세요. AI가 설정된 채점 항목을 모든 답안지에 일관되고 엄격하게 적용합니다.",
     adv_flex_title: "동적 점수 재계산 및 시뮬레이션",
-    adv_flex_text: "채점 항목의 배점을 조정하거나 평가 기준·기본 점수를 수정하면 전체 수강생의 점수 분포 변화를 즉시 확인하고, 클릭 한 번으로 평가 시나리오를 시뮬레이션할 수 있습니다.",
+    adv_flex_text: "채점 항목 배점이나 기본 점수를 조정하면 전체 수강생 점수 분포 변화를 즉시 확인할 수 있으며, 멀티모델 벤치마크 및 회귀 테스트 스위트를 실행해 검증된 답안을 기준으로 여러 AI 모델을 나란히 비교할 수 있습니다.",
     adv_control_title: "최종 결정권은 언제나 교수자에게",
     adv_control_text: "Gradaly는 교수자를 대체하는 도구가 아닌 의사결정 보조 도구입니다. 클릭 한 번으로 채점 항목을 검증·수정하거나 피드백을 직접 편집하며 완전한 통제권을 유지하세요.",
     adv_privacy_title: "완벽한 개인정보 보호 및 로컬 처리",
@@ -58,7 +58,7 @@ window.GRADALY_SITE_I18N.ko = {
     adv1_title: "쾌적한 네이티브 데스크톱 환경",
     adv1_text: "초고속 반응성과 가벼운 실행 환경을 자랑합니다. 브라우저 지연 없이 컴퓨터(macOS, Windows, Linux)에서 직접 고성능 PDF 렌더링을 수행합니다.",
     adv_cost_title: "수수료 0% 직접 연결 및 다중 AI 지원",
-    adv_cost_text: "추가 마진 없이 본인의 API 키(Google Gemini, OpenAI, Anthropic Claude, OpenRouter) 또는 Ollama 로컬 모델을 연결하세요. 또한 QR 연습 모드에서는 학생이 API 키 없이도 portal.gradaly.io에서 자기평가를 수행할 수 있습니다.",
+    adv_cost_text: "추가 마진 없이 본인의 API 키(Google Gemini, OpenAI, Anthropic Claude, OpenRouter) 또는 Ollama 로컬 모델을 사용하고, 내장된 로컬 AI 토큰·비용 장부(일별/월별 차트 및 $/1M 단가 설정)로 사용량을 투명하게 관리하세요. QR 연습 모드에서는 학생도 키 없이 자가평가가 가능합니다.",
 
     // Exam Carousel slides (7 slides)
     carousel_slide1_badge: "시험 모드 • 1단계: 캔버스 불러오기",
@@ -117,7 +117,7 @@ window.GRADALY_SITE_I18N.ko = {
 
     guide_step3_tag: "채점 기준표 및 모범 답안",
     guide_step3_title: "문항 영역 지정, 채점 항목 및 AI 루브릭 어시스턴트",
-    guide_step3_item2_desc: "가산형 또는 감산형 채점 기준표를 설계하고, 모범 답안(⭐ 모범 답안)이 만점을 받는지 검증하며 점수를 동적으로 재계산합니다.",
+    guide_step3_item2_desc: "가산형·감산형 채점 기준표와 상호 배타적 OR 그룹(부분/만점 단계 및 감점 구간), Render / Edit KaTeX 미리보기, 모범 답안(⭐ 모범 답안) 검증 및 동적 점수 재계산을 지원합니다.",
     guide_step3_item3_desc: "실제 학생 답안 스크린샷을 붙여넣으며 채팅 방식으로 AI 루브릭 어시스턴트와 함께 채점 항목을 정교하게 다듬을 수 있습니다.",
 
     guide_step5_tag: "100% 로컬 개인정보 보호",
@@ -185,7 +185,7 @@ window.GRADALY_SITE_I18N.ko = {
     comp_r3_exam: "수강생 명단 CSV 불러오기 + 대량 스캔 PDF 분할 + 100% 오프라인 OCR 매칭",
     comp_r3_prac: "수강생 명단 불필요, 교수자의 답안지 수거·스캔 불필요",
     comp_r4_label: "AI API 키",
-    comp_r4_exam: "선택 사항(100% 수동 모드 지원) 또는 교수자 API 키 사용(Batch 모드 기준 400부 약 $5)",
+    comp_r4_exam: "선택 사항(100% 수동 모드 지원) 또는 교수자 API 키(로컬 토큰 장부 및 사용자 지정 $/1M 요금제 지원)",
     comp_r4_prac: "portal.gradaly.io에서 API 키 불필요(내장 Gradaly AI 릴레이) 또는 학생 개인 Gemini 키 선택 사용",
     comp_r5_label: "무료 버전 vs. Gradaly Pro",
     comp_r5_exam: "무료: 전체 채점 기능 + 답안지 1부 내보내기 미리보기 • Pro: 전체 수강생 Moodle CSV, Excel, 주석 PDF, 시험 웹 포털 및 팀 병합",

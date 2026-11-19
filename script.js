@@ -50,7 +50,7 @@ const translations = {
         adv_pedagogy_title: "Pedagogical Focus & Rubric Design",
         adv_pedagogy_text: "Invest your expertise in designing nuanced, high-standard evaluation rubrics instead of doing repetitive manual grading. AI systematically applies your criteria to every single copy.",
         adv_flex_title: "Dynamic Recalculation & Simulation",
-        adv_flex_text: "Adjust a rubric weighting, tweak criteria, or change the base points: instantly observe the impact across the entire cohort or re-run grading in one click to test your evaluation scenarios.",
+        adv_flex_text: "Adjust a rubric weighting, tweak criteria, or change the base points: instantly observe the impact across the entire cohort — and run Multi-Model Benchmark & Regression Suites to compare AI models side-by-side against human-validated copies.",
         adv_control_title: "You Have the Final Say",
         adv_control_text: "Gradaly is an assistant, not a replacement. The teacher retains full, sovereign control: validate, adjust criteria, or overwrite feedback with a single click.",
         adv_privacy_title: "Total Privacy & Zero Cloud",
@@ -58,7 +58,7 @@ const translations = {
         adv1_title: "Native Desktop Experience",
         adv1_text: "Ultra-fast, lightweight, and responsive. Operates directly on your machine (macOS, Windows, Linux) with high-performance PDF rendering and zero browser lag.",
         adv_cost_title: "100% Direct & Multi-Provider Choice",
-        adv_cost_text: "Use your own API key (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) or run local models via Ollama with zero margin — and in Practice QR mode, students evaluate their work on portal.gradaly.io without needing any API key.",
+        adv_cost_text: "Use your own API key (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) or local Ollama models with zero markup, monitor every token in a built-in local AI Usage & Costs ledger with daily/monthly charts and custom $/1M rates — and in Practice QR mode, students self-assess on portal.gradaly.io with zero API key.",
 
         // Exam Carousel slides (7 slides)
         carousel_slide1_badge: "Exam Mode • Step 1: Import Canvas",
@@ -117,7 +117,7 @@ const translations = {
 
         guide_step3_tag: "Rubric & Solutionnaire",
         guide_step3_title: "Question Zones, Criteria & AI Rubric Assistant",
-        guide_step3_item2_desc: "Define purely additive or diminutive criteria, check your rubric against the Reference Solution (⭐ Solutionnaire), and dynamically recalculate scores.",
+        guide_step3_item2_desc: "Define additive or diminutive rubrics with mutually exclusive OR criteria groups (partial vs. full credit or malus tiers), Render / Edit KaTeX preview, Reference Solution verification (⭐ Solutionnaire), and dynamic cohort score recalculation.",
         guide_step3_item3_desc: "Co-design or refine criteria interactively in chat mode with the AI Rubric Assistant — even by pasting screenshots of real student answers.",
 
         guide_step5_tag: "100% Local Privacy",
@@ -185,7 +185,7 @@ const translations = {
         comp_r3_exam: "CSV roster import + bulk PDF scan splitting + 100% offline OCR matching",
         comp_r3_prac: "Zero student roster, zero copies collected by the teacher",
         comp_r4_label: "AI API Key",
-        comp_r4_exam: "Optional (100% human mode available) or Teacher API key (~$5 for 400 copies in Batch)",
+        comp_r4_exam: "Optional (100% human mode available) or Teacher API key (with built-in local token ledger & custom $/1M pricing)",
         comp_r4_prac: "Zero API key required on portal.gradaly.io (built-in Gradaly AI relay) or optional personal student Gemini key",
         comp_r5_label: "Free vs. Gradaly Pro",
         comp_r5_exam: "Free: full grading + 1-copy export preview • Pro: full-cohort Moodle CSV, Excel, annotated PDFs, Exam Web Portal & Team Merge",
@@ -335,7 +335,7 @@ const translations = {
         adv_pedagogy_title: "Focus Pédagogique & Barème Fin",
         adv_pedagogy_text: "Consacrez votre expertise à la conception d'un barème d'évaluation fin, juste et exigeant plutôt qu'à répéter les mêmes gestes mécaniques. L'IA applique rigoureusement vos critères sur chaque copie.",
         adv_flex_title: "Simulation & Recalcul Dynamique",
-        adv_flex_text: "Modifiez la pondération d'un critère, ajustez le barème ou la note de base : visualisez immédiatement l'impact sur toute la promotion ou relancez la correction en un clic pour tester vos scénarios.",
+        adv_flex_text: "Modifiez la pondération d'un critère, ajustez le barème ou la note de base : visualisez immédiatement l'impact sur toute la promotion — et lancez des suites Benchmark & Tests de Régression multi-modèles pour comparer les IA côte à côte sur des copies validées.",
         adv_control_title: "Vous Gardez le Dernier Mot",
         adv_control_text: "Gradaly est une aide à la décision, pas un remplaçant. L'enseignant conserve un contrôle absolu : validez, modifiez un critère ou réécrivez un commentaire en un seul clic.",
         adv_privacy_title: "Confidentialité Absolue & Données Locales",
@@ -343,7 +343,7 @@ const translations = {
         adv1_title: "Application de Bureau Fluide",
         adv1_text: "Ultra-rapide, légère et réactive. S'exécute directement sur votre ordinateur (macOS, Windows, Linux) avec un affichage PDF haute performance, sans lenteur de navigateur ni distraction.",
         adv_cost_title: "100 % Direct & Multi-Fournisseurs",
-        adv_cost_text: "Utilisez votre propre clé API (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) ou des modèles locaux via Ollama sans aucune marge — et en mode Entraînement QR, les étudiants s'auto-évaluent sur portal.gradaly.io sans avoir besoin d'aucune clé API.",
+        adv_cost_text: "Utilisez votre propre clé API (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) ou des modèles locaux via Ollama sans aucune marge, suivez vos jetons dans le journal local Consommation IA & Coûts (graphiques journaliers/mensuels et tarifs $/1M personnalisés) — et en mode Entraînement QR, les étudiants s'auto-évaluent sur portal.gradaly.io sans clé API.",
 
         // Exam Carousel slides (7 slides)
         carousel_slide1_badge: "Mode Examen • Étape 1 : Canevas & Zone ID",
@@ -402,7 +402,7 @@ const translations = {
 
         guide_step3_tag: "Barème & Solutionnaire",
         guide_step3_title: "Zones de Questions, Critères & Assistant IA de Barème",
-        guide_step3_item2_desc: "Définissez un barème purement additif ou diminutif, vérifiez que votre Solutionnaire (⭐ Corrigé de référence) obtient le score maximum et recalculez les notes dynamiquement.",
+        guide_step3_item2_desc: "Définissez un barème additif ou diminutif incluant des groupes de critères mutuellement exclusifs (OU — paliers de points ou malus), l'aperçu Render / Edit KaTeX, la vérification sur le Solutionnaire (⭐) et le recalcul dynamique des notes.",
         guide_step3_item3_desc: "Co-construisez et affinez vos critères par chat avec l'Assistant IA — y compris en collant des captures d'écran de vraies réponses d'étudiants.",
 
         guide_step5_tag: "Confidentialité 100 % Locale",
@@ -470,7 +470,7 @@ const translations = {
         comp_r3_exam: "Import CSV de la promotion + découpage des scans PDF + appariement OCR 100 % hors-ligne",
         comp_r3_prac: "Zéro liste d'étudiants, zéro copie à ramasser ou scanner pour l'enseignant",
         comp_r4_label: "Clé API IA",
-        comp_r4_exam: "Optionnelle (mode 100 % humain disponible) ou clé enseignant (~5 $ pour 400 copies en Batch)",
+        comp_r4_exam: "Optionnelle (mode 100 % humain disponible) ou clé enseignant (journal local de tokens & tarifs $/1M personnalisés)",
         comp_r4_prac: "Aucune clé API requise sur portal.gradaly.io (relais IA Gradaly intégré) ou clé Gemini personnelle optionnelle",
         comp_r5_label: "Version Gratuite vs Gradaly Pro",
         comp_r5_exam: "Gratuit : correction complète + test d'export 1 copie • Pro : Export Moodle CSV, Excel complet, PDF annotés, Portail Web d'Examen & Fusion d'équipe",

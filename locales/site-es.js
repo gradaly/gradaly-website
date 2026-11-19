@@ -50,7 +50,7 @@ window.GRADALY_SITE_I18N.es = {
     adv_pedagogy_title: "Enfoque pedagógico y diseño de rúbricas",
     adv_pedagogy_text: "Invierta su experiencia académica en diseñar rúbricas de evaluación matizadas y exigentes en lugar de repetir tareas mecánicas de corrección. La IA aplica sistemáticamente sus criterios de calificación a cada copia.",
     adv_flex_title: "Recálculo dinámico y simulación",
-    adv_flex_text: "Ajuste la ponderación de un criterio, refine el baremo o modifique la nota base: observe al instante el impacto en toda la promoción o vuelva a ejecutar la evaluación con un clic para contrastar distintos escenarios.",
+    adv_flex_text: "Ajuste la ponderación de un criterio, refine el baremo o modifique la nota base: observe al instante el impacto en toda la promoción y ejecute Suites de Benchmark y Regresión multimodelo para comparar modelos de IA sobre copias validadas.",
     adv_control_title: "Usted tiene siempre la última palabra",
     adv_control_text: "Gradaly es un asistente de apoyo a la decisión, no un sustituto. El docente conserva el control soberano y absoluto: valide, ajuste criterios o reescriba la retroalimentación con un solo clic.",
     adv_privacy_title: "Privacidad total y datos 100 % locales",
@@ -58,7 +58,7 @@ window.GRADALY_SITE_I18N.es = {
     adv1_title: "Aplicación nativa de escritorio",
     adv1_text: "Ultrarrápida, ligera y fluida. Funciona directamente en su equipo (macOS, Windows, Linux) con renderizado PDF de alto rendimiento y sin latencia de navegador.",
     adv_cost_title: "100 % directo y multiproveedor",
-    adv_cost_text: "Utilice su propia clave API (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) o ejecute modelos locales mediante Ollama sin ningún margen comercial — y en el Modo Práctica QR, los estudiantes autoevalúan su trabajo en portal.gradaly.io sin necesitar ninguna clave API.",
+    adv_cost_text: "Utilice su propia clave API (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) o ejecute modelos locales mediante Ollama sin ningún margen comercial, supervise su consumo en el registro local de tokens IA con gráficos diarios/mensuales y tarifas $/1M personalizadas — y en el Modo Práctica QR, los estudiantes se autoevalúan en portal.gradaly.io sin clave API.",
 
     // Exam Carousel slides (7 slides)
     carousel_slide1_badge: "Modo Examen • Paso 1: Importar plantilla",
@@ -117,7 +117,7 @@ window.GRADALY_SITE_I18N.es = {
 
     guide_step3_tag: "Rúbrica y solucionario",
     guide_step3_title: "Zonas de preguntas, criterios y Asistente IA de Rúbrica",
-    guide_step3_item2_desc: "Defina criterios puramente aditivos o sustractivos, verifique su rúbrica frente al solucionario de referencia (⭐ Solucionario) y recalcule las puntuaciones dinámicamente.",
+    guide_step3_item2_desc: "Defina criterios aditivos o sustractivos incluyendo grupos mutuamente excluyentes OR (niveles parciales o penalizaciones), vista previa Render / Edit KaTeX, verificación con el solucionario (⭐ Solucionario) y recálculo dinámico.",
     guide_step3_item3_desc: "Codiseñe o refine los criterios de evaluación de forma interactiva por chat con el Asistente IA — incluso pegando capturas de pantalla de respuestas reales de estudiantes.",
 
     guide_step5_tag: "Privacidad 100 % local",
@@ -185,7 +185,7 @@ window.GRADALY_SITE_I18N.es = {
     comp_r3_exam: "Importación de lista CSV + división de escaneos PDF masivos + emparejamiento OCR 100 % sin conexión",
     comp_r3_prac: "Sin lista de estudiantes y sin recogida de copias por parte del docente",
     comp_r4_label: "Clave API de IA",
-    comp_r4_exam: "Opcional (modo 100 % humano disponible) o clave API del docente (~5 $ por 400 copias en modo Lote)",
+    comp_r4_exam: "Opcional (modo 100 % humano disponible) o clave API del docente (con registro local de tokens y tarifas $/1M personalizadas)",
     comp_r4_prac: "Sin clave API requerida en portal.gradaly.io (relé de IA de Gradaly integrado) o clave personal de Gemini opcional",
     comp_r5_label: "Versión Gratuita vs. Gradaly Pro",
     comp_r5_exam: "Gratis: evaluación completa + vista previa de exportación de 1 copia • Pro: CSV Moodle de toda la clase, Excel, PDF anotados, Portal Web de Examen y Fusión en equipo",

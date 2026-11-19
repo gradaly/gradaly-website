@@ -50,7 +50,7 @@ window.GRADALY_SITE_I18N.ja = {
     adv_pedagogy_title: "教育的本質とルーブリック設計への集中",
     adv_pedagogy_text: "機械的な反復作業ではなく、きめ細かく水準の高い採点基準（ルーブリック）の設計に専門性を注げます。設計した評価基準はすべての答案に対して一貫して厳密に適用されます。",
     adv_flex_title: "動的な再計算と配点シミュレーション",
-    adv_flex_text: "評価基準の配点変更や項目の微調整、基本点の変更を行えば、履修クラス全体への影響を即座に確認でき、ワンクリックで再採点や評価シナリオの検証が可能です。",
+    adv_flex_text: "評価基準の配点調整や基本点の変更を行うとクラス全体への影響を即座に確認でき、さらにマルチモデル比較＆回帰ベンチマークを実行して確定済み答案に対する各AIモデルの精度を並列比較できます。",
     adv_control_title: "最終判断は常に教員の手に",
     adv_control_text: "Gradalyはあくまで採点支援ツールであり、教員に取って代わるものではありません。採点の承認、基準項目の微調整、講評コメントの書き換えまで、最終的な決定権は常に教員が保持します。",
     adv_privacy_title: "徹底したプライバシー保護とローカル完結",
@@ -58,7 +58,7 @@ window.GRADALY_SITE_I18N.ja = {
     adv1_title: "軽快なネイティブ・デスクトップ体験",
     adv1_text: "高速・軽量で優れた応答性。お使いのPC（macOS、Windows、Linux）上で直接動作し、ブラウザ特有の遅延なく高精細なPDF描画を実現します。",
     adv_cost_title: "手数料ゼロ＆マルチAIプロバイダ対応",
-    adv_cost_text: "ご自身のAPIキー（Google Gemini、OpenAI、Anthropic Claude、OpenRouter）やOllamaによるローカルモデルを上乗せ手数料ゼロで利用可能。さらにQR演習モードでは、学生はAPIキー不要で portal.gradaly.io 上で自己評価を行えます。",
+    adv_cost_text: "ご自身のAPIキー（Google Gemini、OpenAI、Anthropic Claude、OpenRouter）やOllamaローカルモデルを上乗せ手数料ゼロで利用でき、ローカルのAIトークン使用履歴と日別・月別グラフ、$/1M単価設定で消費量を把握できます。QR演習モードでは学生もキー不要で利用可能です。",
 
     // Exam Carousel slides (7 slides)
     carousel_slide1_badge: "試験モード • ステップ 1：テンプレートの読み込み",
@@ -117,7 +117,7 @@ window.GRADALY_SITE_I18N.ja = {
 
     guide_step3_tag: "採点基準＆模範解答",
     guide_step3_title: "設問領域・評価基準とAIルーブリックアシスタント",
-    guide_step3_item2_desc: "一貫した加点方式または減点方式の基準を定義し、模範解答（⭐）で満点になるか検証しながら動的に得点を再計算できます。",
+    guide_step3_item2_desc: "加点方式・減点方式に加え、排他選択（ORグループ：段階評価や減点区分）、Render / Edit によるKaTeXプレビュー、模範解答（⭐）での満点検証、動的な再計算に対応しています。",
     guide_step3_item3_desc: "AIルーブリックアシスタントとのチャット対話で評価基準を共同設計・精緻化。実際の学生答案のスクリーンショットを貼り付けて調整することも可能です。",
 
     guide_step5_tag: "100%ローカルの機密保護",
@@ -185,7 +185,7 @@ window.GRADALY_SITE_I18N.ja = {
     comp_r3_exam: "CSV名簿インポート＋一括スキャンPDF分割＋100%オフラインOCR照合",
     comp_r3_prac: "履修者名簿不要・教員による答案回収ゼロ",
     comp_r4_label: "AI APIキー",
-    comp_r4_exam: "任意（100%手動モード利用可）または教員のAPIキー（バッチ利用時400部で約5ドル）",
+    comp_r4_exam: "任意（100%手動モード利用可）または教員のAPIキー（ローカルのトークン履歴＆任意の$/1M単価設定に対応）",
     comp_r4_prac: "portal.gradaly.io ではAPIキー不要（内蔵Gradaly AIリレー）または任意の学生個人Geminiキー",
     comp_r5_label: "無料版 vs. Gradaly Pro",
     comp_r5_exam: "無料版：全採点機能＋答案1件の出力プレビュー • Pro：クラス全体のMoodle CSV、Excel、注釈付きPDF、試験Webポータル、チーム統合",

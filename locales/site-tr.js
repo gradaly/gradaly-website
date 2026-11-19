@@ -50,7 +50,7 @@ window.GRADALY_SITE_I18N.tr = {
     adv_pedagogy_title: "Pedagojik Odak ve Değerlendirme Ölçeği Tasarımı",
     adv_pedagogy_text: "Uzmanlığınızı tekrarlayan manuel puanlama yerine incelikli, yüksek standartlı değerlendirme ölçekleri tasarlamaya yatırın. Yapay zekâ, belirlediğiniz değerlendirme ölçütlerini her sınav kâğıdına tutarlı biçimde uygular.",
     adv_flex_title: "Dinamik Yeniden Hesaplama ve Simülasyon",
-    adv_flex_text: "Bir ölçüt ağırlığını değiştirin, değerlendirme ölçütlerini ince ayar yapın veya taban puanı güncelleyin: tüm sınıf üzerindeki etkiyi anında gözlemleyin ya da değerlendirme senaryolarınızı test etmek için tek tıklamayla puanlamayı yeniden çalıştırın.",
+    adv_flex_text: "Bir ölçüt ağırlığını değiştirin, değerlendirme ölçütlerini ince ayar yapın veya taban puanı güncelleyin: tüm sınıf üzerindeki etkiyi anında gözlemleyin ve onaylı kâğıtlar üzerinde Çok Modelli Karşılaştırma & Regresyon Paketleri çalıştırarak yapay zekâ modellerini yan yana kıyaslayın.",
     adv_control_title: "Son Söz Her Zaman Sizde",
     adv_control_text: "Gradaly öğretim elemanının yerini alan bir sistem değil, karar destek aracıdır. Tam ve mutlak denetim öğretim elemanındadır: tek tıklamayla onaylayın, ölçütleri düzeltin veya geri bildirimi yeniden yazın.",
     adv_privacy_title: "Tam Gizlilik ve Sıfır Bulut Zorunluluğu",
@@ -58,7 +58,7 @@ window.GRADALY_SITE_I18N.tr = {
     adv1_title: "Yerel Masaüstü Deneyimi",
     adv1_text: "Ultra hızlı, hafif ve akıcı. Yüksek performanslı PDF görüntüleme ve sıfır tarayıcı gecikmesiyle doğrudan bilgisayarınızda (macOS, Windows, Linux) çalışır.",
     adv_cost_title: "%100 Doğrudan Erişim ve Çoklu Sağlayıcı Seçeneği",
-    adv_cost_text: "Sıfır komisyonla kendi API anahtarınızı (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) kullanın veya Ollama ile yerel modeller çalıştırın; QR Alıştırma modunda ise öğrenciler portal.gradaly.io üzerinde hiçbir API anahtarına ihtiyaç duymadan çalışmalarını değerlendirebilir.",
+    adv_cost_text: "Sıfır komisyonla kendi API anahtarınızı (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) veya Ollama ile yerel modelleri kullanın, günlük/aylık grafikler ve özel $/1M tarife ayarlarıyla yerel Yapay Zekâ Jeton & Maliyet günlüğünden tüm tüketimi izleyin; QR Alıştırma modunda öğrenciler portal.gradaly.io üzerinde API anahtarı olmadan çalışır.",
 
     // Exam Carousel slides (7 slides)
     carousel_slide1_badge: "Sınav Modu • Adım 1: Şablonu İçe Aktarma",
@@ -117,7 +117,7 @@ window.GRADALY_SITE_I18N.tr = {
 
     guide_step3_tag: "Değerlendirme Ölçeği ve Örnek Çözüm",
     guide_step3_title: "Soru Alanları, Ölçütler ve Yapay Zekâ Değerlendirme Ölçeği Asistanı",
-    guide_step3_item2_desc: "Tamamen eklemeli veya tamamen düşmeli değerlendirme ölçütleri tanımlayın, ölçeğinizi Örnek Çözüm (⭐ Cevap Anahtarı) üzerinde sınayın ve puanları dinamik olarak yeniden hesaplayın.",
+    guide_step3_item2_desc: "Karşılıklı dışlayıcı OR grupları (kısmi/tam puan veya ceza kademeleri), Render / Edit KaTeX önizlemesi, Örnek Çözüm (⭐ Cevap Anahtarı) doğrulaması ve dinamik puan hesaplama ile eklemeli ya da düşmeli ölçekler oluşturun.",
     guide_step3_item3_desc: "Gerçek öğrenci yanıtlarının ekran görüntülerini bile yapıştırarak Yapay Zekâ Değerlendirme Ölçeği Asistanı ile sohbet modunda ölçütleri birlikte tasarlayın ve geliştirin.",
 
     guide_step5_tag: "%100 Yerel Gizlilik",
@@ -185,7 +185,7 @@ window.GRADALY_SITE_I18N.tr = {
     comp_r3_exam: "CSV öğrenci listesi içe aktarımı + toplu PDF tarama bölme + %100 çevrimdışı OCR eşleştirme",
     comp_r3_prac: "Öğrenci listesi yok, öğretim elemanının topladığı sınav kâğıdı yok",
     comp_r4_label: "Yapay Zekâ API Anahtarı",
-    comp_r4_exam: "İsteğe bağlı (%100 insan modu mevcuttur) veya Öğretim Elemanı API anahtarı (Toplu İşlemde 400 kâğıt için ~5 $)",
+    comp_r4_exam: "İsteğe bağlı (%100 insan modu mevcuttur) veya Öğretim Elemanı API anahtarı (yerel jeton günlüğü ve özel $/1M fiyatlandırma ile)",
     comp_r4_prac: "portal.gradaly.io üzerinde API anahtarı gerekmez (yerleşik Gradaly yapay zekâ rölesi) veya isteğe bağlı kişisel öğrenci Gemini anahtarı",
     comp_r5_label: "Ücretsiz Sürüm ve Gradaly Pro",
     comp_r5_exam: "Ücretsiz: tam puanlama + 1 kâğıt dışa aktarım önizlemesi • Pro: tüm sınıf için Moodle CSV, Excel, açıklamalı PDF'ler, Sınav Web Portalı ve Ekip Birleştirme",

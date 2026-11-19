@@ -50,7 +50,7 @@ window.GRADALY_SITE_I18N.de = {
     adv_pedagogy_title: "Didaktischer Fokus & Präzises Bewertungsraster",
     adv_pedagogy_text: "Investieren Sie Ihre Fachkompetenz in die Ausarbeitung differenzierter, hochwertiger Bewertungskriterien statt in mechanische Routinekorrekturen. Die KI wendet Ihre Kriterien systematisch und konsistent auf jeden einzelnen Prüfungsbogen an.",
     adv_flex_title: "Dynamische Neuberechnung & Simulation",
-    adv_flex_text: "Passen Sie die Gewichtung eines Kriteriums an, verfeinern Sie das Bewertungsschema oder ändern Sie die Basispunktzahl: Beobachten Sie sofort die Auswirkungen auf die gesamte Kohorte oder starten Sie die Bewertung mit einem Klick neu, um Bewertungsszenarien zu erproben.",
+    adv_flex_text: "Passen Sie die Gewichtung eines Kriteriums an, verfeinern Sie das Bewertungsschema oder ändern Sie die Basispunktzahl: Beobachten Sie sofort die Auswirkungen auf die gesamte Kohorte — und führen Sie Multi-Modell-Benchmark- & Regressions-Suites aus, um KI-Modelle direkt anhand validierter Prüfungsbögen zu vergleichen.",
     adv_control_title: "Sie behalten das letzte Wort",
     adv_control_text: "Gradaly ist ein Assistenzwerkzeug, kein Ersatz. Lehrende behalten jederzeit die volle, souveräne Entscheidungshoheit: Validieren Sie Ergebnisse, passen Sie Kriterien an oder überschreiben Sie Rückmeldungen mit einem einzigen Klick.",
     adv_privacy_title: "Vollständiger Datenschutz & Zero Cloud",
@@ -58,7 +58,7 @@ window.GRADALY_SITE_I18N.de = {
     adv1_title: "Native Desktop-Anwendung",
     adv1_text: "Ultraschnell, ressourcenschonend und reaktionsschnell. Läuft direkt auf Ihrem Rechner (macOS, Windows, Linux) mit hochperformanter PDF-Darstellung und ohne Browser-Verzögerungen.",
     adv_cost_title: "100 % Direkt & Freie Anbieterwahl",
-    adv_cost_text: "Nutzen Sie Ihren eigenen API-Schlüssel (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) oder lokale Modelle über Ollama ohne jeglichen Aufschlag — und im QR-Übungsmodus überprüfen Studierende ihre Arbeit auf portal.gradaly.io ganz ohne API-Schlüssel.",
+    adv_cost_text: "Nutzen Sie Ihren eigenen API-Schlüssel (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) oder lokale Modelle über Ollama ohne jeglichen Aufschlag, verfolgen Sie Ihren Tokenverbrauch im lokalen KI-Nutzungsprotokoll (Tages-/Monatsdiagramme & eigene $/1M-Tarife) — und im QR-Übungsmodus arbeiten Studierende auf portal.gradaly.io ganz ohne API-Schlüssel.",
 
     // Exam Carousel slides (7 slides)
     carousel_slide1_badge: "Prüfungsmodus • Schritt 1: Vorlage importieren",
@@ -117,7 +117,7 @@ window.GRADALY_SITE_I18N.de = {
 
     guide_step3_tag: "Bewertungsraster & Musterlösung",
     guide_step3_title: "Aufgabenbereiche, Kriterien & KI-Bewertungsraster-Assistent",
-    guide_step3_item2_desc: "Definieren Sie rein additive oder rein abziehende Bewertungskriterien, prüfen Sie Ihr Raster anhand der Musterlösung (⭐ Musterlösung) und berechnen Sie Punktzahlen dynamisch neu.",
+    guide_step3_item2_desc: "Definieren Sie additive oder abziehende Kriterien samt sich gegenseitig ausschließenden OR-Gruppen (Teilleistungs- oder Malus-Stufen), Render-/Edit-KaTeX-Vorschau, Musterlösungsprüfung (⭐ Musterlösung) und dynamischer Neuberechnung.",
     guide_step3_item3_desc: "Entwerfen und verfeinern Sie Kriterien interaktiv im Chat mit dem KI-Bewertungsraster-Assistenten — sogar durch Einfügen von Screenshots echter Studierendenantworten.",
 
     guide_step5_tag: "100 % Lokaler Datenschutz",
@@ -185,7 +185,7 @@ window.GRADALY_SITE_I18N.de = {
     comp_r3_exam: "CSV-Import der Teilnehmerliste + Aufteilung von Sammelscans + 100-%-Offline-OCR-Zuordnung",
     comp_r3_prac: "Keine Teilnehmerliste, keine einzusammelnden Prüfungsbögen für Lehrende",
     comp_r4_label: "KI-API-Schlüssel",
-    comp_r4_exam: "Optional (100-%-Manuell-Modus verfügbar) oder API-Schlüssel der Lehrperson (~5 $ für 400 Klausuren im Batch)",
+    comp_r4_exam: "Optional (100-%-Manuell-Modus verfügbar) oder API-Schlüssel der Lehrperson (inkl. lokalem Token-Protokoll & eigenen $/1M-Tarifen)",
     comp_r4_prac: "Kein API-Schlüssel auf portal.gradaly.io erforderlich (integriertes Gradaly-KI-Relay) oder optionaler persönlicher Gemini-Schlüssel",
     comp_r5_label: "Kostenlose Version vs. Gradaly Pro",
     comp_r5_exam: "Kostenlos: vollständige Bewertung + 1-Klausur-Exportvorschau • Pro: Moodle-CSV, Excel, kommentierte PDFs, Prüfungs-Webportal & Team-Zusammenführung für die gesamte Kohorte",

@@ -50,7 +50,7 @@ window.GRADALY_SITE_I18N.zh = {
     adv_pedagogy_title: "聚焦教学设计与精细评分标准",
     adv_pedagogy_text: "将您的学术专长投入到高标准、细粒度评分细则的设计中，告别机械重复的批改操作。AI 将严格依照您制定的评分项逐份审阅答卷，确保全班评分尺度一致。",
     adv_flex_title: "动态重算与评分方案模拟",
-    adv_flex_text: "随时调整评分项权重、修改评分标准或变更基础分：即刻观测对全班成绩分布的影响，或一键重新运行评阅以验证不同的评价方案。",
+    adv_flex_text: "随时调整评分项权重、修改评分标准或变更基础分：即刻观测全班成绩分布变化，并可运行多模型基准测试与回归测试套件，基于人工确认答卷横向对比不同 AI 模型的表现。",
     adv_control_title: "教师始终掌握最终裁量权",
     adv_control_text: "Gradaly 是严谨的评阅助手，而非教师的替代者。教师保有完全的学术主导权：一键确认、微调评分项或改写个性化评语。",
     adv_privacy_title: "全面隐私保护与零云端留存",
@@ -58,7 +58,7 @@ window.GRADALY_SITE_I18N.zh = {
     adv1_title: "原生桌面级流畅体验",
     adv1_text: "轻量、高速、响应迅捷。直接运行于您的本地计算机（macOS、Windows、Linux），提供高性能 PDF 渲染，彻底告别网页端卡顿。",
     adv_cost_title: "100% 直连多模型供应商且零差价",
-    adv_cost_text: "直接使用您自己的 API 密钥（Google Gemini、OpenAI、Anthropic Claude、OpenRouter）或通过 Ollama 本地运行模型，平台零加价——而在二维码自主练习模式下，学生在 portal.gradaly.io 上无需任何 API 密钥即可完成自评。",
+    adv_cost_text: "直接使用您自己的 API 密钥（Google Gemini、OpenAI、Anthropic Claude、OpenRouter）或通过 Ollama 本地运行模型，平台零加价，并在本地 AI 用量与费用账本中查看每日/每月图表及自定义 $/1M 单价；二维码自主练习模式下学生在 portal.gradaly.io 上无需密钥即可自评。",
 
     // Exam Carousel slides (7 slides)
     carousel_slide1_badge: "考试模式 • 第 1 步：导入试卷模板",
@@ -117,7 +117,7 @@ window.GRADALY_SITE_I18N.zh = {
 
     guide_step3_tag: "评分细则与参考答案",
     guide_step3_title: "题目作答区、评分项与 AI 评分细则助手",
-    guide_step3_item2_desc: "设定纯加分制或纯扣分制评分标准，利用参考答案（⭐ 参考答案）校验满分一致性，并支持全班分数动态重算。",
+    guide_step3_item2_desc: "设定加分制或扣分制评分标准，支持互斥分组（OR — 部分/满分梯度或扣分档）、Render / Edit KaTeX 公式即时预览、参考答案校验（⭐ 参考答案）及全班分数动态重算。",
     guide_step3_item3_desc: "通过对话模式与 AI 评分细则助手协同构思并打磨评分标准——甚至可直接粘贴真实学生答卷截图进行校准。",
 
     guide_step5_tag: "100% 本地隐私安全",
@@ -185,7 +185,7 @@ window.GRADALY_SITE_I18N.zh = {
     comp_r3_exam: "导入 CSV 学生名单 + 批量扫描 PDF 自动切分 + 100% 本地离线 OCR 身份匹配",
     comp_r3_prac: "零学生名单、教师零收发答卷（完全匿名自主训练）",
     comp_r4_label: "AI API 密钥要求",
-    comp_r4_exam: "可选（支持无密钥 100% 人工模式）或使用教师 API 密钥（批处理模式下评阅 400 份答卷约 $5）",
+    comp_r4_exam: "可选（支持无密钥 100% 人工模式）或使用教师 API 密钥（内置本地 Token 账本与自定义 $/1M 费率）",
     comp_r4_prac: "在 portal.gradaly.io 上无需任何 API 密钥（内置 Gradaly AI 中继），或由学生选填个人 Gemini 密钥",
     comp_r5_label: "免费版 vs. Gradaly Pro",
     comp_r5_exam: "免费版：完整评阅功能 + 单份答卷导出预览 • Pro 版：全班 Moodle CSV、Excel、批注版 PDF、考试查卷门户及团队协作合并",

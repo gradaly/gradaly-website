@@ -50,7 +50,7 @@ window.GRADALY_SITE_I18N.nl = {
     adv_pedagogy_title: "Didactische Focus & Verfijnde Beoordelingsrubriek",
     adv_pedagogy_text: "Investeer uw expertise in het opstellen van genuanceerde, hoogwaardige beoordelingsrubrieken in plaats van in repetitief nakijkwerk. De AI past uw beoordelingscriteria consequent toe op elke kopie.",
     adv_flex_title: "Dynamische Herberekening & Simulatie",
-    adv_flex_text: "Pas de weging van een criterium aan, verfijn de beoordelingsrubriek of wijzig de basisscore: bekijk onmiddellijk de impact over het volledige cohort of herbereken beoordelingen met één klik om scenario's te toetsen.",
+    adv_flex_text: "Pas de weging van een criterium aan, verfijn de beoordelingsrubriek of wijzig de basisscore: bekijk onmiddellijk de impact over het volledige cohort — en voer Multi-Model Benchmark- & Regressiesuites uit om AI-modellen naast elkaar te vergelijken op gevalideerde kopieën.",
     adv_control_title: "U Behoudt het Laatste Woord",
     adv_control_text: "Gradaly ondersteunt uw beoordeling, maar vervangt de docent niet. U behoudt de volledige eindverantwoordelijkheid en controle: valideer, pas criteria aan of herschrijf feedback met één klik.",
     adv_privacy_title: "Volledige Privacy & Lokale Gegevensverwerking",
@@ -58,7 +58,7 @@ window.GRADALY_SITE_I18N.nl = {
     adv1_title: "Vloeiende Native Desktopervaring",
     adv1_text: "Razendsnel, lichtgewicht en responsief. Draait rechtstreeks op uw computer (macOS, Windows, Linux) met hoogwaardige pdf-weergave en zonder browservertraging.",
     adv_cost_title: "100% Rechtstreeks & Keuze uit Meerdere Providers",
-    adv_cost_text: "Gebruik uw eigen API-sleutel (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) of draai lokale modellen via Ollama zonder enige marge — en in de QR-Oefenmodus evalueren studenten hun werk op portal.gradaly.io zonder dat zij een API-sleutel nodig hebben.",
+    adv_cost_text: "Gebruik uw eigen API-sleutel (Google Gemini, OpenAI, Anthropic Claude, OpenRouter) of draai lokale modellen via Ollama zonder enige marge, volg uw tokens in het ingebouwde lokale AI-gebruikslogboek (dag-/maandgrafieken & aangepaste $/1M-tarieven) — en in de QR-Oefenmodus evalueren studenten hun werk op portal.gradaly.io zonder API-sleutel.",
 
     // Exam Carousel slides (7 slides)
     carousel_slide1_badge: "Examenmodus • Stap 1: Canvas importeren",
@@ -117,7 +117,7 @@ window.GRADALY_SITE_I18N.nl = {
 
     guide_step3_tag: "Beoordelingsrubriek & Modeloplossing",
     guide_step3_title: "Vraagzones, Beoordelingscriteria & AI-Rubriekassistent",
-    guide_step3_item2_desc: "Stel zuiver additieve of aftrekkende criteria op, toets uw rubriek aan de modeloplossing (⭐ Modeloplossing) en herbereken scores dynamisch.",
+    guide_step3_item2_desc: "Stel additieve of aftrekkende criteria op met wederzijds uitsluitende OR-groepen (deelkrediet vs. volledig krediet of malusniveaus), Render / Edit KaTeX-voorbeeldweergave, toetsing aan de modeloplossing (⭐ Modeloplossing) en dynamische herberekening.",
     guide_step3_item3_desc: "Ontwerp en verfijn uw criteria interactief via chat met de AI-Rubriekassistent — zelfs door schermafbeeldingen van echte studentenantwoorden te plakken.",
 
     guide_step5_tag: "100% Lokale Privacy",
@@ -185,7 +185,7 @@ window.GRADALY_SITE_I18N.nl = {
     comp_r3_exam: "CSV-import van studentenlijst + splitsen van pdf-groepsscans + 100% offline OCR-koppeling",
     comp_r3_prac: "Geen studentenlijst, geen kopieën om te verzamelen of te scannen door de docent",
     comp_r4_label: "AI API-sleutel",
-    comp_r4_exam: "Optioneel (100% menselijke modus beschikbaar) of API-sleutel van docent (~$5 voor 400 kopieën in Batch)",
+    comp_r4_exam: "Optioneel (100% menselijke modus beschikbaar) of API-sleutel van docent (met ingebouwd lokaal tokenlogboek & eigen $/1M-tarieven)",
     comp_r4_prac: "Geen API-sleutel vereist op portal.gradaly.io (ingebouwde Gradaly AI-relay) of optionele persoonlijke Gemini-sleutel van de student",
     comp_r5_label: "Gratis versie vs. Gradaly Pro",
     comp_r5_exam: "Gratis: volledige beoordeling + exportvoorbeeld van 1 kopie • Pro: volledige Moodle-CSV, Excel, geannoteerde pdf's, Examen-webportaal & Team-samenvoeging",
