@@ -3,7 +3,7 @@ window.GRADALY_MANUAL_I18N.de = {
     badge_manual: "Benutzerhandbuch (2-in-1)",
     back_home: "Zurück zur Website",
     download_btn: "Gradaly herunterladen",
-    hero_pill: "2-in-1-Desktop-Anwendung • Vollständiges Benutzerhandbuch v4.5.0",
+    hero_pill: "2-in-1-Desktop-Anwendung • Vollständiges Benutzerhandbuch v4.6.0",
     hero_title: "Gradaly-Benutzerhandbuch",
     hero_subtitle: "Besser bewerten, gezielter fördern. Gradaly ist eine 2-in-1-Anwendung mit zwei eigenständigen Workflows: (1) Klausur- & Probeklausur-Bewertung durch Lehrende (für formative Probeklausuren unter realistischen Prüfungsbedingungen oder offizielle Abschlussprüfungen) und (2) QR-gestützte Selbsteinschätzung durch Studierende per Smartphone. Wählen Sie unten das passende Handbuch für Ihren Einsatzzweck:",
     search_placeholder: "In allen Handbüchern suchen (z. B. Klausur, Probeklausur, QR-Übung, Bewertungsraster, OCR, API-Schlüssel, FAQ)...",

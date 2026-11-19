@@ -3,7 +3,7 @@ window.GRADALY_MANUAL_I18N.tr = {
     badge_manual: "Kullanım Kılavuzu (2'si 1 Arada)",
     back_home: "Web Sitesine Dön",
     download_btn: "Gradaly'yi İndir",
-    hero_pill: "2'si 1 Arada Masaüstü Uygulaması • Kapsamlı Kullanım Kılavuzu v4.5.0",
+    hero_pill: "2'si 1 Arada Masaüstü Uygulaması • Kapsamlı Kullanım Kılavuzu v4.6.0",
     hero_title: "Gradaly Kullanım Kılavuzu",
     hero_subtitle: "Daha İyi Değerlendirin, Daha İyi Yetiştirin. Gradaly iki bağımsız iş akışı sunan 2'si 1 arada bir uygulamadır: (1) öğretim elemanı tarafından yürütülen Sınav ve Deneme Sınavı Değerlendirmesi (gerçek sınav koşullarında biçimlendirici deneme sınavları veya resmî sınavlar için) ve (2) öğrencinin akıllı telefonunda gerçekleştirdiği QR Öz Değerlendirme Alıştırması. Aşağıdan iş akışınıza uygun kılavuzu seçin:",
     search_placeholder: "Tüm kılavuzlarda arayın (örn. sınav, deneme sınavı, QR alıştırma, değerlendirme ölçeği, OCR, API anahtarı, SSS)...",

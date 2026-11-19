@@ -3,7 +3,7 @@ window.GRADALY_MANUAL_I18N.es = {
     badge_manual: "Manual de usuario (2 en 1)",
     back_home: "Volver al sitio web",
     download_btn: "Descargar Gradaly",
-    hero_pill: "Aplicación de escritorio 2 en 1 • Manual completo de usuario v4.5.0",
+    hero_pill: "Aplicación de escritorio 2 en 1 • Manual completo de usuario v4.6.0",
     hero_title: "Manual de usuario de Gradaly",
     hero_subtitle: "Evaluar mejor, para formar mejor. Gradaly es una aplicación 2 en 1 que ofrece dos flujos de trabajo independientes: (1) Evaluación de exámenes y simulacros por el docente (para pruebas formativas en condiciones reales de examen o exámenes oficiales), y (2) Autoevaluación con Práctica QR por el estudiante desde su smartphone. Seleccione a continuación la guía correspondiente a su flujo de trabajo:",
     search_placeholder: "Buscar en todas las guías (p. ej., examen, simulacro, práctica QR, rúbrica, OCR, clave API, FAQ)...",

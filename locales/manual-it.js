@@ -3,7 +3,7 @@ window.GRADALY_MANUAL_I18N.it = {
     badge_manual: "Manuale Utente (2-in-1)",
     back_home: "Torna al Sito",
     download_btn: "Scarica Gradaly",
-    hero_pill: "Applicazione Desktop 2-in-1 • Manuale Utente Completo v4.5.0",
+    hero_pill: "Applicazione Desktop 2-in-1 • Manuale Utente Completo v4.6.0",
     hero_title: "Manuale Utente Gradaly",
     hero_subtitle: "Valutare meglio, per formare meglio. Gradaly è un'applicazione 2-in-1 che offre due flussi di lavoro indipendenti: (1) la Modalità Esame e Simulazione per il docente (per prove simulate formative in condizioni realistiche d'esame o appelli ufficiali), e (2) la Modalità Esercitazione e Autovalutazione QR per lo studente su smartphone. Seleziona qui sotto la guida corrispondente al tuo flusso di lavoro:",
     search_placeholder: "Cerca in entrambe le guide (es. esame, simulazione, esercitazione QR, griglia, OCR, chiave API, FAQ)...",
