@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5EW5CBP0QL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-5EW5CBP0QL');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradaly — Exam Mode (Teacher Cohort Grading)</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5', // Indigo 600
+                        secondary: '#0D9488', // Teal 600
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        [x-cloak] { display: none !important; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Apple SD Gothic Neo", "Malgun Gothic", "Microsoft YaHei", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-indigo-600 selection:text-white" x-data="i18n()">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a :href="'index.html?lang=' + lang" class="flex-shrink-0 flex items-center gap-2.5">
+                    <div class="w-7 h-7 bg-indigo-600 rounded-md flex items-center justify-center text-white font-semibold text-sm">G</div>
+                    <span class="font-semibold text-lg tracking-tight text-slate-900">Gradaly<span class="text-indigo-600">.io</span></span>
+                    <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium font-mono bg-slate-100 text-slate-600 border border-slate-200/80">v5.0.0</span>
+                </a>
+                <div class="flex items-center space-x-4 sm:space-x-5">
+                    <a :href="'index.html?lang=' + lang" class="hidden md:inline-flex text-[13px] font-medium text-slate-600 hover:text-slate-900 transition" x-text="t.nav_home"></a>
+                    <a href="#" class="hidden md:inline-flex px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-100 text-[13px] font-semibold items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>
+                        <span x-text="t.nav_exam_mode"></span>
+                    </a>
+                    <a :href="'practice.html?lang=' + lang" class="hidden md:inline-flex text-[13px] font-medium text-slate-600 hover:text-teal-700 transition items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-teal-600"></span>
+                        <span x-text="t.nav_practice_mode"></span>
+                    </a>
+                    <a :href="'manual.html?lang=' + lang + '&mode=exam'" class="hidden md:inline-flex text-[13px] font-medium text-slate-600 hover:text-slate-900 transition" x-text="t.nav_manual"></a>
+                    <a :href="'index.html?lang=' + lang + '#pricing'" class="text-[13px] font-medium text-slate-600 hover:text-slate-900 transition" x-text="t.nav_pricing"></a>
+                    <div class="relative" @click.outside="langMenuOpen = false">
+                        <button type="button"
+                                @click="langMenuOpen = !langMenuOpen"
+                                class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-slate-50 transition text-xs font-medium text-slate-700 border border-slate-200 cursor-pointer inline-flex items-center gap-1.5">
+                            <span x-text="currentLangObj.flag"></span>
+                            <span class="hidden lg:inline" x-text="currentLangObj.label"></span>
+                            <span class="lg:hidden uppercase" x-text="currentLangObj.code"></span>
+                            <i class="fas fa-chevron-down text-[9px] text-slate-400 transition-transform duration-150" :class="{'rotate-180': langMenuOpen}"></i>
+                        </button>
+                        <div x-show="langMenuOpen"
+                             x-cloak
+                             x-transition.opacity.duration.150ms
+                             class="absolute right-0 mt-2 w-44 rounded-xl bg-white border border-slate-200 shadow-lg py-1.5 z-50">
+                            <template x-for="item in supportedLanguages" :key="item.code">
+                                <button type="button"
+                                        @click="setLang(item.code)"
+                                        :class="lang === item.code ? 'bg-indigo-50 text-indigo-700 font-semibold' : 'text-slate-700 hover:bg-slate-50 font-medium'"
+                                        class="w-full px-3.5 py-2 text-left text-xs flex items-center justify-between transition cursor-pointer">
+                                    <span class="flex items-center gap-2">
+                                        <span x-text="item.flag"></span>
+                                        <span x-text="item.label"></span>
+                                    </span>
+                                    <i x-show="lang === item.code" class="fas fa-check text-[10px] text-indigo-600"></i>
+                                </button>
+                            </template>
+                        </div>
+                    </div>
+                    <a :href="'index.html?lang=' + lang + '#download'" class="hidden sm:inline-flex items-center justify-center px-3.5 py-1.5 rounded-lg text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-700 transition" x-text="t.nav_download"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Compact Mobile Sub-Navigation -->
+        <div class="md:hidden border-t border-slate-100 bg-white/95 px-4 py-1.5 flex items-center justify-center gap-4 text-xs">
+            <a :href="'index.html?lang=' + lang" class="font-medium text-slate-600 hover:text-slate-900" x-text="t.nav_home"></a>
+            <a :href="'practice.html?lang=' + lang" class="inline-flex items-center gap-1.5 font-medium text-slate-600 hover:text-teal-700">
+                <span class="w-1.5 h-1.5 rounded-full bg-teal-600"></span>
+                <span x-text="t.nav_practice_mode"></span>
+            </a>
+            <a :href="'manual.html?lang=' + lang + '&mode=exam'" class="font-medium text-slate-600 hover:text-slate-900" x-text="t.nav_manual"></a>
+        </div>
+    </nav>
+
+    <!-- Editorial Header & Single-Mode 7-Slide Exam Carousel -->
+    <div class="pt-36 md:pt-28 pb-16 sm:pb-20 bg-gradient-to-b from-indigo-50/40 via-white to-white"
+         x-data="{
+            examSlide: 0,
+            examTotal: 7,
+            timer: null,
+            next() {
+                this.examSlide = (this.examSlide + 1) % this.examTotal;
+                this.resetTimer();
+            },
+            prev() {
+                this.examSlide = (this.examSlide - 1 + this.examTotal) % this.examTotal;
+                this.resetTimer();
+            },
+            goTo(i) {
+                this.examSlide = i;
+                this.resetTimer();
+            },
+            resetTimer() {
+                clearInterval(this.timer);
+                this.timer = setInterval(() => {
+                    this.examSlide = (this.examSlide + 1) % this.examTotal;
+                }, 8000);
+            }
+         }"
+         x-init="resetTimer()">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 border border-indigo-100 mb-5">
+                <i class="fas fa-graduation-cap text-[11px]"></i>
+                <span x-text="t.prod1_section_kicker"></span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 mb-4 max-w-4xl mx-auto leading-tight" x-text="t.guide_title"></h1>
+            <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-500 mb-8 leading-relaxed" x-text="t.guide_subtitle"></p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap justify-center items-center gap-3 mb-12">
+                <a href="#student-portal" class="px-5 py-2.5 rounded-lg bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700 transition shadow-2xs inline-flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-300"></span>
+                    <span x-text="t.prod1_demo_btn"></span>
+                </a>
+                <a :href="'manual.html?lang=' + lang + '&mode=exam'" class="px-4 py-2.5 rounded-lg bg-white text-slate-700 hover:text-indigo-700 hover:bg-slate-50 border border-slate-200/90 text-sm font-medium transition inline-flex items-center gap-2 shadow-2xs">
+                    <i class="fas fa-book-open text-xs text-indigo-500"></i>
+                    <span x-text="t.prod1_manual_btn"></span>
+                </a>
+                <a :href="'index.html?lang=' + lang + '#download'" class="px-4 py-2.5 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/50 text-sm font-medium transition inline-flex items-center gap-2">
+                    <i class="fas fa-download text-xs text-slate-400"></i>
+                    <span x-text="t.nav_download"></span>
+                </a>
+            </div>
+
+            <!-- Exam Mode Carousel (7 Slides) -->
+            <div class="mx-auto max-w-6xl relative">
+                <div class="rounded-2xl border border-slate-200/90 shadow-md bg-white p-2 sm:p-2.5 relative overflow-hidden group">
+                    <div class="grid">
+                        <div x-show="examSlide === 0" x-transition.opacity.duration.400ms class="flex flex-col" style="grid-area: 1 / 1;">
+                            <img src="02_canvas_import.png" alt="Importer le canevas et zone d'identification" class="rounded-xl w-full border border-slate-100">
+                            <div class="px-5 sm:px-7 py-5 bg-white border-t border-slate-100 text-left">
+                                <span class="text-[11px] font-semibold uppercase tracking-wider text-indigo-600" x-text="t.carousel_slide1_badge"></span>
+                                <h3 class="text-base sm:text-lg font-semibold text-slate-900 mt-0.5" x-text="t.carousel_slide1_title"></h3>
+                                <p class="text-slate-500 text-xs sm:text-sm mt-1 leading-relaxed pr-24" x-text="t.carousel_slide1_desc"></p>
+                            </div>
+                        </div>
+
+                        <div x-show="examSlide === 1" x-cloak x-transition.opacity.duration.400ms class="flex flex-col" style="grid-area: 1 / 1;">
+                            <img src="ai_assistant_criteria.png" alt="Assistant IA de création de barème avec corrigé type" class="rounded-xl w-full border border-slate-100">
+                            <div class="px-5 sm:px-7 py-5 bg-white border-t border-slate-100 text-left">
+                                <span class="text-[11px] font-semibold uppercase tracking-wider text-indigo-600" x-text="t.carousel_slide2_badge"></span>
+                                <h3 class="text-base sm:text-lg font-semibold text-slate-900 mt-0.5" x-text="t.carousel_slide2_title"></h3>
+                                <p class="text-slate-500 text-xs sm:text-sm mt-1 leading-relaxed pr-24" x-text="t.carousel_slide2_desc"></p>
+                            </div>
+                        </div>
+
+                        <div x-show="examSlide === 2" x-cloak x-transition.opacity.duration.400ms class="flex flex-col" style="grid-area: 1 / 1;">
+                            <img src="04_students_roster.png" alt="Importer liste des étudiants CSV" class="rounded-xl w-full border border-slate-100">
+                            <div class="px-5 sm:px-7 py-5 bg-white border-t border-slate-100 text-left">
+                                <span class="text-[11px] font-semibold uppercase tracking-wider text-indigo-600" x-text="t.carousel_slide3_badge"></span>
+                                <h3 class="text-base sm:text-lg font-semibold text-slate-900 mt-0.5" x-text="t.carousel_slide3_title"></h3>
+                                <p class="text-slate-500 text-xs sm:text-sm mt-1 leading-relaxed pr-24" x-text="t.carousel_slide3_desc"></p>
+                            </div>
+                        </div>
+
+                        <div x-show="examSlide === 3" x-cloak x-transition.opacity.duration.400ms class="flex flex-col" style="grid-area: 1 / 1;">
+                            <img src="05_copies_matching.png" alt="Importer copies et appariement OCR" class="rounded-xl w-full border border-slate-100">
+                            <div class="px-5 sm:px-7 py-5 bg-white border-t border-slate-100 text-left">
+                                <span class="text-[11px] font-semibold uppercase tracking-wider text-indigo-600" x-text="t.carousel_slide4_badge"></span>
+                                <h3 class="text-base sm:text-lg font-semibold text-slate-900 mt-0.5" x-text="t.carousel_slide4_title"></h3>
+                                <p class="text-slate-500 text-xs sm:text-sm mt-1 leading-relaxed pr-24" x-text="t.carousel_slide4_desc"></p>
+                            </div>
+                        </div>
+
+                        <div x-show="examSlide === 4" x-cloak x-transition.opacity.duration.400ms class="flex flex-col" style="grid-area: 1 / 1;">
+                            <img src="06_grading_workspace.png" alt="Notation des copies : IA, manuelle ou mixte" class="rounded-xl w-full border border-slate-100">
+                            <div class="px-5 sm:px-7 py-5 bg-white border-t border-slate-100 text-left">
+                                <span class="text-[11px] font-semibold uppercase tracking-wider text-indigo-600" x-text="t.carousel_slide5_badge"></span>
+                                <h3 class="text-base sm:text-lg font-semibold text-slate-900 mt-0.5" x-text="t.carousel_slide5_title"></h3>
+                                <p class="text-slate-500 text-xs sm:text-sm mt-1 leading-relaxed pr-24" x-text="t.carousel_slide5_desc"></p>
+                            </div>
+                        </div>
+
+                        <div x-show="examSlide === 5" x-cloak x-transition.opacity.duration.400ms class="flex flex-col" style="grid-area: 1 / 1;">
+                            <img src="07_statistics_histograms.png" alt="Consulter les statistiques et histogrammes" class="rounded-xl w-full border border-slate-100">
+                            <div class="px-5 sm:px-7 py-5 bg-white border-t border-slate-100 text-left">
+                                <span class="text-[11px] font-semibold uppercase tracking-wider text-indigo-600" x-text="t.carousel_slide6_badge"></span>
+                                <h3 class="text-base sm:text-lg font-semibold text-slate-900 mt-0.5" x-text="t.carousel_slide6_title"></h3>
+                                <p class="text-slate-500 text-xs sm:text-sm mt-1 leading-relaxed pr-24" x-text="t.carousel_slide6_desc"></p>
+                            </div>
+                        </div>
+
+                        <div x-show="examSlide === 6" x-cloak x-transition.opacity.duration.400ms class="flex flex-col" style="grid-area: 1 / 1;">
+                            <img src="web_portal_hosted.png" alt="Portail Web en ligne chiffré et fiches QR" class="rounded-xl w-full border border-slate-100">
+                            <div class="px-5 sm:px-7 py-5 bg-white border-t border-slate-100 text-left">
+                                <span class="text-[11px] font-semibold uppercase tracking-wider text-indigo-600" x-text="t.carousel_slide7_badge"></span>
+                                <h3 class="text-base sm:text-lg font-semibold text-slate-900 mt-0.5" x-text="t.carousel_slide7_title"></h3>
+                                <p class="text-slate-500 text-xs sm:text-sm mt-1 leading-relaxed pr-24" x-text="t.carousel_slide7_desc"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button @click="prev()" type="button" class="absolute left-4 top-[42%] -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 hover:bg-white text-slate-700 hover:text-slate-900 border border-slate-200/90 shadow-sm backdrop-blur-xs flex items-center justify-center transition opacity-85 hover:opacity-100 cursor-pointer z-20">
+                        <i class="fas fa-chevron-left text-xs"></i>
+                    </button>
+                    <button @click="next()" type="button" class="absolute right-4 top-[42%] -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 hover:bg-white text-slate-700 hover:text-slate-900 border border-slate-200/90 shadow-sm backdrop-blur-xs flex items-center justify-center transition opacity-85 hover:opacity-100 cursor-pointer z-20">
+                        <i class="fas fa-chevron-right text-xs"></i>
+                    </button>
+
+                    <!-- Indigo Dot Indicators -->
+                    <div class="absolute bottom-5 right-6 flex items-center space-x-1.5 z-20 bg-slate-50 px-2.5 py-1.5 rounded-full border border-slate-200/80">
+                        <template x-for="i in 7" :key="'ex-' + i">
+                            <button @click="goTo(i - 1)"
+                                    :class="{'w-5 bg-indigo-600': examSlide === (i - 1), 'w-1.5 bg-slate-300 hover:bg-slate-400': examSlide !== (i - 1)}"
+                                    class="h-1.5 rounded-full transition-all duration-300 cursor-pointer"></button>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6 Step Cards for Exam Mode (E1-E6) -->
+    <div class="py-20 bg-slate-50/70 border-y border-slate-200/70">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80">
+                    <div class="flex items-start gap-3.5 mb-3">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-700 border border-indigo-100 font-semibold text-xs flex items-center justify-center shrink-0">E1</div>
+                        <div>
+                            <span class="text-[11px] font-medium uppercase tracking-wider text-indigo-600/90" x-text="t.guide_step2_tag"></span>
+                            <h3 class="text-base font-semibold text-slate-900" x-text="t.guide_step2_title"></h3>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-2.5" x-text="t.guide_step2_item1_desc"></p>
+                    <p class="text-sm text-slate-500 leading-relaxed" x-text="t.guide_step2_item2_desc"></p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80">
+                    <div class="flex items-start gap-3.5 mb-3">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-700 border border-indigo-100 font-semibold text-xs flex items-center justify-center shrink-0">E2</div>
+                        <div>
+                            <span class="text-[11px] font-medium uppercase tracking-wider text-indigo-600/90" x-text="t.guide_step3_tag"></span>
+                            <h3 class="text-base font-semibold text-slate-900" x-text="t.guide_step3_title"></h3>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-2.5" x-text="t.guide_step3_item2_desc"></p>
+                    <p class="text-sm text-slate-500 leading-relaxed" x-text="t.guide_step3_item3_desc"></p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80">
+                    <div class="flex items-start gap-3.5 mb-3">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-700 border border-indigo-100 font-semibold text-xs flex items-center justify-center shrink-0">E3</div>
+                        <div>
+                            <span class="text-[11px] font-medium uppercase tracking-wider text-indigo-600/90" x-text="t.guide_step5_tag"></span>
+                            <h3 class="text-base font-semibold text-slate-900" x-text="t.guide_step5_title"></h3>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-2.5" x-text="t.guide_step4_item1_desc"></p>
+                    <p class="text-sm text-slate-500 leading-relaxed" x-text="t.guide_step5_item2_desc"></p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80">
+                    <div class="flex items-start gap-3.5 mb-3">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-700 border border-indigo-100 font-semibold text-xs flex items-center justify-center shrink-0">E4</div>
+                        <div>
+                            <span class="text-[11px] font-medium uppercase tracking-wider text-indigo-600/90" x-text="t.guide_step6_tag"></span>
+                            <h3 class="text-base font-semibold text-slate-900" x-text="t.guide_step6_title"></h3>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-2.5" x-text="t.guide_step6_item1_desc"></p>
+                    <p class="text-sm text-slate-500 leading-relaxed" x-text="t.guide_step6_item3_desc"></p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80">
+                    <div class="flex items-start gap-3.5 mb-3">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-700 border border-indigo-100 font-semibold text-xs flex items-center justify-center shrink-0">E5</div>
+                        <div>
+                            <span class="text-[11px] font-medium uppercase tracking-wider text-indigo-600/90" x-text="t.collab_banner_badge"></span>
+                            <h3 class="text-base font-semibold text-slate-900" x-text="t.collab_banner_title"></h3>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-500 leading-relaxed" x-text="t.collab_banner_desc"></p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border border-slate-200/80">
+                    <div class="flex items-start gap-3.5 mb-3">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-700 border border-indigo-100 font-semibold text-xs flex items-center justify-center shrink-0">E6</div>
+                        <div>
+                            <span class="text-[11px] font-medium uppercase tracking-wider text-indigo-600/90" x-text="t.guide_step8_tag"></span>
+                            <h3 class="text-base font-semibold text-slate-900" x-text="t.guide_step8_title"></h3>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-2.5" x-text="t.guide_step7_item2_desc"></p>
+                    <p class="text-sm text-slate-500 leading-relaxed" x-text="t.guide_step8_item1_desc"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Integrated Exam Restitution Portal Showcase (#student-portal) -->
+    <div id="student-portal" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-[11px] font-semibold uppercase tracking-[0.14em] text-indigo-600" x-text="t.portal_badge"></span>
+                <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 tracking-tight mt-1.5" x-text="t.portal_title"></h2>
+                <p class="mt-2.5 text-sm sm:text-base text-slate-500 leading-relaxed" x-text="t.portal_subtitle"></p>
+            </div>
+
+            <!-- 3 Showcase Previews -->
+            <div class="mb-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="rounded-xl border border-slate-200/80 bg-white p-2 shadow-2xs flex flex-col justify-between">
+                    <img src="web_portal_hosted.png" alt="Portail Web en ligne sécurisé" class="rounded-lg w-full h-[210px] object-cover object-top border border-slate-100">
+                    <div class="pt-3 pb-1.5 text-center">
+                        <span class="text-xs font-medium text-slate-600" x-text="t.portal_shot_web"></span>
+                    </div>
+                </div>
+                <div class="rounded-xl border border-slate-200/80 bg-white p-2 shadow-2xs flex flex-col justify-between">
+                    <img src="mail_gradaly.png" alt="Notification e-mail automatique" class="rounded-lg w-full h-[210px] object-cover object-top border border-slate-100">
+                    <div class="pt-3 pb-1.5 text-center">
+                        <span class="text-xs font-medium text-slate-600" x-text="t.portal_shot_mail"></span>
+                    </div>
+                </div>
+                <div class="rounded-xl border border-slate-200/80 bg-white p-2 shadow-2xs flex flex-col justify-between">
+                    <img src="QR_code_ready_to_print.png" alt="Fiches QR découpables prêtes à imprimer" class="rounded-lg w-full h-[210px] object-cover object-top border border-slate-100">
+                    <div class="pt-3 pb-1.5 text-center">
+                        <span class="text-xs font-medium text-slate-600" x-text="t.portal_shot_qr"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Light Indigo Interactive Live Demo Box -->
+            <div class="bg-gradient-to-br from-indigo-50/70 via-white to-slate-50 rounded-2xl p-7 sm:p-9 border border-indigo-200/80 shadow-2xs">
+                <div class="max-w-2xl mx-auto text-center space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-white text-indigo-700 border border-indigo-200/80 shadow-2xs">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        <span x-text="t.portal_demo_pill"></span>
+                    </div>
+                    <h4 class="text-xl sm:text-2xl font-semibold tracking-tight text-slate-900" x-text="t.portal_demo_title"></h4>
+                    <p class="text-slate-600 text-sm leading-relaxed" x-text="t.portal_demo_desc"></p>
+                    
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+                        <a x-show="lang === 'fr'" :href="'demo/index.html?id=8b0b6cc4a3bfd478081950f54a1a4969&lang=' + lang + '#k=2yQdLmtPN4pKbuVfEflHqDkqLUDbIxr2uRZ7TTTYWtM'" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-sm shadow-2xs transition cursor-pointer">
+                            <span>🇫🇷</span>
+                            <span x-text="t.portal_btn_demo_fr"></span>
+                            <i class="fas fa-external-link-alt text-[11px] opacity-75"></i>
+                        </a>
+                        <a x-show="lang !== 'fr'" :href="'demo/index.html?id=e6b892e325d36bfd74f1a9d50b45d64e&lang=' + lang + '#k=fps-pl-WevkHs676fF76-Jl4xtKBXQCfMjQoxtrG9EY'" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-sm shadow-2xs transition cursor-pointer">
+                            <span x-text="currentLangObj.flag"></span>
+                            <span x-text="t.portal_btn_demo_en"></span>
+                            <i class="fas fa-external-link-alt text-[11px] opacity-75"></i>
+                        </a>
+                    </div>
+                    <p class="text-xs text-slate-400" x-text="t.portal_demo_note"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom CTA & Second Workflow Cross-Link -->
+    <div class="py-16 bg-slate-50/70 border-t border-slate-200/70">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+            <!-- Download / Pricing CTA Card -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200/80 flex flex-col justify-between">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-slate-100 text-slate-600 border border-slate-200/80 mb-3">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        <span class="font-mono font-semibold text-slate-800">v5.0.0</span>
+                        <span>·</span>
+                        <span>macOS · Windows · Linux</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-900 mb-2" x-text="t.cta_title"></h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-5" x-text="t.cta_subtitle"></p>
+                </div>
+                <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-slate-100">
+                    <a :href="'index.html?lang=' + lang + '#download'" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold transition shadow-2xs">
+                        <i class="fas fa-download text-[11px]"></i>
+                        <span x-text="t.nav_download"></span>
+                    </a>
+                    <a :href="'index.html?lang=' + lang + '#pricing'" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-100 hover:bg-slate-200/70 text-slate-700 text-xs font-medium border border-slate-200 transition">
+                        <span x-text="t.nav_pricing"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cross-Link Card to Practice QR Mode -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-gradient-to-br from-teal-50/50 via-white to-white border border-teal-200/80 flex flex-col justify-between">
+                <div>
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-teal-50 text-teal-700 border border-teal-100">
+                            <i class="fas fa-qrcode text-[10px]"></i>
+                            <span x-text="t.prod2_badge"></span>
+                        </span>
+                        <span class="text-xs font-medium text-slate-400" x-text="t.prod2_actor"></span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-900 mb-2" x-text="t.prod2_title"></h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-5" x-text="t.prod2_desc"></p>
+                </div>
+                <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-slate-100">
+                    <a :href="'practice.html?lang=' + lang" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold transition shadow-2xs">
+                        <span x-text="t.prod2_cta"></span>
+                        <i class="fas fa-arrow-right text-[10px]"></i>
+                    </a>
+                    <a :href="'manual.html?lang=' + lang + '&mode=practice'" class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 hover:text-slate-900 transition">
+                        <i class="fas fa-book-open text-[10px]"></i>
+                        <span x-text="t.prod2_manual_btn"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Social links strictly on website pages) -->
+    <footer class="bg-slate-50 text-slate-500 py-10 border-t border-slate-200/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-5">
+            <a :href="'index.html?lang=' + lang" class="flex items-center space-x-2">
+                <div class="w-7 h-7 bg-indigo-600 rounded-md flex items-center justify-center text-white font-semibold text-sm">G</div>
+                <span class="text-slate-900 font-semibold tracking-tight text-lg">Gradaly<span class="text-indigo-600">.io</span></span>
+            </a>
+            <div class="flex flex-wrap items-center justify-center gap-4 text-xs">
+                <span class="text-slate-400" x-text="t.footer_follow"></span>
+                <a href="https://x.com/Gradaly_io" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-slate-600 hover:text-indigo-600 transition font-medium">
+                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    <span>@Gradaly_io</span>
+                </a>
+                <a href="https://www.linkedin.com/company/146643885" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-slate-600 hover:text-indigo-600 transition font-medium">
+                    <svg class="w-3.5 h-3.5 text-sky-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <p class="text-xs text-slate-400">© 2026 Gradaly.io. <span x-text="t.footer_rights"></span></p>
+        </div>
+    </footer>
+
+    <script src="locales/site-nl.js?v=5.0.0"></script>
+    <script src="locales/site-de.js?v=5.0.0"></script>
+    <script src="locales/site-es.js?v=5.0.0"></script>
+    <script src="locales/site-it.js?v=5.0.0"></script>
+    <script src="locales/site-tr.js?v=5.0.0"></script>
+    <script src="locales/site-zh.js?v=5.0.0"></script>
+    <script src="locales/site-ja.js?v=5.0.0"></script>
+    <script src="locales/site-ko.js?v=5.0.0"></script>
+    <script src="script.js?v=5.0.0"></script>
+</body>
+</html>

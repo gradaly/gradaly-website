@@ -1,32 +1,33 @@
 window.GRADALY_SITE_I18N = window.GRADALY_SITE_I18N || {};
 window.GRADALY_SITE_I18N.tr = {
-    nav_exam_mode: "1. Sınav Modu (Öğretim Elemanı)",
-    nav_practice_mode: "2. QR Alıştırma Modu (Öğrenci)",
+    nav_home: "Ana Sayfa",
+    nav_exam_mode: "Sınav Modu",
+    nav_practice_mode: "QR Alıştırma",
     nav_manual: "Kullanım Kılavuzu",
     nav_download: "Uygulamayı İndir",
     hero_version_badge: "En güncel sürüm:",
     hero_2in1_pill: "2'si 1 Arada Masaüstü Uygulaması",
     cta_version_info: "Güncel sürüm:",
     hero_title1: "Daha İyi Değerlendirin, Daha İyi Yetiştirin.",
-    hero_title2: "Sınavlar, Deneme Sınavları ve Öğrenci Çalışmaları İçin 2'si 1 Arada Uygulama.",
-    hero_subtitle: "Titiz ve ayrıntılı bir değerlendirme ölçeği (rubrik) tasarlayın ve Gradaly'nin birbirini tamamlayan iki aracından yararlanın: (1) öğretim elemanlarının taranmış sınav kâğıtlarını değerlendirmesi için Sınav ve Deneme Sınavı Modu (dönem içi gerçek sınav koşullarında biçimlendirici deneme sınavları veya resmî sınavlar için; %100 insan odaklı veya yapay zekâ destekli) ve (2) öğrencilerin kâğıt üzerindeki el yazısı çözümlerini akıllı telefonlarıyla bağımsız olarak değerlendirebilmeleri için QR Alıştırma Modu.",
+    hero_title2: "Yazılı Sınavlar ve Öğrenci Öz Değerlendirmesi İçin 2'si 1 Arada Uygulama.",
+    hero_subtitle: "Titiz ve ayrıntılı bir değerlendirme ölçeği (rubrik) tasarlayın ve Gradaly'nin birbirini tamamlayan iki iş akışından yararlanın: (1) öğretim elemanlarının taranmış yazılı sınav kâğıtlarını değerlendirmesi için Sınav Modu (%100 insan odaklı, yapay zekâ destekli veya ekip hâlinde) ve (2) öğrencilerin kâğıt üzerindeki el yazısı çözümlerini akıllı telefonlarıyla bağımsız olarak değerlendirebilmeleri için QR Alıştırma Modu.",
     download_mac: "macOS için İndir",
     see_how: "Nasıl çalıştığını görün",
 
     // 2-in-1 Product Overview Cards
     two_products_kicker: "2'si 1 Arada Mimari • İki Ayrı İş Akışı",
     two_products_title: "Tek Uygulama, Birbirini Tamamlayan İki Pedagojik Araç",
-    prod1_badge: "Ürün 1 • Sınavlar ve Deneme Sınavları",
+    prod1_badge: "Ürün 1 • Yazılı Sınavlar",
     prod1_actor: "Öğretim Elemanı Tarafından Kullanılır",
-    prod1_title: "Sınav ve Deneme Sınavı Modu (Sınıf Değerlendirmesi)",
-    prod1_desc: "Resmî dönem sonu sınavları, ara sınavlar veya dönem içinde öğrencilere gerçek sınav koşullarında zengin geri bildirim sunmak amacıyla yapılan biçimlendirici deneme sınavları için:",
+    prod1_title: "Sınav Modu (Sınıf Değerlendirmesi)",
+    prod1_desc: "Dönem sonu sınavları, ara sınavlar ve yazılı değerlendirmelerde her kâğıdı titiz bir rubrikle okuyup ayrıntılı geri bildirim sunmak için:",
     prod1_b1: "Öğrenci listesini (CSV) içe aktarın, toplu taramaları bölün ve yerel OCR ile %100 çevrimdışı kimlik eşleştirmesi yapın.",
     prod1_b2: "%100 İnsan Modunda (klavye kısayollarıyla), Çok Modlu Yapay Zekâ Ön Değerlendirmesiyle (%50 indirimli Toplu İşlem) veya Ekip Halinde puanlayın.",
     prod1_b3: "Moodle CSV (gömülü sınav kâğıdı bağlantısıyla), Çok Sayfalı Excel, Açıklamalı PDF'ler veya Şifreli İnceleme Portalı aracılığıyla zengin bireysel geri bildirim sunun.",
-    prod1_cta: "Ürün 1'i Keşfedin: Sınav Modu",
+    prod1_cta: "Sınav Modunu Keşfet",
     prod1_demo_btn: "Canlı Sınav Kâğıdı Demosu",
     prod1_manual_btn: "Sınav Kılavuzunu Oku",
-    prod1_section_kicker: "Ürün 1 • Sınavlar ve Biçimlendirici Deneme Sınavları (Öğretim Elemanı Tarafından)",
+    prod1_section_kicker: "Ürün 1 • Sınav Modu (Öğretim Elemanı Tarafından)",
 
     prod2_badge: "Ürün 2 • Bağımsız QR Alıştırma",
     prod2_actor: "Öğrenci Tarafından Kullanılır (Portalda Anahtar Gerekmez)",
@@ -35,7 +36,7 @@ window.GRADALY_SITE_I18N.tr = {
     prod2_b1: "PDF alıştırma yaprağınıza (tüm sayfa için veya her soru kutusunun içine) QR kodları yerleştirin.",
     prod2_b2: "Öğrenciler soruları kâğıt üzerinde çözer, akıllı telefonlarıyla QR kodu okutur ve el yazısı çalışmalarının fotoğrafını çeker.",
     prod2_b3: "Anında biçimlendirici yapay zekâ geri bildirimi ve kademeli Örnek Çözüm erişimi — portal.gradaly.io üzerinde API anahtarı gerekmez (veya isteğe bağlı kişisel Gemini anahtarı kullanılabilir).",
-    prod2_cta: "Ürün 2'yi Keşfedin: QR Alıştırma Modu",
+    prod2_cta: "QR Alıştırma Modunu Keşfet",
     prod2_demo_btn: "Canlı QR Demosu ve PDF",
     prod2_manual_btn: "QR Alıştırma Kılavuzunu Oku",
 
@@ -44,7 +45,7 @@ window.GRADALY_SITE_I18N.tr = {
     carousel_tab_practice: "2. QR Alıştırma Modu Önizlemesi (Öğrenci • 4 ekran)",
 
     phil_title: "Felsefemiz",
-    phil_text: "Tekrarlayan mekanik puanlama yorucudur ve pedagojik katkısı sınırlıdır. Öğretim elemanları, akademik muhakemelerini kullanmak yerine puan toplamakla sayısız saat harcar. Gradaly, uzmanlığınızı gerçekten fark yaratan alana yönlendirir: titiz, adil ve ayrıntılı bir değerlendirme ölçeği (rubrik) tasarlamak. Dönem sonu sınavınızı kâğıt üzerinde elle okumayı tercih etseniz bile, Gradaly sayesinde dönem içinde gerçekçi deneme sınavları düzenleyebilir veya her öğrencinin ayrıntılı kavramsal geri bildirim alması için QR öz değerlendirme yaprakları yayımlayabilirsiniz.",
+    phil_text: "Tekrarlayan mekanik puanlama yorucudur ve pedagojik katkısı sınırlıdır. Gradaly, uzmanlığınızı gerçekten fark yaratan alana yönlendirir: titiz, adil ve ayrıntılı bir değerlendirme ölçeği (rubrik) tasarlamak. Böylece ister yazılı sınavlarda ister bağımsız QR alıştırma yapraklarında her öğrenci açık, ayrıntılı ve gerçekten öğretici geri bildirim alır.",
 
     adv_title: "Neden Gradaly?",
     adv_pedagogy_title: "Pedagojik Odak ve Değerlendirme Ölçeği Tasarımı",
@@ -107,8 +108,8 @@ window.GRADALY_SITE_I18N.tr = {
     carousel_slide9_desc: "Öğrenciler QR kodu okutur, kâğıt üzerindeki el yazısı çözümlerinin fotoğrafını çeker ve anında biçimlendirici geri bildirim ile örnek çözüm erişimi alır (yerleşik Gradaly yapay zekâ rölesi veya isteğe bağlı kişisel Gemini anahtarıyla).",
 
     // Product 1 Section: Exam Mode
-    guide_title: "Sınav ve Deneme Sınavı Modu: Öğretim Elemanı Tarafından Sınıf Değerlendirmesi",
-    guide_subtitle: "Hem resmî sınavlar hem de dönem içinde gerçek sınav koşullarında uygulanan biçimlendirici deneme sınavları için idealdir. Dönem sonu sınavınızı kâğıt üzerinde elle puanlamayı tercih etseniz bile, Sınav Modu dönem ortasında deneme sınavları düzenlemenize ve tüm sınıfınıza zengin, bireyselleştirilmiş geri bildirim sunmanıza olanak tanır.",
+    guide_title: "Sınav Modu: Öğretim Elemanı Tarafından Sınıf Değerlendirmesi",
+    guide_subtitle: "Yazılı dönem sonu sınavları, ara sınavlar ve sınıf içi değerlendirmeler için geliştirildi: klavye kısayollarıyla %100 manuel okuyun, çok modlu yapay zekâ ön değerlendirmesinden yararlanın veya öğretim ekibiyle iş birliği yaparak tüm sınıfa bireyselleştirilmiş geri bildirim sunun.",
 
     guide_step2_tag: "Şablon ve Çevrimdışı OCR Alanı",
     guide_step2_title: "Boş Sınav PDF'ini ve Öğrenci Kimlik Kutusunu İçe Aktarın",
@@ -173,10 +174,10 @@ window.GRADALY_SITE_I18N.tr = {
     comp_kicker: "Bir Bakışta",
     comp_title: "Özet Karşılaştırma: Sınav Modu ve QR Alıştırma Modu",
     comp_col0: "Boyut",
-    comp_col1: "Ürün 1: Sınav ve Deneme Sınavı Modu (Öğretim Elemanı)",
+    comp_col1: "Ürün 1: Sınav Modu (Öğretim Elemanı)",
     comp_col2: "Ürün 2: QR Alıştırma Modu (Öğrenci)",
     comp_r1_label: "Pedagojik Amaç",
-    comp_r1_exam: "Sınıf içi sınavlar, ara sınavlar veya gerçek sınav koşullarında biçimlendirici deneme sınavları (öğretim elemanı tarafından değerlendirilir)",
+    comp_r1_exam: "Yazılı sınavlar, ara sınavlar ve sınıf içi değerlendirmeler (öğretim elemanı tarafından)",
     comp_r1_prac: "Öğrencinin evde veya uygulama derslerinde kâğıt üzerinde bağımsız çalışması (problem setleri, çalışma yaprakları)",
     comp_r2_label: "Değerlendirmeyi kim yapar?",
     comp_r2_exam: "Öğretim elemanı (%100 manuel olarak, yapay zekâ ön değerlendirmesiyle veya öğretim ekibiyle)",
@@ -194,7 +195,7 @@ window.GRADALY_SITE_I18N.tr = {
     // Student Portal Subsection inside Exam Mode
     portal_badge: "Sınav Modu Sonuç Paylaşımı • Gradaly Pro",
     portal_title: "Zero-Knowledge Sınav İnceleme Portalı",
-    portal_subtitle: "Puanlanmış 200 sınav veya deneme sınavı kâğıdını fiziksel kâğıt dağıtımıyla uğraşmadan dakikalar içinde öğrencilere ulaştırın: istemci tarafında AES-256 ile şifrelenmiş kâğıtları çevrimiçi yayımlayın, otomatik sihirli bağlantılı e-postalar gönderin, notları ve kişisel inceleme bağlantılarını Moodle'a aktarın ya da kesilebilir bireysel QR fişleri yazdırın.",
+    portal_subtitle: "Puanlanmış 200 sınav kâğıdını fiziksel kâğıt dağıtımıyla uğraşmadan dakikalar içinde öğrencilere ulaştırın: istemci tarafında AES-256 ile şifrelenmiş kâğıtları çevrimiçi yayımlayın, otomatik sihirli bağlantılı e-postalar gönderin, notları ve kişisel inceleme bağlantılarını Moodle'a aktarın ya da kesilebilir bireysel QR fişleri yazdırın.",
     portal_shot_web: "1. İstemci Tarafında Şifresi Çözülen Sınav Kâğıdı Görüntüleyici",
     portal_shot_mail: "2. Kişisel Sihirli Bağlantı İçeren Otomatik E-posta",
     portal_shot_qr: "3. Yazdırılabilir Kesilebilir QR Fişleri (E-posta Gerekmez)",
@@ -238,6 +239,7 @@ window.GRADALY_SITE_I18N.tr = {
     install_build_info: "Linux derleme ortamı: x86_64 ikili dosyaları glibc 2.35 içeren Ubuntu 22.04 LTS ortamında (ve ARM64 sürümü Ubuntu 24.04 altında) derlenmektedir. glibc ≥ 2.35 sağlayan tüm dağıtımlarla tam uyumludur.",
     cta_title: "Daha İyi Değerlendirmeye ve Daha İyi Yetiştirmeye Hazır mısınız?",
     cta_subtitle: "Öğrencilerinize hem Sınav Modunda hem de QR Alıştırma Modunda daha zengin, daha net ve gerçekten biçimlendirici geri bildirimler sunun.",
+    footer_follow: "Bizi takip edin:",
     footer_rights: "Tüm hakları saklıdır.",
 
     // Pricing

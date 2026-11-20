@@ -1,32 +1,33 @@
 window.GRADALY_SITE_I18N = window.GRADALY_SITE_I18N || {};
 window.GRADALY_SITE_I18N.ko = {
-    nav_exam_mode: "1. 시험 모드 (교수자용)",
-    nav_practice_mode: "2. QR 연습 모드 (학생용)",
+    nav_home: "홈",
+    nav_exam_mode: "시험 모드",
+    nav_practice_mode: "QR 연습",
     nav_manual: "사용자 매뉴얼",
     nav_download: "앱 다운로드",
     hero_version_badge: "최신 릴리스 버전:",
     hero_2in1_pill: "2-in-1 데스크톱 애플리케이션",
     cta_version_info: "현재 버전:",
     hero_title1: "더 정교한 채점으로, 더 깊이 있는 배움을.",
-    hero_title2: "정규 시험·모의고사 평가와 학생 자율 학습을 아우르는 2-in-1 솔루션.",
-    hero_subtitle: "정교하고 엄격한 채점 기준표(루브릭)를 한 번 설계하여 Gradaly의 두 가지 상호보완적 도구를 활용하세요. (1) 시험 및 모의고사 모드: 교수자가 스캔된 학생 답안지를 평가하는 모드(학기 중 실전과 동일한 환경의 형성적 모의고사 또는 정규 시험용, 100% 수동 채점 또는 AI 보조 채점 지원), (2) QR 자율 연습 모드: 학생이 종이에 직접 손글씨로 푼 답안을 스마트폰으로 촬영하여 스스로 점검하는 자기평가 모드.",
+    hero_title2: "지필 시험 평가와 학생 자율 학습을 아우르는 2-in-1 솔루션.",
+    hero_subtitle: "정교하고 엄격한 채점 기준표(루브릭)를 한 번 설계하여 Gradaly의 두 가지 상호보완적 워크플로를 활용하세요. (1) 시험 모드: 교수자가 스캔된 지필 답안지를 평가하는 모드(100% 수동 채점, AI 보조 채점 또는 팀 협업 지원), (2) QR 자율 연습 모드: 학생이 종이에 직접 손글씨로 푼 답안을 스마트폰으로 촬영하여 스스로 점검하는 자기평가 모드.",
     download_mac: "macOS용 다운로드",
     see_how: "작동 방식 살펴보기",
 
     // 2-in-1 Product Overview Cards
     two_products_kicker: "2-in-1 아키텍처 • 두 가지 독립 워크플로",
     two_products_title: "하나의 애플리케이션, 두 가지 상호보완적 교육 도구",
-    prod1_badge: "제품 1 • 정규 시험 및 모의고사",
+    prod1_badge: "제품 1 • 지필 시험",
     prod1_actor: "교수자·조교용",
-    prod1_title: "시험 및 모의고사 모드 (수강생 일괄 평가)",
-    prod1_desc: "정규 중간·기말고사는 물론, 학기 중 실전 시험 환경에서 학생들에게 풍부한 형성적 피드백을 제공하는 모의고사에 최적화되어 있습니다:",
+    prod1_title: "시험 모드 (수강생 일괄 평가)",
+    prod1_desc: "정규 중간·기말고사와 지필 평가를 정교한 루브릭에 따라 채점하고 풍부한 개별 피드백을 제공하기 위해:",
     prod1_b1: "수강생 명단(CSV) 불러오기, 대량 스캔본 자동 분할 및 100% 오프라인 로컬 OCR 기반 학번·성명 매칭.",
     prod1_b2: "100% 수동 채점(키보드 단축키), 멀티모달 AI 사전 채점(Batch -50% 할인) 또는 채점진 협업 모드 지원.",
     prod1_b3: "Moodle CSV(답안지 열람 링크 포함), 다중 시트 Excel, 주석 포함 PDF 답안지 또는 암호화 웹 열람 포털로 상세한 개별 피드백 제공.",
-    prod1_cta: "제품 1 살펴보기: 시험 모드",
+    prod1_cta: "시험 모드 살펴보기",
     prod1_demo_btn: "실시간 답안지 데모",
     prod1_manual_btn: "시험 모드 매뉴얼 보기",
-    prod1_section_kicker: "제품 1 • 정규 시험 및 형성적 모의고사 (교수자용)",
+    prod1_section_kicker: "제품 1 • 시험 모드 (교수자용)",
 
     prod2_badge: "제품 2 • QR 기반 자율 학습",
     prod2_actor: "학생용 (포털에서 API 키 불필요)",
@@ -35,7 +36,7 @@ window.GRADALY_SITE_I18N.ko = {
     prod2_b1: "PDF 연습문제지에 전체 시트용 또는 각 문항 영역별 QR 코드를 직접 배치하여 인쇄.",
     prod2_b2: "학생이 종이에 직접 풀이를 작성한 뒤 스마트폰으로 QR 코드를 스캔하고 손글씨 답안을 촬영.",
     prod2_b3: "즉각적인 AI 형성적 피드백 제공 및 풀이 시도 후 모범 답안 잠금 해제 — portal.gradaly.io에서는 별도 API 키 설정 불필요(개인 Gemini 키 선택 사용 가능).",
-    prod2_cta: "제품 2 살펴보기: QR 연습 모드",
+    prod2_cta: "QR 연습 모드 살펴보기",
     prod2_demo_btn: "실시간 QR 데모 및 PDF",
     prod2_manual_btn: "QR 연습 매뉴얼 보기",
 
@@ -44,7 +45,7 @@ window.GRADALY_SITE_I18N.ko = {
     carousel_tab_practice: "2. QR 연습 모드 미리보기 (학생 • 4개 화면)",
 
     phil_title: "교육 철학",
-    phil_text: "기계적이고 반복적인 채점은 교수자를 지치게 할 뿐 교육적 가치를 거의 더하지 못합니다. 교육적 통찰을 발휘하는 대신 점수를 단순 합산하는 데 수많은 역량이 소모되기 때문입니다. Gradaly는 교수자의 전문성을 진정으로 중요한 핵심 영역, 즉 정교하고 공정하며 체계적인 채점 기준표(루브릭)를 설계하는 데 집중시킵니다. 기말고사를 종이 위에서 직접 수기로 채점하는 방식을 선호하시더라도, 학기 중 실전과 같은 형성적 모의고사를 운영하거나 QR 자기평가 연습지를 배포하여 모든 학생에게 깊이 있는 개념적 피드백을 제공할 수 있습니다.",
+    phil_text: "기계적이고 반복적인 채점은 교수자를 지치게 할 뿐 교육적 가치를 거의 더하지 못합니다. Gradaly는 교수자의 전문성을 진정으로 중요한 핵심 영역, 즉 정교하고 공정하며 체계적인 채점 기준표 설계에 집중시킵니다. 정규 지필 시험에서는 물론 자율 QR 연습지에서도 모든 학생이 명확하고 깊이 있는 피드백을 받을 수 있습니다.",
 
     adv_title: "왜 Gradaly를 선택해야 할까요?",
     adv_pedagogy_title: "교육적 본질과 정교한 루브릭 설계",
@@ -107,8 +108,8 @@ window.GRADALY_SITE_I18N.ko = {
     carousel_slide9_desc: "학생이 QR 코드를 스캔하고 종이에 작성한 손글씨 풀이를 촬영하면 내장된 Gradaly AI 릴레이(또는 개인 Gemini 키)를 통해 즉각적인 형성적 피드백과 모범 답안을 확인할 수 있습니다.",
 
     // Product 1 Section: Exam Mode
-    guide_title: "시험 및 모의고사 모드: 교수자에 의한 수강생 일괄 평가",
-    guide_subtitle: "정규 중간·기말고사는 물론, 학기 중 실전 시험 환경에서 실시하는 형성적 모의고사에도 이상적입니다. 기말고사를 종이에 직접 채점하시는 교수님이라도 학기 중 모의고사에 시험 모드를 활용하여 수강생 전원에게 깊이 있는 개별 피드백을 전달할 수 있습니다.",
+    guide_title: "시험 모드: 교수자에 의한 수강생 일괄 평가",
+    guide_subtitle: "정규 시험, 중간고사 및 지필 평가를 위해 설계되었습니다. 키보드 단축키 기반의 100% 수동 채점, 멀티모달 AI 사전 채점 또는 교수진 팀 협업을 선택하여 수강생 전원에게 세밀한 개별 피드백을 전달하세요.",
 
     guide_step2_tag: "캔버스 및 오프라인 OCR 영역",
     guide_step2_title: "빈 시험지 PDF 불러오기 및 학생 식별 영역 지정",
@@ -173,10 +174,10 @@ window.GRADALY_SITE_I18N.ko = {
     comp_kicker: "한눈에 비교하기",
     comp_title: "요약 비교: 시험 모드 vs. QR 연습 모드",
     comp_col0: "비교 항목",
-    comp_col1: "제품 1: 시험 및 모의고사 모드 (교수자용)",
+    comp_col1: "제품 1: 시험 모드 (교수자용)",
     comp_col2: "제품 2: QR 연습 모드 (학생용)",
     comp_r1_label: "교육적 목적",
-    comp_r1_exam: "정규 시험, 중간·기말고사 또는 실전 환경의 학기 중 형성적 모의고사 (교수자가 채점)",
+    comp_r1_exam: "정규 시험, 중간·기말고사 및 지필 평가 (교수자가 채점)",
     comp_r1_prac: "가정 학습이나 연습 세션(튜토리얼)에서의 지필 자율 학습 (연습문제집, 과제 시트)",
     comp_r2_label: "평가 수행 주체",
     comp_r2_exam: "교수자 (100% 수동 채점, AI 사전 채점 활용 또는 채점팀 협업)",
@@ -194,7 +195,7 @@ window.GRADALY_SITE_I18N.ko = {
     // Student Portal Subsection inside Exam Mode
     portal_badge: "시험 모드 결과 반환 • Gradaly Pro",
     portal_title: "Zero-Knowledge 암호화 시험 답안 열람 포털",
-    portal_subtitle: "채점 완료된 시험·모의고사 답안지 200부를 번거로운 종이 배부 없이 단 몇 분 만에 반환하세요. AES-256 클라이언트 측 암호화 답안지를 온라인에 게시하고, 자동 매직 링크 이메일 발송, Moodle 성적·열람 링크 연동 또는 절취형 개별 QR 확인증 인쇄를 지원합니다.",
+    portal_subtitle: "채점 완료된 시험 답안지 200부를 번거로운 종이 배부 없이 단 몇 분 만에 반환하세요. AES-256 클라이언트 측 암호화 답안지를 온라인에 게시하고, 자동 매직 링크 이메일 발송, Moodle 성적·열람 링크 연동 또는 절취형 개별 QR 확인증 인쇄를 지원합니다.",
     portal_shot_web: "1. 브라우저 내 클라이언트 측 복호화 답안지 뷰어",
     portal_shot_mail: "2. 개인별 매직 링크가 포함된 자동 안내 이메일",
     portal_shot_qr: "3. 이메일 없이 배부 가능한 절취형 개별 QR 확인증",
@@ -238,6 +239,7 @@ window.GRADALY_SITE_I18N.ko = {
     install_build_info: "Linux 빌드 환경: x86_64 바이너리는 Ubuntu 22.04 LTS 환경(glibc 2.35)에서, ARM64 바이너리는 Ubuntu 24.04에서 빌드되었습니다. glibc ≥ 2.35를 제공하는 모든 최신 Linux 배포판과 호환됩니다.",
     cta_title: "더 정교한 채점으로, 더 깊이 있는 배움을 시작할 준비가 되셨나요?",
     cta_subtitle: "시험 모드와 QR 연습 모드 모두에서 학생들에게 더욱 풍부하고 명확하며 진정한 성장을 돕는 형성적 피드백을 전하세요.",
+    footer_follow: "팔로우:",
     footer_rights: "모든 권리 보유.",
 
     // Pricing

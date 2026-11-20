@@ -1,32 +1,33 @@
 window.GRADALY_SITE_I18N = window.GRADALY_SITE_I18N || {};
 window.GRADALY_SITE_I18N.de = {
-    nav_exam_mode: "1. Prüfungsmodus (Lehrende)",
-    nav_practice_mode: "2. QR-Übungsmodus (Studierende)",
+    nav_home: "Startseite",
+    nav_exam_mode: "Prüfungsmodus",
+    nav_practice_mode: "QR-Übungsmodus",
     nav_manual: "Benutzerhandbuch",
     nav_download: "App herunterladen",
     hero_version_badge: "Aktuelle Version verfügbar:",
     hero_2in1_pill: "2-in-1-Desktop-Anwendung",
     cta_version_info: "Aktuelle Version:",
     hero_title1: "Besser bewerten, gezielter fördern.",
-    hero_title2: "Eine 2-in-1-Anwendung für Klausuren, Probeklausuren & studentisches Üben.",
-    hero_subtitle: "Entwerfen Sie einmal ein präzises, feingliedriges Bewertungsraster und nutzen Sie die zwei komplementären Werkzeuge von Gradaly: (1) den Prüfungs- & Probeklausur-Modus für Lehrende zur Bewertung gescannter Prüfungsbögen (für formative Probeklausuren unter realistischen Prüfungsbedingungen während des Semesters oder für offizielle Abschlussklausuren – zu 100 % manuell oder KI-gestützt) und (2) den QR-Übungsmodus, mit dem Studierende ihre handschriftlichen Lösungen auf Papier eigenständig per Smartphone überprüfen.",
+    hero_title2: "Eine 2-in-1-Anwendung für schriftliche Prüfungen & studentisches Üben.",
+    hero_subtitle: "Entwerfen Sie einmal ein präzises, feingliedriges Bewertungsraster und nutzen Sie die zwei komplementären Workflows von Gradaly: (1) den Prüfungsmodus für Lehrende zur Bewertung gescannter Prüfungsbögen (zu 100 % manuell, KI-gestützt oder im Team) und (2) den QR-Übungsmodus, mit dem Studierende ihre handschriftlichen Lösungen auf Papier eigenständig per Smartphone überprüfen.",
     download_mac: "Für macOS herunterladen",
     see_how: "Funktionsweise entdecken",
 
     // 2-in-1 Product Overview Cards
     two_products_kicker: "2-in-1-Architektur • Zwei eigenständige Workflows",
     two_products_title: "Eine Anwendung, zwei komplementäre didaktische Werkzeuge",
-    prod1_badge: "Produkt 1 • Klausuren & Probeklausuren",
+    prod1_badge: "Produkt 1 • Schriftliche Prüfungen",
     prod1_actor: "Genutzt von Lehrenden",
-    prod1_title: "Prüfungs- & Probeklausur-Modus (Kohortenbewertung)",
-    prod1_desc: "Für offizielle Abschlussklausuren, Zwischenprüfungen oder formative Probeklausuren während des Semesters, um Studierenden fundiertes Feedback unter realistischen Prüfungsbedingungen zu bieten:",
+    prod1_title: "Prüfungsmodus (Kohortenbewertung)",
+    prod1_desc: "Für Abschlussklausuren, Zwischenprüfungen und schriftliche Leistungsnachweise, um Bögen präzise zu bewerten und fundiertes Feedback zu geben:",
     prod1_b1: "Teilnehmerliste (CSV) importieren, Sammelscans aufteilen & Identitäten zu 100 % offline per lokaler OCR zuordnen.",
     prod1_b2: "Bewerten im 100-%-Manuell-Modus (Tastenkürzel), mit multimodaler KI-Vorbewertung (-50 % im Batch) oder im Korrekturteam.",
     prod1_b3: "Detailliertes individuelles Feedback über Moodle-CSV (mit eingebettetem Einsichtslink), mehrblättrige Excel-Tabellen, kommentierte PDFs oder das verschlüsselte Einsichtsportal zurückgeben.",
-    prod1_cta: "Produkt 1 entdecken: Prüfungsmodus",
+    prod1_cta: "Prüfungsmodus entdecken",
     prod1_demo_btn: "Live-Klausur-Demo",
     prod1_manual_btn: "Prüfungshandbuch lesen",
-    prod1_section_kicker: "Produkt 1 • Klausuren & formative Probeklausuren (Durch Lehrende)",
+    prod1_section_kicker: "Produkt 1 • Prüfungsmodus (Durch Lehrende)",
 
     prod2_badge: "Produkt 2 • Eigenständiges QR-Training",
     prod2_actor: "Genutzt von Studierenden (Kein API-Schlüssel auf dem Portal nötig)",
@@ -35,7 +36,7 @@ window.GRADALY_SITE_I18N.de = {
     prod2_b1: "Platzieren Sie QR-Codes auf Ihrem PDF-Übungsblatt (für das gesamte Blatt oder direkt in jedem Aufgabenfeld).",
     prod2_b2: "Studierende rechnen auf Papier, scannen den QR-Code mit dem Smartphone und fotografieren ihren handschriftlichen Lösungsweg.",
     prod2_b3: "Sofortiges formatives KI-Feedback & schrittweise Freischaltung der Musterlösung — ohne API-Schlüssel auf portal.gradaly.io (oder optional mit eigenem Gemini-Schlüssel).",
-    prod2_cta: "Produkt 2 entdecken: QR-Übungsmodus",
+    prod2_cta: "QR-Übungsmodus entdecken",
     prod2_demo_btn: "Live-QR-Demo & PDF",
     prod2_manual_btn: "QR-Übungshandbuch lesen",
 
@@ -44,7 +45,7 @@ window.GRADALY_SITE_I18N.de = {
     carousel_tab_practice: "2. Vorschau QR-Übungsmodus (Studierende • 4 Ansichten)",
 
     phil_title: "Unsere Philosophie",
-    phil_text: "Repetitive Korrekturarbeit ist ermüdend und stiftet kaum didaktischen Mehrwert. Lehrende verbringen zahllose Stunden mit mechanischem Punktezählen, statt ihr fachdidaktisches Urteilsvermögen einzubringen. Gradaly verlagert Ihre Expertise genau dorthin, wo sie wirklich zählt: in die Konzeption eines anspruchsvollen, feingliedrigen und fairen Bewertungsrasters. Selbst wenn Sie Ihre Abschlussklausur lieber klassisch von Hand auf Papier korrigieren, ermöglicht Ihnen Gradaly während des Semesters realistische Probeklausuren oder QR-Übungsblätter zur Selbsteinschätzung anzubieten, damit alle Studierenden ein fundiertes konzeptionelles Feedback erhalten.",
+    phil_text: "Repetitive Korrekturarbeit ist ermüdend und stiftet kaum didaktischen Mehrwert. Gradaly verlagert Ihre Expertise genau dorthin, wo sie wirklich zählt: in die Konzeption eines anspruchsvollen, feingliedrigen und fairen Bewertungsrasters. So erhalten alle Studierenden nachvollziehbares, individuelles und förderndes Feedback — sowohl bei schriftlichen Prüfungen als auch bei eigenständigen QR-Übungsblättern.",
 
     adv_title: "Warum Gradaly?",
     adv_pedagogy_title: "Didaktischer Fokus & Präzises Bewertungsraster",
@@ -107,8 +108,8 @@ window.GRADALY_SITE_I18N.de = {
     carousel_slide9_desc: "Studierende scannen den QR-Code, fotografieren ihre handschriftliche Ausarbeitung auf Papier und erhalten sofortiges formatives Feedback sowie Zugriff auf die Musterlösung (über das integrierte Gradaly-KI-Relay oder optional mit eigenem Gemini-Schlüssel).",
 
     // Product 1 Section: Exam Mode
-    guide_title: "Prüfungs- & Probeklausur-Modus: Kohortenbewertung durch Lehrende",
-    guide_subtitle: "Ideal sowohl für offizielle Abschlussklausuren als auch für formative Probeklausuren während des Semesters unter realistischen Prüfungsbedingungen. Selbst wenn Sie Ihre Abschlussprüfung lieber klassisch von Hand auf Papier bewerten, können Sie im Prüfungsmodus Probeklausuren durchführen und Ihrer gesamten Kohorte detailliertes, individuelles Feedback zurückgeben.",
+    guide_title: "Prüfungsmodus: Kohortenbewertung durch Lehrende",
+    guide_subtitle: "Konzipiert für Abschlussklausuren, Zwischenprüfungen und schriftliche Leistungsnachweise: korrigieren Sie zu 100 % manuell per Tastatur, nutzen Sie multimodale KI-Vorbewertung oder arbeiten Sie im Team — bei gleichzeitig detailliertem, individuellem Feedback für die gesamte Kohorte.",
 
     guide_step2_tag: "Vorlage & Offline-OCR-Bereich",
     guide_step2_title: "Leere Klausurvorlage (PDF) & Identifikationsfeld importieren",
@@ -173,10 +174,10 @@ window.GRADALY_SITE_I18N.de = {
     comp_kicker: "Auf einen Blick",
     comp_title: "Vergleichsübersicht: Prüfungsmodus vs. QR-Übungsmodus",
     comp_col0: "Dimension",
-    comp_col1: "Produkt 1: Prüfungs- & Probeklausur-Modus (Lehrende)",
+    comp_col1: "Produkt 1: Prüfungsmodus (Lehrende)",
     comp_col2: "Produkt 2: QR-Übungsmodus (Studierende)",
     comp_r1_label: "Didaktisches Ziel",
-    comp_r1_exam: "Präsenzklausuren, Zwischenprüfungen oder formative Probeklausuren unter realistischen Prüfungsbedingungen (bewertet durch Lehrende)",
+    comp_r1_exam: "Schriftliche Prüfungen, Zwischenprüfungen und Leistungsnachweise (bewertet durch Lehrende)",
     comp_r1_prac: "Eigenständiges Üben auf Papier zu Hause oder in Tutorien (Übungsblätter, Hausaufgaben)",
     comp_r2_label: "Wer führt die Bewertung durch?",
     comp_r2_exam: "Die Lehrperson (zu 100 % manuell, mit KI-Vorbewertung oder im Korrekturteam)",
@@ -194,7 +195,7 @@ window.GRADALY_SITE_I18N.de = {
     // Student Portal Subsection inside Exam Mode
     portal_badge: "Klausurrückgabe im Prüfungsmodus • Gradaly Pro",
     portal_title: "Zero-Knowledge-Webportal zur Klausureinsicht",
-    portal_subtitle: "Geben Sie 200 bewertete Klausuren oder Probeklausuren in wenigen Minuten ohne Papierlogistik zurück: Veröffentlichen Sie clientseitig AES-256-verschlüsselte Prüfungsbögen online, versenden Sie automatische Magic-Link-E-Mails, exportieren Sie Noten + persönliche Einsichtslinks nach Moodle oder drucken Sie individuelle QR-Zugangsbelege zum Ausschneiden.",
+    portal_subtitle: "Geben Sie 200 bewertete Klausurbögen in wenigen Minuten ohne Papierlogistik zurück: Veröffentlichen Sie clientseitig AES-256-verschlüsselte Prüfungsbögen online, versenden Sie automatische Magic-Link-E-Mails, exportieren Sie Noten + persönliche Einsichtslinks nach Moodle oder drucken Sie individuelle QR-Zugangsbelege zum Ausschneiden.",
     portal_shot_web: "1. Clientseitig entschlüsselte Online-Klausureinsicht",
     portal_shot_mail: "2. Automatische E-Mail-Benachrichtigung mit persönlichem Magic Link",
     portal_shot_qr: "3. Druckbare QR-Zugangsbelege zum Ausschneiden (ohne E-Mail nutzbar)",
@@ -238,6 +239,7 @@ window.GRADALY_SITE_I18N.de = {
     install_build_info: "Linux-Build-Umgebung: x86_64-Binärdateien werden unter Ubuntu 22.04 LTS mit glibc 2.35 erstellt (ARM64 unter Ubuntu 24.04). Vollständig kompatibel mit jeder Linux-Distribution ab glibc ≥ 2.35.",
     cta_title: "Bereit, besser zu bewerten und gezielter zu fördern?",
     cta_subtitle: "Bieten Sie Ihren Studierenden fundierteres, transparenteres und nachhaltig wirksames formatives Feedback — sowohl im Prüfungsmodus als auch im QR-Übungsmodus.",
+    footer_follow: "Folgen Sie uns:",
     footer_rights: "Alle Rechte vorbehalten.",
 
     // Pricing
@@ -253,7 +255,7 @@ window.GRADALY_SITE_I18N.de = {
     plan_free_f3: "100 % lokale Offline-OCR & Teilnehmerzuordnung",
     plan_free_f4: "Live-Bewertungskonsole & volle menschliche Kontrolle",
     plan_free_f5: "Kohortenstatistiken & Punktehistogramme",
-    plan_free_f6: "Testexporte (1 Probeklausur für Moodle-CSV, Excel, PDF und Webportal)",
+    plan_free_f6: "Testexporte (1 Testkopie für Moodle-CSV, Excel, PDF und Webportal)",
     plan_free_f7: "QR-Übungsmodus: Projekterstellung & Gestaltung des druckbaren PDFs mit QR-Codes",
     plan_free_btn: "Kostenlos herunterladen",
     plan_pro_name: "Gradaly Pro",

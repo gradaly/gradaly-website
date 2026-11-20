@@ -1,32 +1,33 @@
 const translations = {
     en: {
-        nav_exam_mode: "1. Exam Mode (Teacher)",
-        nav_practice_mode: "2. Practice QR (Student)",
+        nav_home: "Home",
+        nav_exam_mode: "Exam Mode",
+        nav_practice_mode: "Practice QR",
         nav_manual: "User Manual",
         nav_download: "Download App",
         hero_version_badge: "Latest release available:",
         hero_2in1_pill: "2-in-1 Desktop Application",
         cta_version_info: "Current release:",
         hero_title1: "Grade Smarter, Not Harder.",
-        hero_title2: "One 2-in-1 App for Exams, Mock Tests & Student Training.",
-        hero_subtitle: "Design a rigorous, fine-grained evaluation rubric once and use Gradaly's two complementary tools: (1) Exam & Mock Test Mode for teachers to evaluate scanned student booklets (for formative mock exams in realistic conditions during the year or official exams, 100% human or AI-assisted), and (2) Practice QR Mode for students to self-assess their handwritten paper work autonomously on smartphone.",
+        hero_title2: "One 2-in-1 App for Written Exams & Autonomous Student Practice.",
+        hero_subtitle: "Design a rigorous, fine-grained evaluation rubric once and use Gradaly's two complementary workflows: (1) Exam Mode for teachers to evaluate scanned student booklets (100% human, AI-assisted, or team grading), and (2) Practice QR Mode for students to self-assess their handwritten paper exercises autonomously on smartphone.",
         download_mac: "Download for macOS",
         see_how: "See how it works",
 
         // 2-in-1 Product Overview Cards
         two_products_kicker: "2-in-1 Architecture • Two Distinct Workflows",
         two_products_title: "One Application, Two Complementary Pedagogical Tools",
-        prod1_badge: "Product 1 • Exams & Mock Tests",
+        prod1_badge: "Product 1 • Written Exams",
         prod1_actor: "Used by the Teacher",
-        prod1_title: "Exam & Mock Test Mode (Cohort Evaluation)",
-        prod1_desc: "For official exams, midterms, or formative mock tests during the year to give students rich feedback under realistic exam conditions:",
+        prod1_title: "Exam Mode (Cohort Grading)",
+        prod1_desc: "For midterms, finals, and written assessments where the teacher evaluates scanned student papers with full rubric precision:",
         prod1_b1: "Import student roster (CSV), split bulk scans & match identities 100% offline via local OCR.",
         prod1_b2: "Grade in 100% Human Mode (keyboard shortcuts), with Multimodal AI Pre-Grading (-50% Batch), or in a Team.",
         prod1_b3: "Return rich individual feedback via Moodle CSV (with embedded copy link), Multi-Sheet Excel, Annotated PDFs, or the Encrypted Consultation Portal.",
-        prod1_cta: "Explore Product 1: Exam Mode",
+        prod1_cta: "Explore Exam Mode",
         prod1_demo_btn: "Live Copy Demo",
         prod1_manual_btn: "Read Exam Manual",
-        prod1_section_kicker: "Product 1 • Exams & Formative Mock Tests (By the Teacher)",
+        prod1_section_kicker: "Product 1 • Exam Mode (By the Teacher)",
 
         prod2_badge: "Product 2 • Autonomous QR Training",
         prod2_actor: "Used by the Student (Zero Key on Portal)",
@@ -35,7 +36,7 @@ const translations = {
         prod2_b1: "Stamp QR codes onto your PDF exercise sheet (for the whole sheet or inside each question box).",
         prod2_b2: "Students solve on paper, scan the QR code with their smartphone, and snap a photo of their handwritten work.",
         prod2_b3: "Instant formative AI feedback & progressive Reference Solution unlock — zero API key required on portal.gradaly.io (or optional personal Gemini key).",
-        prod2_cta: "Explore Product 2: Practice QR Mode",
+        prod2_cta: "Explore Practice QR Mode",
         prod2_demo_btn: "Live QR Demo & PDF",
         prod2_manual_btn: "Read Practice QR Manual",
 
@@ -44,7 +45,7 @@ const translations = {
         carousel_tab_practice: "2. Preview Practice QR Mode (Student • 4 screens)",
 
         phil_title: "Our Philosophy",
-        phil_text: "Repetitive grading is exhausting and adds little pedagogical value. Teachers spend countless hours tallying marks instead of exercising pedagogical judgment. Gradaly shifts your time and expertise to where they truly matter: designing a rigorous, fine-grained evaluation rubric. Even if you prefer to grade your final exam by hand on paper, Gradaly lets you organize realistic mock exams during the year or publish QR self-assessment worksheets so every student receives detailed conceptual feedback.",
+        phil_text: "Repetitive grading is exhausting and adds little pedagogical value. Teachers spend countless hours tallying marks instead of exercising pedagogical judgment. Gradaly shifts your time and expertise to where they truly matter: designing a rigorous, fine-grained evaluation rubric so every student receives fair, thorough, and genuinely formative conceptual feedback — whether on official written exams or autonomous QR practice worksheets.",
         
         adv_title: "Why choose Gradaly?",
         adv_pedagogy_title: "Pedagogical Focus & Rubric Design",
@@ -107,8 +108,8 @@ const translations = {
         carousel_slide9_desc: "Students scan the QR code, photograph their handwritten work on paper, and receive instant formative feedback and solution unlocking (via the built-in Gradaly AI relay or an optional personal Gemini key).",
 
         // Product 1 Section: Exam Mode
-        guide_title: "Exam & Mock Test Mode: Cohort Evaluation by the Teacher",
-        guide_subtitle: "Ideal both for official exams and for formative mock tests during the year under realistic exam conditions. Even if you prefer to grade your final exam by hand on paper, Exam Mode lets you run mid-year mock tests and return rich, individualized feedback to your entire cohort.",
+        guide_title: "Exam Mode: Cohort Evaluation by the Teacher",
+        guide_subtitle: "Built for written exams, midterms, and in-class assessments: grade 100% manually at keyboard speed, leverage Multimodal AI pre-grading, or collaborate across teaching teams while delivering clear, individualized feedback to every student.",
 
         guide_step2_tag: "Canvas & Offline OCR Zone",
         guide_step2_title: "Import Blank Exam PDF & Student ID Box",
@@ -173,10 +174,10 @@ const translations = {
         comp_kicker: "At a Glance",
         comp_title: "Summary Comparison: Exam Mode vs. Practice QR Mode",
         comp_col0: "Dimension",
-        comp_col1: "Product 1: Exam & Mock Test Mode (Teacher)",
+        comp_col1: "Product 1: Exam Mode (Teacher)",
         comp_col2: "Product 2: Practice QR Mode (Student)",
         comp_r1_label: "Pedagogical Goal",
-        comp_r1_exam: "In-class exams, midterms, or formative mock tests under realistic exam conditions (corrected by the teacher)",
+        comp_r1_exam: "Written exams, midterms, and in-class assessments (graded by the teacher)",
         comp_r1_prac: "Autonomous student training on paper at home or in tutorials (problem sets, worksheets)",
         comp_r2_label: "Who performs the evaluation?",
         comp_r2_exam: "The teacher (100% manually, with AI pre-grading, or in a teaching team)",
@@ -194,7 +195,7 @@ const translations = {
         // Student Portal Subsection inside Exam Mode
         portal_badge: "Exam Mode Restitution • Gradaly Pro",
         portal_title: "Zero-Knowledge Exam Consultation Portal",
-        portal_subtitle: "Return 200 graded exam or mock test copies in minutes without paper handling: publish AES-256 client-encrypted copies online, send automated magic-link emails, export grades + personal consultation links to Moodle, or print cut-out individual QR slips.",
+        portal_subtitle: "Return 200 graded exam copies in minutes without paper handling: publish AES-256 client-encrypted copies online, send automated magic-link emails, export grades + personal consultation links to Moodle, or print cut-out individual QR slips.",
         portal_shot_web: "1. Client-Side Decrypted Exam Copy Viewer",
         portal_shot_mail: "2. Automated Email with Personal Magic Link",
         portal_shot_qr: "3. Printable Cut-Out QR Slips (No Email Needed)",
@@ -238,6 +239,7 @@ const translations = {
         install_build_info: "Linux build environment: x86_64 binaries are built in an Ubuntu 22.04 LTS runner with glibc 2.35 (and ARM64 under Ubuntu 24.04). Fully compatible with any distribution providing glibc ≥ 2.35.",
         cta_title: "Ready to Grade Smarter, Not Harder?",
         cta_subtitle: "Provide your students with richer, clearer, and truly formative feedback — in both Exam Mode and Practice QR Mode.",
+        footer_follow: "Follow us:",
         footer_rights: "All rights reserved.",
 
         // Pricing
@@ -285,33 +287,34 @@ const translations = {
         uclouvain_offer: "UCLouvain faculty? Claim your free license →",
     },
     fr: {
-        nav_exam_mode: "1. Mode Examen (Enseignant)",
-        nav_practice_mode: "2. Mode Entraînement QR (Étudiant)",
+        nav_home: "Accueil",
+        nav_exam_mode: "Mode Examen",
+        nav_practice_mode: "Entraînement QR",
         nav_manual: "Manuel Utilisateur",
         nav_download: "Télécharger l'App",
         hero_version_badge: "Dernière version disponible :",
         hero_2in1_pill: "Application Desktop 2-en-1",
         cta_version_info: "Version actuelle :",
         hero_title1: "Mieux Corriger, Pour Mieux Former.",
-        hero_title2: "Un Logiciel 2-en-1 : Examens, Tests à Blanc & Entraînement Étudiant.",
-        hero_subtitle: "Concevez un barème fin et exigeant, et profitez des deux outils complémentaires réunis dans Gradaly : (1) le Mode Examen & Test à Blanc permettant à l'enseignant d'évaluer un lot de copies scannées (pour un test à blanc formatif en conditions réelles pendant l'année ou un examen final, 100 % humain ou assisté par IA), et (2) le Mode Entraînement QR permettant à l'étudiant de s'auto-évaluer en autonomie sur papier avec son smartphone.",
+        hero_title2: "Un Logiciel 2-en-1 : Examens Écrits & Entraînement Étudiant.",
+        hero_subtitle: "Concevez un barème fin et exigeant, et profitez des deux usages complémentaires réunis dans Gradaly : (1) le Mode Examen permettant à l'enseignant d'évaluer les copies papier scannées de sa promotion (100 % humain, assisté par IA ou en équipe), et (2) le Mode Entraînement QR permettant à l'étudiant de s'auto-évaluer en autonomie sur papier avec son smartphone.",
         download_mac: "Télécharger pour macOS",
         see_how: "Voir le fonctionnement",
 
         // 2-in-1 Product Overview Cards
         two_products_kicker: "Architecture 2-en-1 • Deux Outils Distincts",
         two_products_title: "Une Seule Application, Deux Usages Pédagogiques Complémentaires",
-        prod1_badge: "Produit 1 • Examens & Tests à Blanc",
+        prod1_badge: "Produit 1 • Examens Écrits",
         prod1_actor: "Utilisé par l'Enseignant",
-        prod1_title: "Mode Examen & Test à Blanc (Correction de Promotion)",
-        prod1_desc: "Pour vos examens finaux, partiels ou tests à blanc formatifs pendant l'année afin d'offrir un feedback détaillé dans des conditions réalistes d'examen :",
+        prod1_title: "Mode Examen (Correction de Promotion)",
+        prod1_desc: "Pour vos examens finaux, partiels et interrogations écrites afin d'évaluer chaque copie avec rigueur et d'offrir un feedback détaillé :",
         prod1_b1: "Importez la liste d'étudiants (CSV), découpez les scans groupés et associez les copies 100 % hors-ligne par OCR.",
         prod1_b2: "Corrigez en Mode 100 % Humain (au clavier), avec Pré-correction IA Multimodale (Batch -50 %), ou en Équipe.",
         prod1_b3: "Restituez un feedback détaillé par Export Moodle (CSV avec lien de copie), Tableur Excel, Copies PDF Annotées ou Portail Web Chiffré.",
-        prod1_cta: "Découvrir le Produit 1 : Mode Examen",
+        prod1_cta: "Découvrir le Mode Examen",
         prod1_demo_btn: "Démo Copie en Direct",
         prod1_manual_btn: "Manuel Examen",
-        prod1_section_kicker: "Produit 1 • Examens & Tests à Blanc Formatifs (Par l'Enseignant)",
+        prod1_section_kicker: "Produit 1 • Mode Examen (Par l'Enseignant)",
 
         prod2_badge: "Produit 2 • Entraînement Autonome QR",
         prod2_actor: "Utilisé par l'Étudiant (Zéro clé requise)",
@@ -320,7 +323,7 @@ const translations = {
         prod2_b1: "Incrustez des QR codes sur votre feuille d'exercices PDF (pour toute la fiche ou dans chaque cadre de question).",
         prod2_b2: "L'étudiant rédige sur papier, scanne le QR code avec son smartphone et prend en photo son brouillon manuscrit.",
         prod2_b3: "Feedback IA formateur immédiat & déblocage du corrigé type après essai — aucune clé API requise sur portal.gradaly.io (ou clé Gemini personnelle optionnelle).",
-        prod2_cta: "Découvrir le Produit 2 : Mode Entraînement QR",
+        prod2_cta: "Découvrir le Mode Entraînement QR",
         prod2_demo_btn: "Démo QR & PDF en Direct",
         prod2_manual_btn: "Manuel Entraînement QR",
 
@@ -329,7 +332,7 @@ const translations = {
         carousel_tab_practice: "2. Aperçu Mode Entraînement QR (Étudiant • 4 écrans)",
 
         phil_title: "Notre Philosophie",
-        phil_text: "Corriger des copies de manière répétitive est épuisant et n'apporte que peu de valeur ajoutée. Gradaly permet à l'enseignant de déplacer son temps et son expertise là où ils comptent le plus : la conception d'un barème d'évaluation fin, juste et formateur. Même si vous préférez corriger votre examen final à la main sur papier, Gradaly vous permet d'organiser des tests à blanc formatifs en conditions réelles pendant l'année ou de publier des feuilles d'exercices QR pour offrir à chaque étudiant un feedback détaillé et individualisé.",
+        phil_text: "Corriger des copies de manière répétitive est épuisant et n'apporte que peu de valeur ajoutée. Gradaly permet à l'enseignant de déplacer son expertise là où elle compte le plus : la conception d'un barème d'évaluation fin, juste et formateur. Chaque étudiant reçoit ainsi un feedback détaillé, transparent et véritablement utile pour progresser — tant lors des examens corrigés par l'enseignant que sur les feuilles d'exercices QR en autonomie.",
         
         adv_title: "Pourquoi choisir Gradaly ?",
         adv_pedagogy_title: "Focus Pédagogique & Barème Fin",
@@ -392,8 +395,8 @@ const translations = {
         carousel_slide9_desc: "L'étudiant scanne le QR code, photographie son brouillon manuscrit et reçoit immédiatement un feedback formateur et le corrigé type débloqué (via le relais IA Gradaly intégré ou sa propre clé Gemini).",
 
         // Product 1 Section: Exam Mode
-        guide_title: "Mode Examen & Test à Blanc : Évaluation de Promotion par l'Enseignant",
-        guide_subtitle: "Idéal aussi bien pour un examen final que pour un test à blanc formatif pendant l'année dans des conditions réalistes d'examen. Même si vous préférez corriger l'examen final à la main sur papier, ce mode vous permet d'organiser des tests en cours d'année pour offrir un feedback riche et détaillé à toute votre promotion.",
+        guide_title: "Mode Examen : Évaluation de Promotion par l'Enseignant",
+        guide_subtitle: "Conçu pour les examens finaux, partiels et évaluations écrites : corrigez en Mode 100 % Humain au clavier, appuyez-vous sur la pré-correction IA multimodale ou travaillez à plusieurs en équipe, tout en restituant un feedback riche et individualisé à toute votre promotion.",
 
         guide_step2_tag: "Canevas & Zone OCR",
         guide_step2_title: "Importer le Sujet PDF Vierge & la Zone d'ID Étudiant",
@@ -458,10 +461,10 @@ const translations = {
         comp_kicker: "En un coup d'œil",
         comp_title: "Tableau Comparatif : Mode Examen vs Mode Entraînement QR",
         comp_col0: "Dimension",
-        comp_col1: "Produit 1 : Mode Examen & Test à Blanc (Enseignant)",
+        comp_col1: "Produit 1 : Mode Examen (Enseignant)",
         comp_col2: "Produit 2 : Mode Entraînement QR (Étudiant)",
         comp_r1_label: "Objectif pédagogique",
-        comp_r1_exam: "Examens, partiels ou tests à blanc formatifs en conditions réalistes d'examen (corrigés par l'enseignant)",
+        comp_r1_exam: "Examens écrits, partiels et interrogations (corrigés par l'enseignant)",
         comp_r1_prac: "Entraînement autonome de l'étudiant sur papier à domicile ou en TD (fiches d'exercices, devoirs)",
         comp_r2_label: "Qui réalise l'évaluation ?",
         comp_r2_exam: "L'enseignant (100 % manuellement, avec pré-correction IA, ou en équipe de correcteurs)",
@@ -479,7 +482,7 @@ const translations = {
         // Student Portal Subsection inside Exam Mode
         portal_badge: "Restitution Mode Examen • Gradaly Pro",
         portal_title: "Portail Web Zero-Knowledge de Consultation des Copies Corrigées",
-        portal_subtitle: "Rendez 200 copies d'examen ou de test à blanc corrigées en quelques minutes : publiez les copies chiffrées en AES-256 en ligne, envoyez automatiquement les liens magiques par e-mail, exportez les notes + liens de consultation vers Moodle, ou imprimez des coupons QR individuels.",
+        portal_subtitle: "Rendez 200 copies corrigées en quelques minutes sans manipulation papier : publiez les copies chiffrées en AES-256 en ligne, envoyez automatiquement les liens magiques par e-mail, exportez les notes + liens de consultation vers Moodle, ou imprimez des coupons QR individuels.",
         portal_shot_web: "1. Consultation Web de la copie corrigée",
         portal_shot_mail: "2. Notification e-mail avec lien magique",
         portal_shot_qr: "3. Coupons QR individuels prêts à imprimer",
@@ -523,6 +526,7 @@ const translations = {
         install_build_info: "Environnement de compilation Linux : Les binaires x86_64 sont compilés sous Ubuntu 22.04 LTS (glibc 2.35) et ARM64 sous Ubuntu 24.04. Compatibles avec toute distribution Linux récente intégrant glibc ≥ 2.35.",
         cta_title: "Prêt à mieux corriger, pour mieux former ?",
         cta_subtitle: "Offrez à vos étudiants un feedback plus riche, plus précis et véritablement formateur — en Mode Examen comme en Mode Entraînement QR.",
+        footer_follow: "Suivez-nous :",
         footer_rights: "Tous droits réservés.",
 
         // Pricing
@@ -621,6 +625,9 @@ document.addEventListener('alpine:init', () => {
         },
         init() {
             this.lang = resolveWebsiteLanguage();
+            try {
+                localStorage.setItem('gradaly_lang', this.lang);
+            } catch (_) {}
             this.updateTranslations();
         },
         setLang(code) {

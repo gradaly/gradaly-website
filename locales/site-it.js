@@ -1,32 +1,33 @@
 window.GRADALY_SITE_I18N = window.GRADALY_SITE_I18N || {};
 window.GRADALY_SITE_I18N.it = {
-    nav_exam_mode: "1. Modalità Esame (Docente)",
-    nav_practice_mode: "2. Modalità Esercitazione QR (Studente)",
+    nav_home: "Home",
+    nav_exam_mode: "Modalità Esame",
+    nav_practice_mode: "Esercitazione QR",
     nav_manual: "Manuale Utente",
     nav_download: "Scarica l'App",
     hero_version_badge: "Ultima versione disponibile:",
     hero_2in1_pill: "Applicazione Desktop 2-in-1",
     cta_version_info: "Versione attuale:",
     hero_title1: "Valutare meglio, per formare meglio.",
-    hero_title2: "Un'unica applicazione 2-in-1 per Esami, Prove Simulate ed Esercitazione Autonoma.",
-    hero_subtitle: "Progetta una griglia di valutazione rigorosa e analitica una sola volta e sfrutta i due strumenti complementari riuniti in Gradaly: (1) la Modalità Esame e Simulazione per il docente, pensata per valutare elaborati scansionati (sia in prove simulate formative durante il corso sia in appelli ufficiali, al 100% manuale o assistita dall'IA), e (2) la Modalità Esercitazione QR per lo studente, che permette di autovalutare in autonomia su smartphone i propri esercizi svolti su carta.",
+    hero_title2: "Un'unica applicazione 2-in-1 per Esami Scritti ed Esercitazione Autonoma.",
+    hero_subtitle: "Progetta una griglia di valutazione rigorosa e analitica una sola volta e sfrutta i due flussi complementari riuniti in Gradaly: (1) la Modalità Esame per il docente, pensata per valutare elaborati scansionati (al 100% manuale, assistita da IA o in team), e (2) la Modalità Esercitazione QR per lo studente, che permette di autovalutare su smartphone i propri esercizi svolti su carta.",
     download_mac: "Scarica per macOS",
     see_how: "Scopri come funziona",
 
     // 2-in-1 Product Overview Cards
     two_products_kicker: "Architettura 2-in-1 • Due Flussi di Lavoro Distinti",
     two_products_title: "Un'Unica Applicazione, Due Strumenti Didattici Complementari",
-    prod1_badge: "Strumento 1 • Esami e Prove Simulate",
+    prod1_badge: "Strumento 1 • Esami Scritti",
     prod1_actor: "Utilizzato dal Docente",
-    prod1_title: "Modalità Esame e Simulazione (Valutazione del Corso)",
-    prod1_desc: "Per appelli d'esame ufficiali, prove intermedie o simulazioni formative durante l'anno volte a fornire agli studenti un feedback approfondito in condizioni realistiche d'esame:",
+    prod1_title: "Modalità Esame (Valutazione del Corso)",
+    prod1_desc: "Per appelli d’esame ufficiali, prove intermedie e verifiche scritte, valutando ogni elaborato con precisione e restituendo un feedback approfondito:",
     prod1_b1: "Importa l'elenco degli studenti (CSV), dividi le scansioni multiple e abbina le identità al 100% offline tramite OCR locale.",
     prod1_b2: "Valuta in Modalità 100% Manuale (scorciatoie da tastiera), con Pre-valutazione IA Multimodale (Batch -50%) o in Commissione.",
     prod1_b3: "Restituisci un feedback formativo ricco tramite CSV Moodle (con link diretto all'elaborato), Excel multi-foglio, PDF annotati o Portale Web cifrato.",
-    prod1_cta: "Esplora lo Strumento 1: Modalità Esame",
+    prod1_cta: "Scopri la Modalità Esame",
     prod1_demo_btn: "Demo Elaborato dal Vivo",
     prod1_manual_btn: "Manuale Modalità Esame",
-    prod1_section_kicker: "Strumento 1 • Esami e Prove Simulate Formative (Per il Docente)",
+    prod1_section_kicker: "Strumento 1 • Modalità Esame (Per il Docente)",
 
     prod2_badge: "Strumento 2 • Esercitazione Autonoma QR",
     prod2_actor: "Utilizzato dallo Studente (Zero chiavi sul Portale)",
@@ -35,7 +36,7 @@ window.GRADALY_SITE_I18N.it = {
     prod2_b1: "Integra codici QR sulla tua scheda di esercizi PDF (per l'intero foglio o all'interno di ciascun riquadro di domanda).",
     prod2_b2: "Gli studenti svolgono gli esercizi su carta, scansionano il codice QR con lo smartphone e fotografano il proprio svolgimento manoscritto.",
     prod2_b3: "Feedback formativo IA immediato e sblocco progressivo della Soluzione di riferimento — nessuna chiave API richiesta su portal.gradaly.io (o chiave Gemini personale facoltativa).",
-    prod2_cta: "Esplora lo Strumento 2: Modalità Esercitazione QR",
+    prod2_cta: "Scopri la Modalità Esercitazione QR",
     prod2_demo_btn: "Demo QR e PDF dal Vivo",
     prod2_manual_btn: "Manuale Esercitazione QR",
 
@@ -44,7 +45,7 @@ window.GRADALY_SITE_I18N.it = {
     carousel_tab_practice: "2. Anteprima Modalità Esercitazione QR (Studente • 4 schermate)",
 
     phil_title: "La Nostra Filosofia Didattica",
-    phil_text: "La correzione meccanica e ripetitiva è logorante e offre scarso valore aggiunto sul piano formativo. Troppo spesso l'impegno del docente viene assorbito dal conteggio manuale dei punteggi anziché dall'esercizio del giudizio critico e didattico. Gradaly permette di concentrare la propria competenza accademica laddove conta davvero: la progettazione di una griglia di valutazione rigorosa, equa e analitica. Anche se preferisci correggere su carta l'appello finale, Gradaly ti consente di organizzare prove simulate durante l'anno o di pubblicare schede di autovalutazione QR affinché ogni studente riceva un feedback concettuale dettagliato e personalizzato.",
+    phil_text: "La correzione meccanica e ripetitiva è logorante e offre scarso valore aggiunto sul piano formativo. Gradaly permette al docente di concentrare la propria competenza accademica laddove conta davvero: la progettazione di una griglia di valutazione rigorosa, equa e analitica, così che ogni studente riceva un feedback dettagliato e realmente formativo — sia negli esami scritti sia nelle schede di esercitazione autonoma con QR.",
 
     adv_title: "Perché scegliere Gradaly?",
     adv_pedagogy_title: "Rigore Didattico e Progettazione della Griglia",
@@ -107,8 +108,8 @@ window.GRADALY_SITE_I18N.it = {
     carousel_slide9_desc: "Gli studenti scansionano il codice QR, fotografano il proprio svolgimento su carta e ricevono subito un feedback formativo e lo sblocco della soluzione (tramite il relay IA integrato di Gradaly o una chiave Gemini personale facoltativa).",
 
     // Product 1 Section: Exam Mode
-    guide_title: "Modalità Esame e Simulazione: Valutazione degli Elaborati da parte del Docente",
-    guide_subtitle: "Ideale sia per gli appelli d'esame ufficiali sia per le prove simulate formative durante il semestre in condizioni realistiche d'esame. Anche se preferisci correggere su carta l'esame finale, la Modalità Esame ti permette di organizzare simulazioni in itinere e restituire un feedback ricco e personalizzato all'intero corso.",
+    guide_title: "Modalità Esame: Valutazione degli Elaborati da parte del Docente",
+    guide_subtitle: "Ideale per appelli ufficiali, prove intermedie e verifiche scritte: correggi al 100% manualmente con scorciatoie da tastiera, utilizza la pre-valutazione IA multimodale oppure collabora in commissione offrendo un feedback personalizzato a tutto il corso.",
 
     guide_step2_tag: "Modello e Area OCR Offline",
     guide_step2_title: "Importa il Modello PDF Vuoto e il Riquadro Identificativo",
@@ -173,10 +174,10 @@ window.GRADALY_SITE_I18N.it = {
     comp_kicker: "A Colpo d'Occhio",
     comp_title: "Confronto Sintetico: Modalità Esame vs Modalità Esercitazione QR",
     comp_col0: "Dimensione",
-    comp_col1: "Strumento 1: Modalità Esame e Simulazione (Docente)",
+    comp_col1: "Strumento 1: Modalità Esame (Docente)",
     comp_col2: "Strumento 2: Modalità Esercitazione QR (Studente)",
     comp_r1_label: "Obiettivo didattico",
-    comp_r1_exam: "Esami in aula, prove intermedie o simulazioni formative in condizioni realistiche d'esame (valutate dal docente)",
+    comp_r1_exam: "Esami scritti, appelli ufficiali e prove intermedie (valutati dal docente)",
     comp_r1_prac: "Esercitazione autonoma dello studente su carta a casa o a esercitazione (fogli di problemi, schede di lavoro)",
     comp_r2_label: "Chi effettua la valutazione?",
     comp_r2_exam: "Il docente (al 100% manualmente, con pre-valutazione IA o in commissione d'esame)",
@@ -194,7 +195,7 @@ window.GRADALY_SITE_I18N.it = {
     // Student Portal Subsection inside Exam Mode
     portal_badge: "Restituzione Modalità Esame • Gradaly Pro",
     portal_title: "Portale Web Zero-Knowledge per la Visione degli Elaborati",
-    portal_subtitle: "Restituisci 200 elaborati d'esame o di simulazione con la massima trasparenza e senza movimentazione di carta: pubblica online gli elaborati cifrati lato client con AES-256, invia notifiche e-mail con link segreti, esporta voti e link personali in Moodle o stampa tagliandi QR individuali.",
+    portal_subtitle: "Restituisci 200 elaborati corretti con la massima trasparenza e senza movimentazione di carta: pubblica online gli elaborati cifrati lato client con AES-256, invia notifiche e-mail con link segreti, esporta voti e link personali in Moodle o stampa tagliandi QR individuali.",
     portal_shot_web: "1. Consultazione Web dell'Elaborato Decifrato Lato Client",
     portal_shot_mail: "2. E-mail Automatica con Link Personale Sicuro",
     portal_shot_qr: "3. Tagliandi QR Individuali Pronti da Ritagliare (Senza E-mail)",
@@ -238,6 +239,7 @@ window.GRADALY_SITE_I18N.it = {
     install_build_info: "Ambiente di compilazione Linux: i binari x86_64 sono compilati su Ubuntu 22.04 LTS con glibc 2.35 (e ARM64 su Ubuntu 24.04). Pienamente compatibili con qualsiasi distribuzione dotata di glibc ≥ 2.35.",
     cta_title: "Pronto a valutare meglio, per formare meglio?",
     cta_subtitle: "Offri ai tuoi studenti un feedback più ricco, trasparente e autenticamente formativo — sia in Modalità Esame sia in Modalità Esercitazione QR.",
+    footer_follow: "Seguici:",
     footer_rights: "Tutti i diritti riservati.",
 
     // Pricing

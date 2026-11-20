@@ -1,32 +1,33 @@
 window.GRADALY_SITE_I18N = window.GRADALY_SITE_I18N || {};
 window.GRADALY_SITE_I18N.nl = {
-    nav_exam_mode: "1. Examenmodus (Docent)",
-    nav_practice_mode: "2. QR-Oefenmodus (Student)",
+    nav_home: "Startpagina",
+    nav_exam_mode: "Examenmodus",
+    nav_practice_mode: "QR-Oefenmodus",
     nav_manual: "Gebruikershandleiding",
     nav_download: "Download App",
     hero_version_badge: "Nieuwste versie beschikbaar:",
     hero_2in1_pill: "2-in-1 Desktopapplicatie",
     cta_version_info: "Huidige versie:",
     hero_title1: "Beter beoordelen, om beter op te leiden.",
-    hero_title2: "Één 2-in-1 applicatie voor examens, proefexamens & zelfstandige studententraining.",
-    hero_subtitle: "Ontwerp eenmalig een zorgvuldige, fijnmazige beoordelingsrubriek en benut de twee complementaire instrumenten van Gradaly: (1) de Examen- & Proefexamenmodus waarmee docenten gescande examenkopieën beoordelen (voor formatieve proefexamens onder realistische examenomstandigheden tijdens het academiejaar of officiële examens, 100% menselijk of met AI-ondersteuning), en (2) de QR-Oefenmodus waarmee studenten hun handgeschreven uitwerkingen op papier zelfstandig evalueren via hun smartphone.",
+    hero_title2: "Één 2-in-1 applicatie voor schriftelijke examens & zelfstandige studententraining.",
+    hero_subtitle: "Ontwerp eenmalig een zorgvuldige, fijnmazige beoordelingsrubriek en benut de twee complementaire werkwijzen van Gradaly: (1) de Examenmodus waarmee docenten gescande examenkopieën beoordelen (100% menselijk, met AI-ondersteuning of in teamverband), en (2) de QR-Oefenmodus waarmee studenten hun handgeschreven oefeningen op papier zelfstandig evalueren via hun smartphone.",
     download_mac: "Download voor macOS",
     see_how: "Ontdek hoe het werkt",
 
     // 2-in-1 Product Overview Cards
     two_products_kicker: "2-in-1 Architectuur • Twee Onderscheiden Werkwijzen",
     two_products_title: "Één Applicatie, Twee Complementaire Didactische Instrumenten",
-    prod1_badge: "Product 1 • Examens & Proefexamens",
+    prod1_badge: "Product 1 • Schriftelijke Examens",
     prod1_actor: "Gebruikt door de Docent",
-    prod1_title: "Examen- & Proefexamenmodus (Cohortbeoordeling)",
-    prod1_desc: "Voor officiële tentamens, deelexamens of formatieve proefexamens tijdens het jaar om studenten rijke feedback te bieden onder realistische examenomstandigheden:",
+    prod1_title: "Examenmodus (Cohortbeoordeling)",
+    prod1_desc: "Voor officiële examens, deeltentamens en schriftelijke toetsen om kopieën met een fijnmazige rubriek te beoordelen en rijke feedback te bieden:",
     prod1_b1: "Importeer de studentenlijst (CSV), splits groepsscans en koppel kopieën 100% offline via lokale OCR.",
     prod1_b2: "Beoordeel in 100% Menselijke Modus (sneltoetsen), met Multimodale AI-voorbeoordeling (-50% Batch), of in een docententeam.",
     prod1_b3: "Bezorg rijke individuele feedback via Moodle-CSV (met ingesloten kopielink), Excel met meerdere tabbladen, geannoteerde pdf's of het versleutelde inzageportaal.",
-    prod1_cta: "Ontdek Product 1: Examenmodus",
+    prod1_cta: "Ontdek de Examenmodus",
     prod1_demo_btn: "Live Kopie-demo",
     prod1_manual_btn: "Handleiding Examenmodus",
-    prod1_section_kicker: "Product 1 • Examens & Formatieve Proefexamens (Door de Docent)",
+    prod1_section_kicker: "Product 1 • Examenmodus (Door de Docent)",
 
     prod2_badge: "Product 2 • Zelfstandige QR-Training",
     prod2_actor: "Gebruikt door de Student (Geen sleutel vereist op portaal)",
@@ -35,7 +36,7 @@ window.GRADALY_SITE_I18N.nl = {
     prod2_b1: "Plaats QR-codes op uw pdf-oefenblad (voor het volledige blad of in elk afzonderlijk vraagkader).",
     prod2_b2: "Studenten werken hun oplossing uit op papier, scannen de QR-code met hun smartphone en fotograferen hun handgeschreven werk.",
     prod2_b3: "Directe formatieve AI-feedback & stapsgewijze vrijgave van de modeloplossing — geen API-sleutel vereist op portal.gradaly.io (of optionele persoonlijke Gemini-sleutel).",
-    prod2_cta: "Ontdek Product 2: QR-Oefenmodus",
+    prod2_cta: "Ontdek de QR-Oefenmodus",
     prod2_demo_btn: "Live QR-demo & PDF",
     prod2_manual_btn: "Handleiding QR-Oefenmodus",
 
@@ -44,7 +45,7 @@ window.GRADALY_SITE_I18N.nl = {
     carousel_tab_practice: "2. Voorbeeld QR-Oefenmodus (Student • 4 schermen)",
 
     phil_title: "Onze Onderwijsvisie",
-    phil_text: "Repetitief nakijkwerk is uitputtend en voegt weinig didactische waarde toe. Docenten besteden talloze uren aan mechanisch telwerk in plaats van aan inhoudelijk en didactisch oordeel. Met Gradaly verlegt u uw aandacht en vakinhoudelijke expertise naar waar ze werkelijk het verschil maken: het ontwerpen van een zorgvuldige, eerlijke en fijnmazige beoordelingsrubriek. Zelfs als u uw eindexamen liever met de hand op papier nakijkt, stelt Gradaly u in staat om tijdens het jaar realistische proefexamens te organiseren of zelfevaluatiebladen met QR-codes te publiceren zodat elke student diepgaande conceptuele feedback ontvangt.",
+    phil_text: "Repetitief nakijkwerk is uitputtend en voegt weinig didactische waarde toe. Met Gradaly verlegt u uw vakinhoudelijke expertise naar waar ze werkelijk het verschil maakt: het ontwerpen van een zorgvuldige, eerlijke en fijnmazige beoordelingsrubriek. Zo ontvangt elke student heldere, diepgaande en vormende feedback — zowel na schriftelijke examens als bij zelfstandige QR-oefenbladen.",
 
     adv_title: "Waarom kiezen voor Gradaly?",
     adv_pedagogy_title: "Didactische Focus & Verfijnde Beoordelingsrubriek",
@@ -107,8 +108,8 @@ window.GRADALY_SITE_I18N.nl = {
     carousel_slide9_desc: "Studenten scannen de QR-code, fotograferen hun handgeschreven uitwerking op papier en ontvangen direct formatieve feedback en toegang tot de modeloplossing (via de ingebouwde Gradaly AI-relay of een optionele persoonlijke Gemini-sleutel).",
 
     // Product 1 Section: Exam Mode
-    guide_title: "Examen- & Proefexamenmodus: Cohortbeoordeling door de Docent",
-    guide_subtitle: "Uitstekend geschikt voor zowel officiële examens als formatieve proefexamens tijdens het academiejaar onder realistische examenomstandigheden. Zelfs wanneer u het eindexamen bij voorkeur handmatig op papier nakijkt, kunt u met de Examenmodus tussentijdse proefexamens organiseren en het volledige cohort diepgaande, geïndividualiseerde feedback bezorgen.",
+    guide_title: "Examenmodus: Cohortbeoordeling door de Docent",
+    guide_subtitle: "Ontwikkeld voor schriftelijke examens, deeltentamens en schriftelijke toetsen: beoordeel 100% handmatig via het toetsenbord, schakel multimodale AI-voorbeoordeling in of werk samen in een docententeam, en bezorg het volledige cohort gedetailleerde individuele feedback.",
 
     guide_step2_tag: "Canvas & Offline OCR-zone",
     guide_step2_title: "Blanco Examen-PDF & Identificatiekader Importeren",
@@ -173,10 +174,10 @@ window.GRADALY_SITE_I18N.nl = {
     comp_kicker: "In één oogopslag",
     comp_title: "Overzichtsvergelijking: Examenmodus vs. QR-Oefenmodus",
     comp_col0: "Dimensie",
-    comp_col1: "Product 1: Examen- & Proefexamenmodus (Docent)",
+    comp_col1: "Product 1: Examenmodus (Docent)",
     comp_col2: "Product 2: QR-Oefenmodus (Student)",
     comp_r1_label: "Didactisch doel",
-    comp_r1_exam: "Schriftelijke examens, deeltentamens of formatieve proefexamens onder realistische examenomstandigheden (beoordeeld door de docent)",
+    comp_r1_exam: "Schriftelijke examens, deeltentamens en schriftelijke toetsen (beoordeeld door de docent)",
     comp_r1_prac: "Zelfstandige oefening op papier thuis of tijdens werkcolleges (oefeningenreeksen, werkbladen)",
     comp_r2_label: "Wie voert de evaluatie uit?",
     comp_r2_exam: "De docent (100% handmatig, met AI-voorbeoordeling, of in een docententeam)",
@@ -194,7 +195,7 @@ window.GRADALY_SITE_I18N.nl = {
     // Student Portal Subsection inside Exam Mode
     portal_badge: "Terugkoppeling Examenmodus • Gradaly Pro",
     portal_title: "Zero-Knowledge Inzageportaal voor Examens",
-    portal_subtitle: "Geef 200 beoordeelde examen- of proefexamenkopieën binnen enkele minuten terug zonder papierwerk: publiceer client-side met AES-256 versleutelde kopieën online, verstuur automatische e-mails met magische links, exporteer cijfers + persoonlijke inzagelinks naar Moodle, of druk uitknipbare individuele QR-strookjes af.",
+    portal_subtitle: "Bezorg 200 beoordeelde examenkopieën in enkele minuten zonder papierwerk: publiceer client-side AES-256 versleutelde kopieën online, verstuur automatische magic-link e-mails, exporteer cijfers + persoonlijke inzagelinks naar Moodle of druk individuele QR-strookjes af.",
     portal_shot_web: "1. Client-side ontsleutelde inzageweergave van de examenkopie",
     portal_shot_mail: "2. Geautomatiseerde e-mail met persoonlijke magische link",
     portal_shot_qr: "3. Afdrukbare individuele QR-strookjes (geen e-mail vereist)",
@@ -238,6 +239,7 @@ window.GRADALY_SITE_I18N.nl = {
     install_build_info: "Linux-bouwomgeving: x86_64-binaries worden gecompileerd op Ubuntu 22.04 LTS met glibc 2.35 (en ARM64 op Ubuntu 24.04). Volledig compatibel met elke distributie met glibc ≥ 2.35.",
     cta_title: "Klaar om beter te beoordelen en sterker op te leiden?",
     cta_subtitle: "Geef uw studenten rijkere, duidelijkere en écht formatieve feedback — zowel in de Examenmodus als in de QR-Oefenmodus.",
+    footer_follow: "Volg ons:",
     footer_rights: "Alle rechten voorbehouden.",
 
     // Pricing

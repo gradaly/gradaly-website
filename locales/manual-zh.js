@@ -5,12 +5,12 @@ window.GRADALY_MANUAL_I18N.zh = {
     download_btn: "下载 Gradaly",
     hero_pill: "二合一桌面应用程序 • 完整用户手册 v5.0.0",
     hero_title: "Gradaly 用户手册",
-    hero_subtitle: "精于评阅，重在育人。Gradaly 是一款集两大独立教学工作流于一体的二合一桌面软件：（1）面向教师的“考试与模拟测验评阅模式”（适用于学期中真实考场条件下的过程性模拟测验或期末正式考试），以及（2）面向学生的智能手机端“二维码自主练习与自评模式”。请在下方选择与您的教学场景对应的指南：",
-    search_placeholder: "在全部手册中搜索（例如：考试、模拟测验、二维码练习、评分细则、OCR、API 密钥、常见问题）……",
+    hero_subtitle: "精于评阅，重在育人。Gradaly 是一款集两大独立教学工作流于一体的二合一桌面软件：（1）面向教师的“考试评阅模式”，用于评阅扫描版学生纸质答卷；（2）面向学生的智能手机端“二维码自主练习与自评模式”。请在下方选择与您的教学场景对应的指南：",
+    search_placeholder: "在全部手册中搜索（例如：考试、二维码练习、评分细则、OCR、API 密钥、常见问题）……",
     card_exam_badge: "产品 1 • 教师端答卷评阅",
     card_exam_chapters: "章节 E1–E9",
-    card_exam_title: "手册 1：考试与模拟测验模式（教师使用）",
-    card_exam_desc: "适用于期末正式考试、期中测验或学期中真实考场条件下的过程性模拟测验：扫描学生答卷、通过本地 OCR 100% 离线匹配学生身份、支持人工/AI 辅助/助教团队协作评阅，并向学生归还带详细批注的答卷。",
+    card_exam_title: "手册 1：考试模式（教师使用）",
+    card_exam_desc: "适用于期末正式考试、期中考核与随堂书面测验：扫描学生答卷、通过本地 OCR 100% 离线匹配学生身份、支持人工/AI 辅助/助教团队协作评阅，并向学生归还带详细批注的答卷。",
     card_practice_badge: "产品 2 • 学生端自主自评",
     card_practice_chapters: "章节 P1–P5",
     card_practice_title: "手册 2：二维码自主练习与自评模式（学生使用）",
@@ -37,12 +37,12 @@ window.GRADALY_MANUAL_I18N.zh = {
             id: "exam-getting-started",
             guide: "exam",
             stepNumber: "E1",
-            partHeader: "手册 1 — 考试与模拟测验模式（教师端）",
+            partHeader: "手册 1 — 考试模式（教师端）",
             partColor: "indigo",
             partBanner: {
-                kicker: "手册 1 • 产品 1：考试与模拟测验评阅",
-                title: "教师端考试与模拟测验评阅完整指南（支持 100% 人工、AI 辅助及团队协作模式）",
-                desc: "面向扫描版学生答卷评阅的独立完整指南——无论是期末正式考试，还是学期中在真实考场环境下开展的过程性模拟测验，均可从容应对。"
+                kicker: "手册 1 • 产品 1：考试评阅",
+                title: "教师端考试评阅完整指南（支持 100% 人工、AI 辅助及团队协作模式）",
+                desc: "面向扫描版学生书面答卷评阅的独立完整指南——涵盖评分细则设计、离线 OCR 身份匹配、人工或 AI 辅助评阅、团队合并以及成绩反馈归还全流程。"
             },
             tag: "考试模式 • 第 1 步 — 创建考试项目",
             badge: "支持 100% 人工或 AI 辅助",
@@ -50,7 +50,7 @@ window.GRADALY_MANUAL_I18N.zh = {
             title: "创建考试项目及 100% 人工评阅 vs. AI 辅助工作流",
             subtitle: "新建考试项目（或启动内置 20 份答卷的考试演示项目），在您的本地电脑上高效评阅扫描版学生答卷。",
             paragraphs: [
-                "<strong>什么是考试项目（带有 <code>Exam</code> 徽标）？</strong> 考试项目专为教师统一收取纸质答卷、扫描为 PDF 并对全班进行评阅的教学评价场景而设计——既涵盖<strong>期中与期末正式考试</strong>，也十分适合<strong>学期中在真实考场条件下组织的过程性模拟测验</strong>。即便您在期末正式考试中更习惯纸质手改，考试模式依然是开展期中模拟考、在真实应试环境下为每位学生提供详尽个性化反馈的理想工具。顶部导航栏提供 <strong>6 个专属工作流标签页</strong>：<code>1. 试卷模板与题目</code>、<code>2. 学生名单</code>、<code>3. 答卷管理</code>、<code>4. 答卷匹配</code>、<code>5. 评阅工作台</code> 以及 <code>6. 统计与导出</code>。",
+                "<strong>什么是考试项目（带有 <code>Exam</code> 徽标）？</strong> 考试项目专为教师统一收取纸质答卷、扫描为 PDF 并对全班进行评阅的书面评价场景而设计——涵盖<strong>期中、期末考试以及各类随堂书面考核</strong>。顶部导航栏提供 <strong>6 个专属工作流标签页</strong>：<code>1. 试卷模板与题目</code>、<code>2. 学生名单</code>、<code>3. 答卷管理</code>、<code>4. 答卷匹配</code>、<code>5. 评阅工作台</code> 以及 <code>6. 统计与导出</code>。",
                 "<strong>100% 人工评阅模式或 AI 辅助模式：</strong> 在 Gradaly 中评阅试卷<strong>并非必须</strong>配置 AI API 密钥。软件开箱即支持<strong>100% 人工评阅模式</strong>，配备高速键盘快捷键（按数字键 <code>1–9</code> 勾选或取消评分项，按 <code>J</code>/<code>K</code> 键切换上下份学生答卷）、调整评分项分值后全班成绩自动动态重算，以及支持 Markdown 与 KaTeX 数学公式的丰富评语。当您需要时，随时可连接 AI API 密钥以启用 <strong>AI 评分细则助手</strong>与<strong>多模态 AI 预评阅</strong>，同时始终由教师保留最终人工复核与裁定权。",
                 "<strong>独立于界面语言的项目专属语言：</strong> 新建项目时可明确指定<strong>项目语言</strong>（简体中文、英语、法语、德语、西班牙语等）——也可随时点击顶部项目名称旁的国旗徽章或在<strong>项目 AI 设置</strong>中修改。即使您的 Gradaly 桌面界面使用其他语言，该设置也会统一控制生成的评分标准、AI 评阅指令、学生反馈及所有导出内容（带批注 PDF、Excel、Moodle CSV、二维码回执、网页端门户及二维码练习模式）。",
                 "在<strong>欢迎界面</strong>中，点击<strong>新建项目</strong>并选择<strong>考试项目（扫描答卷评阅）</strong>；或者点击<strong>创建演示项目 → 考试演示</strong>，直接体验包含 20 份手写学生答卷与完整参考答案的大学物理考试示例项目。"
@@ -424,9 +424,9 @@ window.GRADALY_MANUAL_I18N.zh = {
             badge: "技术原理、数据隐私与最佳实践",
             shortTitle: "常见问题解答",
             title: "常见问题解答（FAQ）",
-            subtitle: "围绕 AI 评阅底层原理、过程性模拟测验与正式考试的应用策略、Documents/Gradaly 本地存储机制、API 密钥安全、Zero-Knowledge 零知识云端加密以及技术支持的详细解答。",
+            subtitle: "围绕 AI 评阅底层原理、教师人工复核最佳实践、Documents/Gradaly 本地存储机制、API 密钥安全、Zero-Knowledge 零知识云端加密以及技术支持的详细解答。",
             paragraphs: [
-                "以下为您集中解答关于 Gradaly“考试与模拟测验模式”在技术架构、教学方法及数据隐私方面最受关注的问题。"
+                "以下为您集中解答关于 Gradaly“考试模式”在技术架构、教学方法及数据隐私方面最受关注的问题。"
             ],
             faqs: [
                 {
@@ -434,8 +434,8 @@ window.GRADALY_MANUAL_I18N.zh = {
                     a: "<p>当您请求 AI 评阅某位学生答卷上的某道题时，Gradaly 会提取您为该题绘制的<strong>矩形区域裁剪图像</strong>，连同包含评分细则各评分项（<code>CRITERIA</code>）与通用评阅指令（<code>PROMPT_TEXT</code>）的结构化提示词，一并发送给您选定的多模态视觉大模型。</p><p><strong>题干图像究竟取自学生答卷还是空白试卷模板？</strong><ul><li><strong>单一合并区域（默认设置）：</strong> 当您为每道题绘制单个矩形框时，Gradaly 会<strong>完全从该学生的答卷（<code>copies/copie_XXX.pdf</code>）中裁剪该区域</strong>，不使用空白试卷模板（<code>canvas.pdf</code>）。因此，若每位学生的试卷上印有不同的个性化数值参数，AI 看到的就是该学生卷面上的真实参数与作答内容。</li><li><strong>分离区域（<code>分离题干 / 作答区</code>）与 <code>AI 题干来源</code> 选项：</strong> 在 <em>1. 试卷模板与题目</em> 标签页中，通过 <strong><code>AI 题干来源：[学生答卷] / [空白试卷模板]</code></strong> 选择器，您可以指定题干部分是从每份<strong>学生答卷</strong>裁剪（一人一卷个性化试题时必选），还是从<strong>空白试卷模板（<code>canvas.pdf</code>）</strong>裁剪并拼接在作答区上方（适用于学生在不含题干的独立答题纸上作答的情形）。</li></ul></p><p><strong>随时透视核查发送的原图与 JSON 请求：</strong> 在 <em>5. 评阅工作台</em> 中，随时点击“对此题重新运行 AI 评阅”按钮旁的 <strong><code>👁️ AI 请求</code>（<code>Requête IA</code>）</strong>按钮（或在<em>设置 → 高级设置</em>中开启 <em>AI 调试模式</em>并打开 <code>.debug/grading/inspect.html</code>），即可直观查看发送给 AI 的精确 JPEG 图像、图像来源构成、System 与 User 提示词、完整的 HTTP JSON 请求体，以及模型所执行的任何 Python 代码。</p>"
                 },
                 {
-                    q: "我是否可以直接信任 AI 的评阅结果？还是更适合将其用于过程性模拟测验？",
-                    a: "<p><strong>既可以信赖，又绝不能在一开始盲目轻信！</strong> 在初始阶段，您设定的评分细则可能过于严苛或存在表述歧义，或者所选 AI 模型可能在特定复杂推导或罕见数学记号上出现误读。</p><p><strong>过程性模拟测验 vs. 期末正式考试：</strong> 许多高校教师在期末正式考试中习惯采用纸质手改（或使用 Gradaly 的 100% 人工评阅模式），同时非常乐意在<strong>学期中的过程性模拟测验</strong>中启用 Gradaly 的 AI 预评阅，从而在真实应试环境下为全班学生提供详尽、个性化的诊断反馈。</p><p><strong>人工复核与确认不可或缺：</strong> 每当将 Gradaly 用于<strong>终结性评价或高利害正式考试</strong>时，我们强烈建议您<strong>逐题审阅 AI 的预评阅结果并进行人工复核确认</strong>。Gradaly 的交互界面专为高效人工审阅、微调与一键确认而设计——坚持教师人工把关始终是最佳学术实践。</p><p><strong>面向学生的评分透明度与成绩申诉机制：</strong> 得益于 Gradaly（通过批注版 PDF 或学生在线查卷门户）向学生完整公开各项评分标准的勾选情况，我们也强烈建议向学生开放查卷复议渠道，允许学生针对特定评分项的适用情况提出合理申诉。</p>"
+                    q: "如何看待与监督 AI 的预评阅结果？",
+                    a: "<p><strong>既可以借力，也绝不在初始阶段盲目轻信！</strong> 在初期，您设定的评分细则可能过于严苛或存在表述歧义，或者所选 AI 模型可能在特定复杂推导或罕见手写记号上出现误读。</p><p><strong>人工复核与确认不可或缺：</strong> Gradaly 的设计初衷是让教师始终保留最终裁量权。特别是在正式计分考试中，请务必利用标准答案及少量真实答卷校准细则，并逐一审阅与人工确认 AI 给出的评分与反馈。</p><p><strong>面向学生的评分透明度与查卷复议：</strong> 得益于 Gradaly（通过批注版 PDF 或学生在线查卷门户）向学生完整公开各项评分标准的勾选情况，我们也建议向学生开放查卷反馈渠道，以便对具体评分条目进行沟通核实。</p>"
                 },
                 {
                     q: "使用 AI 评阅一场考试大约需要多少费用？",

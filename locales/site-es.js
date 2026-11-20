@@ -1,32 +1,33 @@
 window.GRADALY_SITE_I18N = window.GRADALY_SITE_I18N || {};
 window.GRADALY_SITE_I18N.es = {
-    nav_exam_mode: "1. Modo Examen (Docente)",
-    nav_practice_mode: "2. Modo Práctica QR (Estudiante)",
+    nav_home: "Inicio",
+    nav_exam_mode: "Modo Examen",
+    nav_practice_mode: "Práctica QR",
     nav_manual: "Manual de usuario",
     nav_download: "Descargar aplicación",
     hero_version_badge: "Última versión disponible:",
     hero_2in1_pill: "Aplicación de escritorio 2 en 1",
     cta_version_info: "Versión actual:",
     hero_title1: "Evaluar mejor, para formar mejor.",
-    hero_title2: "Una aplicación 2 en 1 para exámenes, simulacros y práctica autónoma.",
-    hero_subtitle: "Diseñe una única vez una rúbrica de evaluación rigurosa y detallada, y aproveche las dos herramientas complementarias de Gradaly: (1) el Modo Examen y Simulacro para que el docente evalúe cuadernillos escaneados (ya sea en simulacros formativos en condiciones reales durante el curso o en exámenes oficiales, de forma 100 % manual o asistida por IA), y (2) el Modo Práctica QR para que el estudiante autoevalúe su trabajo manuscrito en papel de manera autónoma desde su smartphone.",
+    hero_title2: "Una aplicación 2 en 1 para exámenes escritos y práctica autónoma.",
+    hero_subtitle: "Diseñe una única vez una rúbrica de evaluación rigurosa y detallada, y aproveche las dos herramientas complementarias de Gradaly: (1) el Modo Examen para que el docente evalúe cuadernillos escaneados (100 % manual, asistido por IA o en equipo), y (2) el Modo Práctica QR para que el estudiante autoevalúe su trabajo manuscrito en papel de manera autónoma desde su smartphone.",
     download_mac: "Descargar para macOS",
     see_how: "Ver cómo funciona",
 
     // 2-in-1 Product Overview Cards
     two_products_kicker: "Arquitectura 2 en 1 • Dos flujos de trabajo diferenciados",
     two_products_title: "Una sola aplicación, dos herramientas pedagógicas complementarias",
-    prod1_badge: "Producto 1 • Exámenes y simulacros",
+    prod1_badge: "Producto 1 • Exámenes Escritos",
     prod1_actor: "Utilizado por el docente",
-    prod1_title: "Modo Examen y Simulacro (Evaluación de promoción)",
-    prod1_desc: "Para exámenes finales, parciales o simulacros formativos durante el año académico que brinden retroalimentación detallada en condiciones reales de examen:",
+    prod1_title: "Modo Examen (Evaluación de promoción)",
+    prod1_desc: "Para exámenes finales, parciales y pruebas escritas en los que el docente evalúa con precisión y devuelve una retroalimentación detallada:",
     prod1_b1: "Importe la lista de estudiantes (CSV), divida escaneos masivos y asocie identidades 100 % sin conexión mediante OCR local.",
     prod1_b2: "Califique en Modo 100 % Humano (atajos de teclado), con precorrección de IA multimodal (lotes con -50 %) o en equipo docente.",
     prod1_b3: "Entregue retroalimentación individualizada mediante CSV para Moodle (con enlace a la copia), Excel multihoja, PDF anotados o el Portal Web cifrado.",
-    prod1_cta: "Explorar Producto 1: Modo Examen",
+    prod1_cta: "Descubrir el Modo Examen",
     prod1_demo_btn: "Demo de copia en vivo",
     prod1_manual_btn: "Leer manual de Examen",
-    prod1_section_kicker: "Producto 1 • Exámenes y simulacros formativos (Por el docente)",
+    prod1_section_kicker: "Producto 1 • Modo Examen (Por el docente)",
 
     prod2_badge: "Producto 2 • Práctica autónoma con QR",
     prod2_actor: "Utilizado por el estudiante (Sin clave en el portal)",
@@ -35,7 +36,7 @@ window.GRADALY_SITE_I18N.es = {
     prod2_b1: "Incruste códigos QR en su hoja de ejercicios en PDF (para toda la guía o dentro del recuadro de cada pregunta).",
     prod2_b2: "El estudiante resuelve en papel, escanea el código QR con su smartphone y fotografía su desarrollo manuscrito.",
     prod2_b3: "Retroalimentación formativa inmediata por IA y desbloqueo progresivo del solucionario de referencia — sin requerir clave API en portal.gradaly.io (o con clave personal de Gemini opcional).",
-    prod2_cta: "Explorar Producto 2: Modo Práctica QR",
+    prod2_cta: "Descubrir el Modo Práctica QR",
     prod2_demo_btn: "Demo QR y PDF en vivo",
     prod2_manual_btn: "Leer manual de Práctica QR",
 
@@ -44,7 +45,7 @@ window.GRADALY_SITE_I18N.es = {
     carousel_tab_practice: "2. Vista previa Modo Práctica QR (Estudiante • 4 pantallas)",
 
     phil_title: "Nuestra filosofía",
-    phil_text: "La corrección repetitiva resulta agotadora y aporta escaso valor pedagógico. A menudo, el profesorado dedica innumerables horas a tareas mecánicas de recuento en lugar de ejercer su juicio académico. Gradaly traslada su dedicación y experiencia docente hacia donde realmente marcan la diferencia: el diseño de una rúbrica de evaluación rigurosa, equitativa y formativa. Incluso si prefiere calificar su examen final a mano sobre papel, Gradaly le permite organizar simulacros formativos en condiciones reales durante el semestre o publicar guías de autoevaluación con QR para que cada estudiante reciba una retroalimentación conceptual detallada.",
+    phil_text: "La corrección repetitiva resulta agotadora y aporta escaso valor pedagógico. Gradaly traslada su dedicación y experiencia docente hacia donde realmente marcan la diferencia: el diseño de una rúbrica de evaluación rigurosa, equitativa y formativa. Así, cada estudiante recibe una retroalimentación conceptual clara, detallada y útil — tanto en exámenes escritos evaluados por el docente como en guías de práctica autónoma con códigos QR.",
 
     adv_title: "¿Por qué elegir Gradaly?",
     adv_pedagogy_title: "Enfoque pedagógico y diseño de rúbricas",
@@ -107,8 +108,8 @@ window.GRADALY_SITE_I18N.es = {
     carousel_slide9_desc: "El estudiante escanea el código QR, fotografía su resolución manuscrita en papel y recibe al instante retroalimentación formativa y el desbloqueo del solucionario (mediante el relé de IA integrado de Gradaly o una clave personal de Gemini opcional).",
 
     // Product 1 Section: Exam Mode
-    guide_title: "Modo Examen y Simulacro: Evaluación de promoción por el docente",
-    guide_subtitle: "Idóneo tanto para exámenes oficiales como para simulacros formativos durante el curso en condiciones reales de evaluación. Incluso si prefiere corregir el examen final a mano en papel, el Modo Examen le permite realizar pruebas formativas intermedias y devolver retroalimentación rigurosa e individualizada a toda su promoción.",
+    guide_title: "Modo Examen: Evaluación de promoción por el docente",
+    guide_subtitle: "Diseñado para exámenes finales, parciales y pruebas escritas: corrija al 100 % de forma manual con atajos de teclado, apóyese en la precorrección por IA multimodal o colabore en equipo devolviendo retroalimentación rigurosa e individualizada a toda su promoción.",
 
     guide_step2_tag: "Plantilla y zona OCR sin conexión",
     guide_step2_title: "Importar el PDF en blanco y el recuadro de identificación",
@@ -173,10 +174,10 @@ window.GRADALY_SITE_I18N.es = {
     comp_kicker: "De un vistazo",
     comp_title: "Comparativa resumida: Modo Examen frente a Modo Práctica QR",
     comp_col0: "Dimensión",
-    comp_col1: "Producto 1: Modo Examen y Simulacro (Docente)",
+    comp_col1: "Producto 1: Modo Examen (Docente)",
     comp_col2: "Producto 2: Modo Práctica QR (Estudiante)",
     comp_r1_label: "Objetivo pedagógico",
-    comp_r1_exam: "Exámenes presenciales, parciales o simulacros formativos en condiciones reales de examen (evaluados por el docente)",
+    comp_r1_exam: "Exámenes escritos, parciales y pruebas presenciales (evaluados por el docente)",
     comp_r1_prac: "Práctica autónoma del estudiante en papel, en casa o en clases prácticas (guías de problemas, hojas de trabajo)",
     comp_r2_label: "¿Quién realiza la evaluación?",
     comp_r2_exam: "El docente (100 % manualmente, con precorrección de IA o en equipo docente)",
@@ -194,7 +195,7 @@ window.GRADALY_SITE_I18N.es = {
     // Student Portal Subsection inside Exam Mode
     portal_badge: "Devolución en Modo Examen • Gradaly Pro",
     portal_title: "Portal Zero-Knowledge de consulta de exámenes",
-    portal_subtitle: "Devuelva 200 copias corregidas de exámenes o simulacros sin manipulación de papel: publique en línea copias cifradas en cliente con AES-256, envíe correos automáticos con enlaces mágicos, exporte calificaciones y enlaces personales a Moodle o imprima talones QR individuales recortables.",
+    portal_subtitle: "Devuelva 200 exámenes corregidos en minutos sin manipulación de papel: publique en línea copias cifradas en cliente con AES-256, envíe correos automáticos con enlaces mágicos, exporte calificaciones y enlaces personales a Moodle o imprima talones QR individuales recortables.",
     portal_shot_web: "1. Visor de copia de examen descifrada en el navegador",
     portal_shot_mail: "2. Correo electrónico automático con enlace mágico personal",
     portal_shot_qr: "3. Talones QR individuales recortables para imprimir (sin correo)",
@@ -238,6 +239,7 @@ window.GRADALY_SITE_I18N.es = {
     install_build_info: "Entorno de compilación en Linux: los binarios x86_64 se compilan en Ubuntu 22.04 LTS con glibc 2.35 (y ARM64 en Ubuntu 24.04). Totalmente compatibles con cualquier distribución que disponga de glibc ≥ 2.35.",
     cta_title: "¿Listo para evaluar mejor y formar mejor?",
     cta_subtitle: "Brinde a sus estudiantes una retroalimentación más rica, clara y genuinamente formativa — tanto en el Modo Examen como en el Modo Práctica QR.",
+    footer_follow: "Síguenos:",
     footer_rights: "Todos los derechos reservados.",
 
     // Pricing

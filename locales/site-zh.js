@@ -1,32 +1,33 @@
 window.GRADALY_SITE_I18N = window.GRADALY_SITE_I18N || {};
 window.GRADALY_SITE_I18N.zh = {
-    nav_exam_mode: "1. 考试模式（教师端）",
-    nav_practice_mode: "2. 二维码自主练习（学生端）",
+    nav_home: "首页",
+    nav_exam_mode: "考试模式",
+    nav_practice_mode: "QR 练习",
     nav_manual: "用户手册",
     nav_download: "下载应用",
     hero_version_badge: "最新发布版本：",
     hero_2in1_pill: "二合一桌面应用程序",
     cta_version_info: "当前版本：",
     hero_title1: "精于评阅，重在育人。",
-    hero_title2: "集正式考试、模拟测验与学生自主训练于一体的二合一教学软件。",
-    hero_subtitle: "只需精心设计一份严谨细致的评分细则，即可发挥 Gradaly 两大互补工具的教学价值：（1）面向教师的“考试与模拟测验模式”，用于评阅扫描版学生答卷（既可用于学期中真实考场环境下的诊断性模拟测验，也可用于期末正式考试，支持 100% 人工评阅或 AI 辅助评阅）；（2）面向学生的“二维码自主练习模式”，支持学生在纸面作答后使用智能手机自主完成过程性自评。",
+    hero_title2: "集正式书面考试与学生自主训练于一体的二合一教学软件。",
+    hero_subtitle: "只需精心设计一份严谨细致的评分细则，即可发挥 Gradaly 两大互补工作流的教学价值：（1）面向教师的“考试模式”，用于评阅扫描版学生纸质答卷（支持 100% 人工评阅、AI 辅助预评或团队协作）；（2）面向学生的“QR 二维码练习模式”，支持学生在纸面作答后使用智能手机自主完成过程性自评。",
     download_mac: "下载 macOS 版",
     see_how: "了解工作原理",
 
     // 2-in-1 Product Overview Cards
     two_products_kicker: "二合一架构 • 两大独立教学工作流",
     two_products_title: "一款软件，满足两种互补的教学评价场景",
-    prod1_badge: "产品 1 • 正式考试与模拟测验",
+    prod1_badge: "产品 1 • 书面考试",
     prod1_actor: "由教师使用",
-    prod1_title: "考试与模拟测验模式（全班答卷评阅）",
-    prod1_desc: "适用于期末正式考试、期中测验，或学期中在真实考试条件下开展的过程性模拟测验，为学生提供详尽的诊断性反馈：",
+    prod1_title: "考试模式（全班答卷评阅）",
+    prod1_desc: "适用于期末考试、期中考核与随堂书面测验，助您依循严谨细则评阅每份答卷并给出详尽反馈：",
     prod1_b1: "导入学生名单（CSV），拆分批量扫描文件，并通过本地 OCR 100% 离线匹配学生身份。",
     prod1_b2: "支持 100% 人工评阅模式（全键盘快捷键）、多模态 AI 预评阅（批处理享 5 折优惠）或助教团队协作评阅。",
     prod1_b3: "通过 Moodle CSV（内嵌在线答卷查阅链接）、多工作表 Excel 成绩册、批注版 PDF 答卷或加密查卷门户向学生反馈详细的个性化评语。",
-    prod1_cta: "探索产品 1：考试模式",
+    prod1_cta: "了解考试模式",
     prod1_demo_btn: "在线答卷演示",
     prod1_manual_btn: "阅读考试模式手册",
-    prod1_section_kicker: "产品 1 • 正式考试与过程性模拟测验（教师端）",
+    prod1_section_kicker: "产品 1 • 考试模式（教师端）",
 
     prod2_badge: "产品 2 • 二维码自主训练",
     prod2_actor: "由学生使用（门户端零密钥配置）",
@@ -35,7 +36,7 @@ window.GRADALY_SITE_I18N.zh = {
     prod2_b1: "在 PDF 习题讲义上嵌入二维码（支持整份讲义总二维码或每道题目框内的独立二维码）。",
     prod2_b2: "学生在纸上推演作答，用智能手机扫描二维码并拍摄手写解答过程。",
     prod2_b3: "即时获取过程性 AI 诊断反馈并在作答后解锁参考答案——在 portal.gradaly.io 上无需配置任何 API 密钥（亦可选填个人 Gemini 密钥）。",
-    prod2_cta: "探索产品 2：二维码自主练习模式",
+    prod2_cta: "了解 QR 练习模式",
     prod2_demo_btn: "在线二维码与 PDF 演示",
     prod2_manual_btn: "阅读练习模式手册",
 
@@ -44,7 +45,7 @@ window.GRADALY_SITE_I18N.zh = {
     carousel_tab_practice: "2. 预览二维码自主练习模式（学生端 • 4 个界面）",
 
     phil_title: "我们的教育理念",
-    phil_text: "机械重复的算分与批改令人疲惫，且难以产生真正的教学价值。教师往往在繁琐的分数统计上耗费大量心力，而非专注于学术判断与学情诊断。Gradaly 将您的专业学识聚焦于真正核心的环节：设计严谨、细致且公平的评分细则。即便您习惯在期末正式考试中采用传统纸质手改，依然可以利用 Gradaly 在学期中组织全真模拟测验，或发布二维码自评习题讲义，让每位学生都能获得深入的概念性反馈。",
+    phil_text: "机械重复的算分与批改令人疲惫，且难以产生真正的教学价值。Gradaly 将您的专业学识聚焦于真正核心的环节：设计严谨、细致且公平的评分细则。无论是在教师评阅的书面考试中，还是在学生自主完成的二维码习题讲义上，每位学生都能获得清晰、深入且具有启发性的反馈。",
 
     adv_title: "为什么选择 Gradaly？",
     adv_pedagogy_title: "聚焦教学设计与精细评分标准",
@@ -107,8 +108,8 @@ window.GRADALY_SITE_I18N.zh = {
     carousel_slide9_desc: "学生扫描二维码，拍下纸面手写解题过程，即可立即获得过程性诊断反馈并解锁参考答案（通过内置 Gradaly AI 中继服务或选填个人 Gemini 密钥）。",
 
     // Product 1 Section: Exam Mode
-    guide_title: "考试与模拟测验模式：教师主导的全班答卷评阅",
-    guide_subtitle: "既适用于期末正式考试，也非常适合学期中在真实考场环境下组织过程性模拟测验。即使您在期末考试中更倾向于纸质人工批改，考试模式也能帮助您在学期中轻松开展模拟考，为全班每一位学生提供详尽、个性化的诊断性反馈。",
+    guide_title: "考试模式：教师主导的全班答卷评阅",
+    guide_subtitle: "专为书面考试、期中考核与随堂测验打造：支持高效率 100% 人工键盘评阅、多模态 AI 预评阅或教研团队协同批改，并为全班每位学生提供详尽的个性化诊断反馈。",
 
     guide_step2_tag: "试卷模板与离线 OCR 识别区",
     guide_step2_title: "导入空白试卷 PDF 与学生身份信息框",
@@ -173,10 +174,10 @@ window.GRADALY_SITE_I18N.zh = {
     comp_kicker: "核心对比一览",
     comp_title: "模式对比总览：考试模式 vs. 二维码自主练习模式",
     comp_col0: "对比维度",
-    comp_col1: "产品 1：考试与模拟测验模式（教师端）",
+    comp_col1: "产品 1：考试模式（教师端）",
     comp_col2: "产品 2：二维码自主练习模式（学生端）",
     comp_r1_label: "核心教学目标",
-    comp_r1_exam: "随堂测验、期中/期末正式考试，或真实考场条件下的过程性模拟测验（由教师统一评阅）",
+    comp_r1_exam: "书面考试、期中/期末考核与随堂书面测验（由教师评阅）",
     comp_r1_prac: "课后作业、习题课或考前自主纸面刷题训练（习题集、复习讲义）",
     comp_r2_label: "由谁执行评阅？",
     comp_r2_exam: "由教师执行（支持 100% 人工评阅、AI 预评阅，或课程组/助教团队协作）",
@@ -194,7 +195,7 @@ window.GRADALY_SITE_I18N.zh = {
     // Student Portal Subsection inside Exam Mode
     portal_badge: "考试模式成绩反馈 • Gradaly Pro",
     portal_title: "Zero-Knowledge 零知识加密考试查卷门户",
-    portal_subtitle: "无需繁琐的纸质试卷分发，数分钟内向 200 名学生精准归还正式考试或模拟测验答卷：在线发布客户端 AES-256 加密答卷、自动发送专属加密链接邮件、将成绩与个人查卷链接同步导入 Moodle，或打印可裁剪的个人查卷二维码凭条。",
+    portal_subtitle: "无需繁琐的纸质试卷分发，数分钟内向 200 名学生精准归还已批改答卷：在线发布客户端 AES-256 加密答卷、自动发送专属查卷链接邮件、将成绩与个人查卷链接同步导入 Moodle，或打印可裁剪的个人查卷二维码凭条。",
     portal_shot_web: "1. 浏览器本地解密的学生答卷查阅界面",
     portal_shot_mail: "2. 含个人专属加密链接的自动通知邮件",
     portal_shot_qr: "3. 可打印裁剪的个人二维码查卷凭条（无需学生邮箱）",
@@ -238,6 +239,7 @@ window.GRADALY_SITE_I18N.zh = {
     install_build_info: "Linux 构建环境说明：x86_64 二进制包在配备 glibc 2.35 的 Ubuntu 22.04 LTS 环境中构建（ARM64 版本基于 Ubuntu 24.04 构建），完全兼容任何提供 glibc ≥ 2.35 的现代 Linux 发行版。",
     cta_title: "精于评阅，重在育人——准备好开启智慧评价了吗？",
     cta_subtitle: "无论是在考试模式还是二维码自主练习模式下，都能为您的学生提供更深入、更清晰且真正促进学习的诊断性反馈。",
+    footer_follow: "关注我们：",
     footer_rights: "保留所有权利。",
 
     // Pricing
