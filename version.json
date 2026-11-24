@@ -1,18 +1,18 @@
 {
-  "version": "5.0.0",
-  "name": "Gradaly v5.0.0",
-  "title": "Gradaly v5.0.0",
-  "published_at": "2026-11-19T18:52:00.000Z",
-  "notes": "### 🚀 Gradaly v5.0.0 — Multi-Model Benchmark Suites, Mutually Exclusive `OR` Criteria & Local AI Token Usage Ledger\n- **Multi-Model Benchmark & Regression Test Suites**: Capture human-validated exam copies and questions (`⭐`) into reusable benchmark suites to evaluate and compare AI models side-by-side (Google Gemini, OpenAI, Anthropic Claude, OpenRouter, institutional servers, and local Ollama). Includes a structured provider/model selector, mandatory pre-flight Vision & Python sandbox verification before campaign launch, configurable multi-threaded execution (`1–16` parallel workers with VRAM protection for local Ollama), a live multi-phase progress bar, detailed accuracy metrics (MAE, exact match rate, per-criterion F1, latency, token usage), and 1-click opening of any benchmark suite as a full Gradaly project to inspect and refine ground truth.\n- **Mutually Exclusive Rubric Criteria (`OR` Groups) & Malus Tiers**: Link consecutive positive criteria (e.g., partial credit *OR* full credit tiers) or negative malus criteria into mutually exclusive `OR` groups — manually or via the AI Rubric Assistant. Checking one criterion in an `OR` group automatically unchecks the others, `Max possible` / `Min possible` bounds are computed accurately per group, and `OR` groups are clearly displayed across the Grading Console, Annotated PDFs, Review Portal, and Encrypted Student Web Portals.\n- **Gap-Insertion Drag-and-Drop & Unified Render / Edit KaTeX Toggle**: Reorder questions, PDF pages, individual criteria, or entire `OR` criterion groups together with an explicit visual gap-insertion indicator. Added a unified **Render / Edit** button across criterion descriptions, question grading instructions, project AI prompts, AI justifications, and student feedback to seamlessly switch between live Markdown + KaTeX math rendering and source editing.\n- **100% Local AI Token Usage Ledger, Time-Series Charts & Custom Pricing (`~/.gradaly_ai_usage.jsonl`)**: Every AI call (single & batch grading, rubric assistant, prompt coherence checks, diagnostics, and benchmark campaigns) automatically logs input and output/reasoning tokens, date, provider, and model locally on your machine with zero student personal data. Open **AI Usage & Costs** (`Coins` icon in the header or in Settings) to view daily/monthly bar charts and cumulative curves, filter by provider/model/category, export to CSV, reset the ledger, and configure custom `$ / 1M` input/output token rates strictly for providers and models you have previously used.",
-  "html_url": "https://github.com/gradaly/gradaly-website/releases/tag/v5.0.0",
+  "version": "5.0.1",
+  "name": "Gradaly v5.0.1",
+  "title": "Gradaly v5.0.1",
+  "published_at": "2026-11-24T15:00:00.000Z",
+  "notes": "### 🚀 Gradaly v5.0.1 — Smooth PDF Viewer Scrolling & Layout Stability\n- **Fixed PDF Viewer Rapid Scroll Oscillation & CPU Spike**: Eliminated an asynchronous page state echo loop and redundant PDF canvas re-renders when scrolling rapidly up and down through multi-page student copies in the Grading and Review tabs.\n- **Stabilized Grading Right-Panel Page Indicator**: Fixed the height of the page mismatch indicator banner in the Grading tab so that crossing page boundaries while scrolling never shifts the rubric criteria or feedback editors below it.",
+  "html_url": "https://github.com/gradaly/gradaly-website/releases/tag/v5.0.1",
   "assets": {
-    "macos": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_5.0.0_universal.dmg",
-    "windows": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_5.0.0_x64-setup.exe",
-    "linux_appimage_x86": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_5.0.0_amd64.AppImage",
-    "linux_appimage_arm": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_5.0.0_aarch64.AppImage",
-    "linux_deb_x86": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_5.0.0_amd64.deb",
-    "linux_deb_arm": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_5.0.0_arm64.deb",
-    "linux_rpm_x86": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly-5.0.0-1.x86_64.rpm",
-    "linux_rpm_arm": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly-5.0.0-1.aarch64.rpm"
+    "macos": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_5.0.1_universal.dmg",
+    "windows": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_5.0.1_x64-setup.exe",
+    "linux_appimage_x86": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_5.0.1_amd64.AppImage",
+    "linux_appimage_arm": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_5.0.1_aarch64.AppImage",
+    "linux_deb_x86": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_5.0.1_amd64.deb",
+    "linux_deb_arm": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly_5.0.1_arm64.deb",
+    "linux_rpm_x86": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly-5.0.1-1.x86_64.rpm",
+    "linux_rpm_arm": "https://github.com/gradaly/gradaly-website/releases/latest/download/Gradaly-5.0.1-1.aarch64.rpm"
   }
 }

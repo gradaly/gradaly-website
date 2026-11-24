@@ -3,7 +3,7 @@ window.GRADALY_MANUAL_I18N.nl = {
     badge_manual: "Gebruikershandleiding (2-in-1)",
     back_home: "Terug naar de website",
     download_btn: "Download Gradaly",
-    hero_pill: "2-in-1 Desktopapplicatie • Volledige Gebruikershandleiding v5.0.0",
+    hero_pill: "2-in-1 Desktopapplicatie • Volledige Gebruikershandleiding v5.0.1",
     hero_title: "Gradaly Gebruikershandleiding",
     hero_subtitle: "Beter beoordelen, om beter op te leiden. Gradaly is een 2-in-1 applicatie met twee onafhankelijke werkwijzen: (1) Examenbeoordeling door de docent van gescande studentenkopieën, en (2) QR-Zelfevaluatie door de student op de smartphone. Kies hieronder de handleiding die bij uw werkwijze past:",
     search_placeholder: "Zoek in alle handleidingen (bijv. examen, QR-oefening, beoordelingsrubriek, OCR, API-sleutel, FAQ)...",

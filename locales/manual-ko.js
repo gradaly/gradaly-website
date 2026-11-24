@@ -3,7 +3,7 @@ window.GRADALY_MANUAL_I18N.ko = {
     badge_manual: "사용자 매뉴얼 (2-in-1)",
     back_home: "웹사이트로 돌아가기",
     download_btn: "Gradaly 다운로드",
-    hero_pill: "2-in-1 데스크톱 애플리케이션 • 전체 사용자 매뉴얼 v5.0.0",
+    hero_pill: "2-in-1 데스크톱 애플리케이션 • 전체 사용자 매뉴얼 v5.0.1",
     hero_title: "Gradaly 사용자 매뉴얼",
     hero_subtitle: "더 정교한 채점으로, 더 깊이 있는 배움을. Gradaly는 두 가지 독립적인 교육 워크플로를 제공하는 2-in-1 애플리케이션입니다. (1) 교수자가 스캔된 학생 답안지를 채점하는 시험 모드, (2) 학생이 스마트폰으로 수행하는 QR 자율 연습 및 자기평가. 아래에서 목적에 맞는 매뉴얼을 선택하세요:",
     search_placeholder: "전체 가이드 검색 (예: 시험, QR 연습, 채점 기준표, 루브릭, OCR, API 키, FAQ)...",

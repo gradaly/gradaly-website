@@ -3,7 +3,7 @@ window.GRADALY_MANUAL_I18N.ja = {
     badge_manual: "ユーザーマニュアル（2-in-1）",
     back_home: "Webサイトに戻る",
     download_btn: "Gradaly をダウンロード",
-    hero_pill: "2-in-1 デスクトップアプリケーション • 完全ユーザーマニュアル v5.0.0",
+    hero_pill: "2-in-1 デスクトップアプリケーション • 完全ユーザーマニュアル v5.0.1",
     hero_title: "Gradaly ユーザーマニュアル",
     hero_subtitle: "より深い採点で、より確かな学びを。Gradalyは2つの独立した教育ワークフローを備えた 2-in-1 アプリケーションです：(1) 教員によるスキャン済み答案冊子の「試験採点モード」、および (2) 学生がスマートフォンで行う「QR自己評価・演習モード」。ご利用目的に合ったガイドを以下からお選びください：",
     search_placeholder: "すべてのガイドを検索（例：試験、QR演習、採点基準、OCR、APIキー、FAQ）...",

@@ -3,7 +3,7 @@ window.GRADALY_MANUAL_I18N.zh = {
     badge_manual: "用户手册（二合一）",
     back_home: "返回官网首页",
     download_btn: "下载 Gradaly",
-    hero_pill: "二合一桌面应用程序 • 完整用户手册 v5.0.0",
+    hero_pill: "二合一桌面应用程序 • 完整用户手册 v5.0.1",
     hero_title: "Gradaly 用户手册",
     hero_subtitle: "精于评阅，重在育人。Gradaly 是一款集两大独立教学工作流于一体的二合一桌面软件：（1）面向教师的“考试评阅模式”，用于评阅扫描版学生纸质答卷；（2）面向学生的智能手机端“二维码自主练习与自评模式”。请在下方选择与您的教学场景对应的指南：",
     search_placeholder: "在全部手册中搜索（例如：考试、二维码练习、评分细则、OCR、API 密钥、常见问题）……",
